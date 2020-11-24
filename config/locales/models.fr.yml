@@ -1,0 +1,8 @@
+fr:
+  activerecord:
+    models:
+      shop: commerçant
+      order: commande
+    attributes:
+      order:
+        status: status
