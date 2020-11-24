@@ -6,6 +6,8 @@ class Order < ApplicationRecord
   validates :status, uniqueness: { scope: :user_id }, if: :cart?
   # validates :status, inclusion: { in: ["accepted", "denied", "pending", "cancelled"] }
 
+  monetize :price_cents
+
   def cart?
     return status == "cart"
   end
