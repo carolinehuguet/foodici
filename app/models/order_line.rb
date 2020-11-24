@@ -1,4 +1,6 @@
 class OrderLine < ApplicationRecord
   belongs_to :product
-  belongs_to :ordershop
+  belongs_to :order_shop
+
+  validates :subtotal_price_cents, :quantity, presence: true
 end
