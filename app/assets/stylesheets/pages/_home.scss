@@ -1,1 +1,30 @@
 // Specific CSS for your home-page
+@import "components/search_form";
+
+.content-home {
+  margin-top: 150px;
+}
+
+.welcome-block{
+  height: 30vh;
+}
+
+.text-large {
+  font-size: 23px;
+  font-weight: 300;
+}
+
+// CHECKBOX - Vous vous déplacez...
+.form-check-label {
+  color: $black-900;
+  // font-size: 16px!important;
+  text-transform: uppercase;
+  letter-spacing: 0.105em;
+  font-weight: 300;
+}
+
+.form-check p {
+  color: $green-700;
+  font-size: 14px;
+  font-weight: 300;
+}
