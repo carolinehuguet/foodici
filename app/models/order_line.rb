@@ -4,5 +4,5 @@ class OrderLine < ApplicationRecord
 
   validates :subtotal_price_cents, :quantity, presence: true
 
-  monetize :price_cents
+  monetize :subtotal_price_cents
 end
