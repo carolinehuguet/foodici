@@ -4,7 +4,7 @@
 <br>
 <div class="ml-5 border-bottom">
   <div>
-    <h5>ADRESSE DE DEPART</h5>
+    <h5>ADRESSE DE DEPART 🖊</h5>
     <p>17 rue des Oiseaux, Dinan</p>
   </div>
   <%#= cl_image_tag à petit pas %>
@@ -13,7 +13,7 @@
   <%#= cl_image_tag en voiture %>
 </div>
 <div class="ml-5 mt-3 ">
-  <div class="form-inline mt-3 ">
+  <div class="form-inline mt-3">
     <%= form_tag products_path, method: :get do %>
       <%= text_field_tag :query,
         params[:query],
@@ -61,7 +61,30 @@
     <div class="d-flex">
       <div class="products-list-wrapper tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-tout" role="tabpanel" aria-labelledby="pills-tout-tab">
-          Produits
+
+          <%#= TEST %>
+
+         <div class="d-flex justify-content-around">
+  <div class="row opacity-color">
+    <div class="card-trip">
+          <img src="https://lh3.googleusercontent.com/proxy/bzcICmejIYBofwmkXF5e7dylQB4GYgEe5HRMPN29gYCUcuIhYh6vseRUIR_YSEmkI13WjTfKxG8PDAljION2oZN8fHXyzdMdAVE87FplgDwfwHtY" alt="">
+          <div class="card-trip-infos ">
+            <div>
+              <p>Commerçant</p>
+              <h4>Banane</h4>
+            </div>
+            <div class="card-price">
+
+        <div class="price-currency"><strong>2</strong><small>€/pièces</small></div>
+      </div>
+      <%= image_tag "picto/panier.svg", class: "card-trip-user avatar-bordered", crop: :fill, width: 50 %>
+          </div>
+        </div>
+  </div>
+</div>
+
+        <%#= TEST END %>
+
         </div>
         <div class="tab-pane fade show" id="pills-boucherie" role="tabpanel" aria-labelledby="pills-boucherie-tab">
           Produits
@@ -91,7 +114,7 @@
           Produits
         </div>
       </div>
-      <div class="cart products-cart-wrapper">
+      <div class="list-course products-cart-wrapper">
         <div class="container">
         <div class="text-center p-3" id="border-bottom">
           Mes courses

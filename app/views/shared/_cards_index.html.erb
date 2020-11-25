@@ -7,14 +7,14 @@
       <%= link_to product, class: "link-product" do %>
         <div class="card-trip">
           <%#= cl_image_tag product.photo, crop: :fill, width: 400, class: "product-photo"%>
-          <div class="card-trip-infos text-center ">
+          <div class="card-trip-infos ">
             <div>
               <p><%= product.shop.name %></p>
               <h4><%= product.name %></h4>
             </div>
             <div class="card-price">
 
-        <div class="price-currency"><%= product.price_cents %> €/kg</div>
+        <div class="price-currency"><%= product.price_cents %> €/<%= product.unit %></div>
       </div>
           <button class="main-cta">
           <div class="container-counter" id="container-counter">
@@ -39,20 +39,20 @@
   </div>
 </div>
 
-
-<div class="d-flex justify-content-around">
+     <div class="d-flex justify-content-around">
   <div class="row opacity-color">
     <div class="card-trip">
-          <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fvergerpelanne.com%2Fpomme%2F&psig=AOvVaw2q9xZjkhI1AqGyyo0OmunG&ust=1606407777029000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMiclruNnu0CFQAAAAAdAAAAABAD" alt="">
-          <div class="card-trip-infos text-center ">
+          <img src="https://lh3.googleusercontent.com/proxy/bzcICmejIYBofwmkXF5e7dylQB4GYgEe5HRMPN29gYCUcuIhYh6vseRUIR_YSEmkI13WjTfKxG8PDAljION2oZN8fHXyzdMdAVE87FplgDwfwHtY" alt="">
+          <div class="card-trip-infos ">
             <div>
-              <p>Fruits</p>
+              <p>Commerçant</p>
               <h4>Banane</h4>
             </div>
             <div class="card-price">
 
-        <div class="price-currency">2 €/kg</div>
+        <div class="price-currency"><strong>2</strong><small>€/pièces</small></div>
       </div>
+      <%= image_tag "picto/panier.svg", class: "card-trip-user avatar-bordered", crop: :fill, width: 50 %>
           </div>
         </div>
   </div>

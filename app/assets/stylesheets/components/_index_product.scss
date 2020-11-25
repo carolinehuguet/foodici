@@ -1,5 +1,5 @@
 .products-list-wrapper {
-  flex: 0 0 64%;
+  flex: 0 0 34%;
 }
 
 .products-cart-wrapper {
@@ -18,10 +18,11 @@
   border-top: 2px dashed #dae1ce;
 }
 
-.cart {
+.list-course {
   width: 250px;
   position: fixed;
   top: 420px;
   right:17vw;
   z-index: 999;
 }
+
