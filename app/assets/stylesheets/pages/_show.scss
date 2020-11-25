@@ -6,13 +6,23 @@
   background-image: url('https://res.cloudinary.com/dlu9wclb0/image/upload/v1606315702/ferme-de-loic_lxdakk.png');
   background-size: 100%;
   color: #fff;
-  filter: gray saturate(0%) brightness(70%) contrast(1000%);
 
   h1 {
     padding-top: 100px;
   }
 
 }
+
+.back-text {
+  opacity: 40%;
+
+  a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+  }
+
+}
+
+
 
 .img-product {
   border: none;
@@ -23,7 +33,22 @@
   background-size: cover;
 
   img {
-    padding-top: 50px;
+    width:80%;
+    display: block;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+  .form-group {
+    max-width: 120px;
+    position: absolute;
+    bottom: 0px;
+    right: -7px;
+
+    .form-control {
+      border-radius: 10px;
+      border: none;
+    }
   }
 }
 
@@ -37,17 +62,38 @@
   top: 208px;
   right:17vw;
   z-index: 999;
+  border:none;
+  box-shadow: 0px 15px 10px 5px rgba(80, 80, 80, .05);
 }
 
 .text-product {
-  max-width: 500px;
+  max-width: 450px;
+
+  p {
+    line-height: 1.8;
+    opacity: 0.7;
+  }
+
 }
 
 .text-shop {
-  max-width: 500px;
-  left:17vw;
   text-align: left;
-  position: absolute;
+
+  h1 {
+  color: #EEEAE0;
+  }
+
+  p {
+  color: #EEEAE0;
+  }
+
+  .overtitle {
+  color: #EEEAE0;
+  }
+}
+
+.text-shop-content {
+  max-width: 500px;
 }
 
 #border-bottom {
@@ -59,9 +105,25 @@
 }
 
 .button-product {
-  width:300px;
+  width:350px;
   height:50px;
   border-radius: 15px;
   padding:10px;
 
 }
+
+.card-price {
+    font-size: 35px;
+    font-family: 'Poppins';
+    display: flex;
+
+    h3 {
+      font-family: 'Poppins'
+    }
+
+    .price-currency {
+      font-size: 15px;
+    }
+
+}
+
