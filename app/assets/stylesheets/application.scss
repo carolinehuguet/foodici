@@ -11,4 +11,9 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
-@import "components/button";
+
+.nav-pills .nav-link {
+  border-radius: 10px;
+}
+
+@import"pages/show";
