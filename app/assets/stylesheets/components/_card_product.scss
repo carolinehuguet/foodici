@@ -1,0 +1,82 @@
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  transition: 1000ms;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+  background-color: #EAE9E4;
+}
+
+.card-product h4 {
+  font-family: "Poppins", arial, sans-serif;
+  font-size: 21px;
+  margin: 0;
+  color: #1B391F;
+}
+
+.card-product span {
+  font-family: "Poppins", arial, sans-serif;
+  color: #AAADAB;
+  font-size: 1.3em;
+}
+
+.card-product strong{
+  font-size: 2em;
+  color: #1B391F;
+}
+
+.card-product sup{
+  color: #1B391F;
+}
+
+.card-product i {
+  font-size: 1.6em;
+  color: #AAADAB;
+  transition: 500ms;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%
+}
+
+.add-or-remove {
+  font-size: 1.2em !important;
+  color: #1B391F;
+  background-color: #F9F7F3;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+// ------- PSEUDO CLASSES ------
+
+.card-product:hover {
+  transform: scale(1.02);
+  transition: 500ms;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-product i:hover {
+  color: #2A5730;
+  transition: 500ms;
+}
