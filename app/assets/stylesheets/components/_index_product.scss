@@ -4,14 +4,24 @@
 
 .products-cart-wrapper {
   flex: 0 0 33%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  color: $primary;
 }
 
-.border-bottom {
-  border-bottom: solide;
+#border-bottom {
+  border-bottom: 2px dashed #dae1ce;
+}
+
+#border-top {
+  border-top: 2px dashed #dae1ce;
 }
 
 .cart {
-
-  position: sticky;
-  top: 0;
+  width: 250px;
+  position: fixed;
+  top: 420px;
+  right:17vw;
+  z-index: 999;
 }
