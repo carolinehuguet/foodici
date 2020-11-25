@@ -1,0 +1,67 @@
+
+.banniere-commercant {
+  background-size: cover;
+  background-position: top;
+  height: 450px;
+  background-image: url('https://res.cloudinary.com/dlu9wclb0/image/upload/v1606315702/ferme-de-loic_lxdakk.png');
+  background-size: 100%;
+  color: #fff;
+  filter: gray saturate(0%) brightness(70%) contrast(1000%);
+
+  h1 {
+    padding-top: 100px;
+  }
+
+}
+
+.img-product {
+  border: none;
+  border-radius: 20px;
+  height:400px;
+  width:300px;
+  background: url("https://res.cloudinary.com/dlu9wclb0/image/upload/v1606313176/card-texture_ehqi5a.png");
+  background-size: cover;
+
+  img {
+    padding-top: 50px;
+  }
+}
+
+.courses {
+  height:600px;
+  width:250px;
+  background-color: white;
+  border-radius: 20px;
+  // position: -webkit-sticky;
+  position: fixed;
+  top: 208px;
+  right:17vw;
+  z-index: 999;
+}
+
+.text-product {
+  max-width: 500px;
+}
+
+.text-shop {
+  max-width: 500px;
+  left:17vw;
+  text-align: left;
+  position: absolute;
+}
+
+#border-bottom {
+  border-bottom: 2px dashed #DAE1CE;
+}
+
+#border-top {
+  border-top: 2px dashed #DAE1CE;
+}
+
+.button-product {
+  width:300px;
+  height:50px;
+  border-radius: 15px;
+  padding:10px;
+
+}
