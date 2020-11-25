@@ -2,11 +2,11 @@ class Order < ApplicationRecord
   belongs_to :user
   has_many :order_shops
 
-  validates :starting_address, :total_price_cents, presence: true
+  validates :starting_address, presence: true
   validates :status, uniqueness: { scope: :user_id }, if: :cart?
-  # validates :status, inclusion: { in: ["accepted", "denied", "pending", "cancelled"] }
+  validates :status, inclusion: { in: ["cart", "pending", "fulfilled"] }
 
-  monetize :price_cents
+  monetize :total_price_cents
 
   def cart?
     return status == "cart"
