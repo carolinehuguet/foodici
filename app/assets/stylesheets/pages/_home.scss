@@ -16,15 +16,11 @@
 
 // CHECKBOX - Vous vous déplacez...
 .form-check-label {
-  margin-top: 16px;
   color: $black-900;
   text-transform: uppercase;
   letter-spacing: 0.105em;
   font-weight: 300;
-}
-
-.form-check-label.active {
-  font-weight: 500;
+  cursor: pointer;
 }
 
 .form-check p {
@@ -34,6 +30,7 @@
 }
 
 .form-picto-wrapper {
+  margin-bottom: 16px;
   width: 100px;
   height: 100px;
   border: 1.5px solid $green-900;
@@ -43,15 +40,19 @@
   align-items: center;
 }
 
-.form-picto-wrapper.active {
-  border: 2.5px solid $green-900;
-  border-radius: 10%;
-  background-color: $orange-600;
-}
-
 .form-picto-wrapper img {
   width: 50px;
   height: 50px;
+}
+
+.form-check-input:checked + label {
+  font-weight: 500;
+}
+
+.form-check-input:checked + label .form-picto-wrapper {
+  border: 2.5px solid $green-900;
+  border-radius: 10%;
+  background-color: $orange-600;
 }
 
 // TEST 1 ----------------------------------------------------------
