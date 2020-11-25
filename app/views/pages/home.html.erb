@@ -15,24 +15,36 @@
 
    <div class="container my-5">
     <h3>Vous vous déplacez...</h3>
-    <div class="d-flex justify-content-center my-3">
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-        <label class="form-check-label" for="exampleRadios1">
+    <%# Synthaxe simple form %>
+
+    <div class="d-flex justify-content-center my-4">
+
+      <div class="form-check d-flex flex-column align-items-center">
+        <div class="form-picto-wrapper">
+          <%= image_tag("picto/small_walk.svg") %>
+        </div>
+        <input class="form-check-input visually-hidden" type="radio" name="exampleRadios" id="toggle">
+        <label class="form-check-label" for="toggle">
           à petits pas
         </label>
         <p>rayon de 500m</p>
       </div>
 
-      <div class="form-check">
+      <div class="form-check d-flex flex-column align-items-center">
+        <div class="form-picto-wrapper active">
+          <%= image_tag("picto/normal_walk.svg") %>
+        </div>
         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-        <label class="form-check-label" for="exampleRadios1">
+        <label class="form-check-label active" for="exampleRadios1">
           à pied
         </label>
         <p>rayon de 1km</p>
       </div>
 
-      <div class="form-check">
+      <div class="form-check d-flex flex-column align-items-center">
+        <div class="form-picto-wrapper">
+          <%= image_tag("picto/bicycle.svg") %>
+        </div>
         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
         <label class="form-check-label" for="exampleRadios1">
           à vélo
@@ -40,7 +52,10 @@
         <p>rayon de 1km</p>
       </div>
 
-      <div class="form-check">
+      <div class="form-check d-flex flex-column align-items-center">
+        <div class="form-picto-wrapper">
+          <%= image_tag("picto/car.svg") %>
+        </div>
         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
         <label class="form-check-label" for="exampleRadios1">
           en voiture
@@ -48,7 +63,12 @@
         <p>rayon de 1km</p>
       </div>
     </div>
-    <%= link_to 'Voir les produits', products_path %>
+    <%= link_to 'Voir les produits', products_path, class: "btn btn-primary main-btn" %>
+  </div>
+
+  <div class="container my-5">
+    <h3>Les commerçants à proximité</h3>
+    <div><p>map</p></div>
   </div>
 
 </main>
