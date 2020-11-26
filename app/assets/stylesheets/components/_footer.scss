@@ -1,0 +1,39 @@
+.test {
+
+  background-image: url(https://res.cloudinary.com/dlu9wclb0/image/upload/v1606386450/vague_footer_pvlv8l.svg);
+  background-repeat: repeat-x;
+
+  width: 6400px;
+  height: 198px;
+  animation-name: wave;
+  animation-iteration-count: infinite;
+  animation-duration: 9s;
+  animation-timing-function: cubic-bezier(0.36, 0.45, 0.63, 0.53);
+  overflow: hidden;
+
+}
+
+@keyframes wave{
+  0% {
+    transform:translate3d(0, 0, 0);
+  }
+  100% {
+    transform:translate3d(-1600px, 0, 0);
+  }
+}
+
+.page-footer {
+  // padding-top: 40px;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,.1);
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  background-color: #fff;
+  display: block;
+  font-size: 17px;
+  padding-right:5%;
+}
+
+// .content-footer {
+//   background-color: #fff;
+// }
