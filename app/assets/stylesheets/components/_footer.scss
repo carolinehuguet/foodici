@@ -10,7 +10,10 @@
   animation-duration: 9s;
   animation-timing-function: cubic-bezier(0.36, 0.45, 0.63, 0.53);
   overflow: hidden;
-
+  bottom: 0;
+  margin-bottom: -80px;
+  margin-top: -10px;
+    z-index: 999;
 }
 
 @keyframes wave{
@@ -23,17 +26,17 @@
 }
 
 .page-footer {
-  // padding-top: 40px;
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,.1);
-  position: absolute;
-  bottom:0;
-  width: 100%;
-  background-color: #fff;
-  display: block;
-  font-size: 17px;
-  padding-right:5%;
+  // background-color: #fff;
+  width:100vw !important;
+  overflow: hidden;
+  z-index: 999;
+
+  p {
+    text-transform: none;
+  }
 }
 
-// .content-footer {
-//   background-color: #fff;
-// }
+.white-footer {
+  background-color: #fff;
+  width:100vw !important;
+}
