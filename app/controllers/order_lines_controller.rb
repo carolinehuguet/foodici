@@ -25,6 +25,10 @@ class OrderLinesController < ApplicationController
     end
   end
 
+  def index
+    @order_lines = OrderLine.all
+  end
+
   private
   def order_line_params
     params.require(:order_line).permit(:quantity)
