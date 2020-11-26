@@ -9,6 +9,8 @@
 
   h1 {
     padding-top: 100px;
+    margin: 0;
+    text-align: left;
   }
 
 }
@@ -24,12 +26,21 @@
   width:300px;
   background: url("https://res.cloudinary.com/dlu9wclb0/image/upload/v1606313176/card-texture_ehqi5a.png");
   background-size: cover;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+
+
+  &:hover img {
+    width: 83%;
+    transition: 0.5s;
+  }
 
   img {
     width:80%;
     display: block;
-    margin-top: 60px;
-    margin-left: 30px;
+    transition: 0.5s;
+
 }
 
   .form-group {
@@ -110,8 +121,9 @@
     font-family: 'Poppins';
     display: flex;
 
-    h3 {
-      font-family: 'Poppins'
+    h4 {
+      font-family: 'Poppins';
+      text-align: left;
     }
 
     .price-currency {
