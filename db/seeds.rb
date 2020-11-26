@@ -44,7 +44,8 @@ puts "Creating shops..."
 
 CSV.foreach(filepath_shops, csv_options) do |row|
   # name,address,opening_hour,closing_hour,opening_days,phone_number,category,description
-  Shop.create!(
+  file = URI.open(row['image'])
+  shop = Shop.new(
     name: row['name'],
     address: row['address'],
     opening_hour: row['opening_hour'],
@@ -54,6 +55,8 @@ CSV.foreach(filepath_shops, csv_options) do |row|
     category: row['category'],
     description: row['description']
   )
+  shop.photo.attach(io: file, filename: row['name'], content_type: 'image/png' )
+  shop.save!
 end
 
 shops = Shop.all.order(:id)
