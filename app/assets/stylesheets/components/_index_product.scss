@@ -1,5 +1,5 @@
 .products-list-wrapper {
-  flex: 0 0 34%;
+  flex: 0 0 64%;
 }
 
 .products-cart-wrapper {
@@ -26,3 +26,15 @@
   z-index: 999;
 }
 
+.img-product-card {
+  border: none;
+
+  background: url("https://res.cloudinary.com/dlu9wclb0/image/upload/v1606313176/card-texture_ehqi5a.png");
+  background-size: cover;
+}
+
+.img-product-c {
+  width: 100px;
+  border-radius: 20px 20px 0 0;
+
+}
