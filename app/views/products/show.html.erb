@@ -12,7 +12,10 @@
             </div>
           </div>
         </div>
-        <a href="#" class="btn btn-primary mt-3 mb-5 button-product">Valider</a>
+        <%= simple_form_for [@product, @order_line] do |f| %>
+          <%= f.input :quantity %>
+          <%= submit_tag 'Valider', class: 'btn btn-primary mt-3 mb-5 button-product' %>
+        <% end %>
       </div>
       <div class="text-product px-4">
         <div class="overtitle"><%= @product.amount %> <%= @product.unit %></div>

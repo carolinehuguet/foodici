@@ -1,5 +1,5 @@
 class CartsController < ApplicationController
-
-	def show
+  def show
+    @order = Order.find(params[:id])
 	end
 end
