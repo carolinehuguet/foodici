@@ -1,32 +1,29 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="container mt-4">
+<div class="container pt-5 mt-5">
   <div class="mb-3">
     <a href="#" class="back-text">< Retour aux produits</a>
   </div>
     <div class="d-flex">
       <div>
         <div class="card img-product" style="width: 350px">
-          <img class="card-img" src="https://assets.stickpng.com/images/580b57fbd9996e24bc43c11c.png" alt="Card image cap">
+          <%= image_tag @product.photo, crop: :fill, width: 400 %>
           <div class="form-group row">
             <div class="col-10">
-              <input class="form-control" type="number" value="42" id="example-number-input">
+              <input class="form-control" type="number" min= "0" value="0" id="example-number-input">
             </div>
           </div>
         </div>
-        <a href="#" class="btn btn-primary mt-3 mb-5 button-product">Valider</a>
+        <%= simple_form_for [@product, @order_line] do |f| %>
+          <%= f.input :quantity %>
+          <%= submit_tag 'Valider', class: 'btn btn-primary mt-3 mb-5 button-product' %>
+        <% end %>
       </div>
       <div class="text-product px-4">
-        <div class="overtitle">Sachet de 1kg</div>
-        <h2> Pomme </h2>
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+        <div class="overtitle"><%= @product.amount %> <%= @product.unit %></div>
+        <h2><%= @product.name %></h2>
+        <p><%= @product.shop.description %></p>
       </div>
         <div class="card-price pr-5">
-          <h3>2</h3>
+          <h4 mr-1><%= @product.price %></h4>
           <div class="price-currency">€</div>
         </div>
       <div class="card courses">
@@ -57,10 +54,10 @@
   </div>
 </div>
 
-<div class="banniere-commercant">
+<div class="banniere-commercant mt-5">
   <div class="container text-shop">
-    <h1>La ferme de Loïc</h1>
-    <div class="overtitle mb-2">Du lundi au samedi / 9-12h - 14h-19h</div>
-    <p class="mb-5 text-shop-content">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditis, At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditis, At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditis</p>
+    <h1 mb-2><%= @product.shop.name %></h1>
+    <div class="overtitle mb-2">Ouvert de <%= @product.shop.opening_hour %>h à <%= @product.shop.closing_hour %>h</div>
+    <p class="mb-5 text-shop-content"><%= @product.shop.description %></p>
   </div>
 </div>

@@ -9,20 +9,15 @@
 
   h1 {
     padding-top: 100px;
+    margin: 0;
+    text-align: left;
   }
 
 }
 
 .back-text {
   opacity: 40%;
-
-  a:hover, a:visited, a:link, a:active {
-    text-decoration: none;
-  }
-
 }
-
-
 
 .img-product {
   border: none;
@@ -31,19 +26,28 @@
   width:300px;
   background: url("https://res.cloudinary.com/dlu9wclb0/image/upload/v1606313176/card-texture_ehqi5a.png");
   background-size: cover;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+
+
+  &:hover img {
+    width: 83%;
+    transition: 0.5s;
+  }
 
   img {
     width:80%;
     display: block;
-    margin-top: 60px;
-    margin-left: 30px;
+    transition: 0.5s;
+
 }
 
   .form-group {
     max-width: 120px;
     position: absolute;
-    bottom: 0px;
-    right: -7px;
+    bottom: 20px;
+    right: -15px;
 
     .form-control {
       border-radius: 10px;
@@ -117,8 +121,9 @@
     font-family: 'Poppins';
     display: flex;
 
-    h3 {
-      font-family: 'Poppins'
+    h4 {
+      font-family: 'Poppins';
+      text-align: left;
     }
 
     .price-currency {

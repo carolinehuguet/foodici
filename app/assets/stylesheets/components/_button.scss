@@ -1,6 +1,50 @@
+// MAIN BUTTON
 .main-btn {
+  margin: 20px;
+  height: 47px;
+  min-width: 170px;
   background-color: $green-800!important;
+  color: $orange-500!important;
   border-radius: 15px!important;
-  padding: 12px 25px!important;
+  padding: 12px 27px!important;
   font-size: 16px!important;
+  font-weight: 300!important;
+  transition: all 0.3s;
+}
+
+a.main-btn {
+  text-decoration: none;
+}
+input.main-btn {
+  border: none;
+}
+
+.main-btn:hover {
+  background-color: $green-700!important;
+}
+
+// SECONDARY BUTTON
+.line-btn {
+  margin: 20px;
+  height: 47px;
+  min-width: 170px;
+  border: 1px solid $green-800!important;
+  background-color: $orange-500!important;
+  color: $green-800!important;
+  border-radius: 15px!important;
+  padding: 12px 27px!important;
+  font-size: 16px!important;
+  font-weight: 300!important;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a.line-btn {
+  text-decoration: none;
+}
+
+.line-btn:hover {
+  background-color: $green-800!important;
+  border: 1px solid $green-800!important;
+  color: $orange-500!important;
 }

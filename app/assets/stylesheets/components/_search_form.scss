@@ -3,20 +3,25 @@
   margin: 0px auto;
 }
 
-.search-form-control .form-control {
+.search-form-control.form-control {
   height: 55px;
-  border: 1px solid rgba(218, 225, 206, 0.5);
+  border: 1.5px solid rgba(218, 225, 206, 0.5);
   border-radius: 15px;
 }
 
-.search-form-control .form-control:focus {
+.search-form-control.form-control:focus {
   border: 1px solid $green-700;
   outline: none !important;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 1px 6px rgba(42, 87, 48, 0.2);
 }
 
 .form-control::placeholder {
   font-size: 14px;
   color: $black-600;
   font-weight: 300;
+  padding-left: 8px;
+}
+
+.ap-input-icon {
+  display: none;
 }
