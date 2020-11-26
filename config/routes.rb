@@ -4,9 +4,11 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resources :shops, only: [:show]
 
-  resources :products, only: [:index, :show]
+  resources :products, only: [:index, :show] do
+    resources :order_lines, only: [:create]
+  end
 
-  resources :order_lines, only: [:create, :update, :destroy]
+  resources :order_lines, only: [:update, :destroy]
 
   resource :cart, only: [:show]
 

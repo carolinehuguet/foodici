@@ -6,13 +6,11 @@
       <div>
         <div class="card img-product" style="width: 350px">
           <img class="card-img" src="https://assets.stickpng.com/images/580b57fbd9996e24bc43c11c.png" alt="Card image cap">
-          <div class="form-group row">
-            <div class="col-10">
-              <input class="form-control" type="number" value="42" id="example-number-input">
-            </div>
-          </div>
         </div>
-        <a href="#" class="btn btn-primary mt-3 mb-5 button-product">Valider</a>
+        <%= simple_form_for [@product, @order_line] do |f| %>
+          <%= f.input :quantity %>
+          <%= submit_tag 'Valider', class: 'btn btn-primary mt-3 mb-5 button-product' %>
+        <% end %>
       </div>
       <div class="text-product px-4">
         <div class="overtitle">Sachet de 1kg</div>

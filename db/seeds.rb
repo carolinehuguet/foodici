@@ -44,7 +44,7 @@ puts "Creating shops..."
 
 CSV.foreach(filepath_shops, csv_options) do |row|
   # name,address,opening_hour,closing_hour,opening_days,phone_number,category,description
-  Shop.create!(
+ Shop.create!(
     name: row['name'],
     address: row['address'],
     opening_hour: row['opening_hour'],
