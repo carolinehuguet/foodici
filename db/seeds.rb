@@ -37,7 +37,7 @@ CSV.foreach(filepath_users, csv_options) do |row|
   )
 end
 
-users = User.all
+users = User.all.order(:id)
 
 puts "Users created!"
 puts "Creating shops..."
@@ -56,7 +56,7 @@ CSV.foreach(filepath_shops, csv_options) do |row|
   )
 end
 
-shops = Shop.all
+shops = Shop.all.order(:id)
 
 puts "Shops created!"
 puts "Creating orders..."
@@ -72,7 +72,7 @@ CSV.foreach(filepath_orders, csv_options) do |row|
   )
 end
 
-orders = Order.all
+orders = Order.all.order(:id)
 
 puts "Orders created!"
 puts "Creating products... 'To lose patience is to lose the battle.'"
@@ -95,7 +95,7 @@ CSV.foreach(filepath_products, csv_options) do |row|
   product.save!
 end
 
-products = Product.all
+products = Product.all.order(:id)
 
 puts "Products created!"
 puts "Creating order_shops..."
@@ -112,7 +112,7 @@ CSV.foreach(filepath_order_shops, csv_options) do |row|
   )
 end
 
-order_shops = OrderShop.all
+order_shops = OrderShop.all.order(:id)
 
 puts "Order_shops created!"
 puts "Creating order_lines..."
