@@ -1,18 +1,64 @@
+
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-// Define fonts for body and headers
-$body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Nunito", "Helvetica", "sans-serif";
+// Volkhov
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,400&family=Volkhov:wght@400;700&display=swap');
 
-// To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+
+// Define fonts for body and headers
+$body-font: 'Poppins', "Helvetica", "sans-serif";
+$headers-font: 'Volkhov',"Helvetica",  serif;
+
+h1 {
+  color: $green-900;
+  font-size: 48px!important;
+  font-weight: 700!important;
+}
+
+h2 {
+  color: $green-900;
+  font-size: 40px!important;
+  font-weight: 700!important;
+}
+
+h3 {
+  color: $green-900;
+  font-size: 25px!important;
+  font-weight: 700!important;
+}
+
+h4 {
+  color: $green-900;
+  font-size: 23px!important;
+  font-weight: 400!important;
+}
+
+h5 {
+  color: $green-900;
+  font-size: 20px!important;
+  font-weight: 400!important;
+}
+
+h6 {
+  color: $green-900;
+  font-size: 18px!important;
+  font-weight: 400!important;
+}
+
+.overtitle {
+  font-family: 'Poppins', "Helvetica", "sans-serif";
+  color: $black-600;
+  font-size: 16px!important;
+  font-weight: 300!important;
+  text-transform: uppercase;
+  letter-spacing: 0.105em;
+}
+
+p {
+  color: $green-900;
+  font-size: 16px!important;
+  font-weight: 400!important;
+}

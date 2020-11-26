@@ -1,0 +1,129 @@
+
+.banniere-commercant {
+  background-size: cover;
+  background-position: top;
+  height: 450px;
+  background-image: url('https://res.cloudinary.com/dlu9wclb0/image/upload/v1606315702/ferme-de-loic_lxdakk.png');
+  background-size: 100%;
+  color: #fff;
+
+  h1 {
+    padding-top: 100px;
+  }
+
+}
+
+.back-text {
+  opacity: 40%;
+
+  a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+  }
+
+}
+
+
+
+.img-product {
+  border: none;
+  border-radius: 20px;
+  height:400px;
+  width:300px;
+  background: url("https://res.cloudinary.com/dlu9wclb0/image/upload/v1606313176/card-texture_ehqi5a.png");
+  background-size: cover;
+
+  img {
+    width:80%;
+    display: block;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+  .form-group {
+    max-width: 120px;
+    position: absolute;
+    bottom: 0px;
+    right: -7px;
+
+    .form-control {
+      border-radius: 10px;
+      border: none;
+    }
+  }
+}
+
+.courses {
+  height:600px;
+  width:250px;
+  background-color: white;
+  border-radius: 20px;
+  // position: -webkit-sticky;
+  position: fixed;
+  top: 208px;
+  right:17vw;
+  z-index: 999;
+  border:none;
+  box-shadow: 0px 15px 10px 5px rgba(80, 80, 80, .05);
+}
+
+.text-product {
+  max-width: 450px;
+
+  p {
+    line-height: 1.8;
+    opacity: 0.7;
+  }
+
+}
+
+.text-shop {
+  text-align: left;
+
+  h1 {
+  color: #EEEAE0;
+  }
+
+  p {
+  color: #EEEAE0;
+  }
+
+  .overtitle {
+  color: #EEEAE0;
+  }
+}
+
+.text-shop-content {
+  max-width: 500px;
+}
+
+#border-bottom {
+  border-bottom: 2px dashed #DAE1CE;
+}
+
+#border-top {
+  border-top: 2px dashed #DAE1CE;
+}
+
+.button-product {
+  width:350px;
+  height:50px;
+  border-radius: 15px;
+  padding:10px;
+
+}
+
+.card-price {
+    font-size: 35px;
+    font-family: 'Poppins';
+    display: flex;
+
+    h3 {
+      font-family: 'Poppins'
+    }
+
+    .price-currency {
+      font-size: 15px;
+    }
+
+}
+
