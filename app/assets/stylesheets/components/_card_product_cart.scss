@@ -74,10 +74,20 @@
   border-radius: 20px;
 }
 
+.add-or-remove i {
+  font-size: 1em !important;
+  margin: 0 5px;
+}
+
+.add-or-remove button {
+  border: none;
+  background-color: transparent;
+}
+
 // ------- PSEUDO CLASSES ------
 
 .card-product:hover {
-  transform: scale(1.02);
+  // transform: scale(1);
   transition: 500ms;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }

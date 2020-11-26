@@ -6,7 +6,12 @@ Rails.application.routes.draw do
 
   resources :products, only: [:index, :show]
 
-  resources :order_lines, only: [:create, :update, :destroy]
+  resources :order_lines, only: [:create, :update, :destroy] do
+    member do
+      patch :increase_quantity
+      patch :decrease_quantity
+    end
+  end
 
   resource :cart, only: [:show]
 

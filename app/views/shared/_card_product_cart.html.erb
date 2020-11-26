@@ -1,17 +1,17 @@
 <article class="card-product">
- 	<%= image_tag "bavette-boeuf.png", alt: "image d'une pomme", width: 200 %>
+ 	<%= cl_image_tag order_line.product.photo.key, height: 200 %>
 	<div class="card-product-infos">
 		<div>
-			<p class="product-name">Bavette de boeuf</p>
-		<p><span>250g</span></p>
+			<p class="product-name"><%= order_line.product.name %></p>
+		<p><span><%= order_line.product.amount %> <%= order_line.product.unit %></span></p>
 		</div>
-		<p class="add-or-remove"> -  2  + </p>
+		<p class="add-or-remove"><button><i class="fas fa-minus"></i></button> <%= order_line.quantity %> <button><i class="fas fa-plus"></i></button></p>
 		<div class="price">
-			<p><strong>5</strong><sup>€/kg</sup></p>
-		<p><span>0,0€/kg</span></p>
+			<p><strong><%= humanized_money(order_line.subtotal_price_cents) %></strong><sup>€/<%= order_line.product.unit %></sup></p>
+		<p><span><%= order_line.product.price_cents %>€/<%= order_line.product.unit %></span></p>
 		</div>
 		<div>
-			<a href="#" title=""><i class="far fa-trash-alt"></i></a>
+			<%= link_to(icon("far","far fa-trash-alt"), order_lines_path(@order_line) , method: :delete, data: { confirm: "Are you sure?" }) %>
 		</div>
 	</div>
 </article>

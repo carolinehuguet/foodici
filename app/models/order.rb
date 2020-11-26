@@ -1,6 +1,7 @@
 class Order < ApplicationRecord
   belongs_to :user
   has_many :order_shops
+  has_many :order_lines, through: :order_shops
 
   validates :starting_address, presence: true
   validates :status, uniqueness: { scope: :user_id }, if: :cart?

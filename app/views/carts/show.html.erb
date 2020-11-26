@@ -3,15 +3,14 @@
 	<%= render :partial => "shared/timeline" %>
 	<div class="row">
 		<div class="col-12 col-lg-8">
-			<section>
-				<h3>Boucherie</h3>
-				<%= render :partial => "shared/card_product_cart" %>
-				<%= render :partial => "shared/card_product_cart" %>
-			</section>
-			<section>
-				<h3>Epicerie</h3>
-				<%= render :partial => "shared/card_product_cart" %>
-			</section>
+			<% @order_lines.each do |category,order_lines| %>
+				<section>
+					<h3><%= category %></h3>
+					<% order_lines.each do |order_line| %>
+						<%= render partial: "shared/card_product_cart", locals: { order_line: order_line } %>
+					<% end %>
+				</section>
+			<% end %>
 		</div>
 		<aside class="col-12 col-lg-4 recap">
 			<div>
