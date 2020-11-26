@@ -65,14 +65,17 @@
           <p>rayon de 1km</p>
         </div>
     </div>
-
-      <%= submit_tag "Search", class: "line-btn" %>
-    <% end %>
-    <%= link_to 'Voir les produits', products_path, class: "main-btn" %>
+    <%= submit_tag "Search", class: "line-btn" %>
+  <% end %>
+  <%= link_to 'Voir les produits', products_path, class: "main-btn" %>
 
   <div class="container my-5">
     <h3>Les commerçants à proximité</h3>
-    <div><p>map</p></div>
+    <div id="map"
+      style="width: 100%; height: 600px;"
+      data-markers="<%= @markers.to_json %>"
+      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
   </div>
 
 </main>

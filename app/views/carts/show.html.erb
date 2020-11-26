@@ -90,7 +90,10 @@
 						<p>TOTAL : <strong> 13,43€ </strong></p>
 					</div>
 				</footer>
-				<p><a href="#" class="btn btn-primary btn-block">Valider</a></p>
+        <%= form_tag orders_path(@order) do %>
+          <%= hidden_field_tag 'order_id', order.params[:id] %>
+          <%= submit_tag 'Valider', class: 'btn btn-primary btn-block' %>
+        <% end %>
 			</div>
 		</aside>
 	</div>
