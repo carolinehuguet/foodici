@@ -1,0 +1,63 @@
+.container-compteur {
+  display:flex;
+  width:200px;
+  height:100%;
+  position:relative;
+  margin:20px auto;
+}
+
+input {
+  width:30px;
+}
+
+.basket {
+  background-color:tomato;
+  position:absolute;
+  right:0;
+  width:48px;
+  height:48px;
+  border-radius: 50%;
+}
+
+.main-cta {
+  background-color:green;
+  border-radius:30px;
+}
+.main-cta::after {
+  content: "🥳";
+  position:absolute;
+  top:15px;
+  left:13px;
+}
+
+#compteur {
+   position:absolute;
+  left:20px;
+  top:15px;
+}
+
+.hidden {
+    display:none;
+}
+
+.show {
+  display:block;
+}
+
+
+
+
+.submit {
+  background-color:green;
+  width:48px;
+  height:48px;
+}
+
+
+.badge {
+  position: relative;
+  bottom: 180px;
+  left: 230px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
