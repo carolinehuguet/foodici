@@ -1,0 +1,17 @@
+<article class="card-product">
+ 	<%= cl_image_tag order_line.product.photo.key, height: 200 %>
+	<div class="card-product-infos">
+		<div>
+			<p class="product-name"><%= order_line.product.name %></p>
+		<p><span><%= order_line.product.amount %> <%= order_line.product.unit %></span></p>
+		</div>
+		<p class="add-or-remove"><button><i class="fas fa-minus"></i></button> <%= order_line.quantity %> <button><i class="fas fa-plus"></i></button></p>
+		<div class="price">
+			<p><strong><%= humanized_money(order_line.subtotal_price_cents) %></strong><sup>€/<%= order_line.product.unit %></sup></p>
+		<p><span><%= order_line.product.price_cents %>€/<%= order_line.product.unit %></span></p>
+		</div>
+		<div>
+			<%= link_to(icon("far","far fa-trash-alt"), order_lines_path(@order_line) , method: :delete, data: { confirm: "Are you sure?" }) %>
+		</div>
+	</div>
+</article>

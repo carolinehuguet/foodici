@@ -8,7 +8,12 @@ Rails.application.routes.draw do
     resources :order_lines, only: [:create]
   end
 
-  resources :order_lines, only: [:update, :destroy]
+  resources :order_lines, only: [:update, :destroy] do
+    member do
+      patch :increase_quantity
+      patch :decrease_quantity
+    end
+  end
 
   resource :cart, only: [:show]
 
