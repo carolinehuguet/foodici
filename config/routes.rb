@@ -16,5 +16,5 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :dashboard, only: [:show]
+  resource :dashboard, only: [:show]
 end
