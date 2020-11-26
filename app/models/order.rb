@@ -7,6 +7,7 @@ class Order < ApplicationRecord
   validates :status, inclusion: { in: ["cart", "pending", "fulfilled"] }
 
   monetize :total_price_cents
+  monetize :amount_cents
 
   def cart?
     return status == "cart"
