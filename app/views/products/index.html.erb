@@ -64,20 +64,24 @@
 
           <%#= TEST %>
 
-         <div class="d-flex justify-content-around m-4">
+
+        <div class="d-flex justify-content-around m-4">
           <div class="row opacity-color">
           <% @products.each do |product| %>
             <div class="col-md-4 mb-4">
-              <%#= link_to product, class: "link-product" do %>
                 <div class="card-trip">
-
+              <%#= link_to product, class: "link-product" do %>
+​
                     <%= image_tag product.photo, crop: :fill, class: "img-product-card"%>
+              <%# end %>
+
                     <% if product.organic == true %>
                     <div class="badge badge-success">
                       <p>bio</p>
                     </div>
                     <% end %>
 
+                  
                   <div class="card-trip-infos">
                     <div>
                       <p><small><%= product.shop.name %></small></p>
@@ -85,12 +89,15 @@
                     </div>
                     <div class="card-price">
 
+                      
                       <div class="price-currency"><strong><%= product.price %></strong> €/<%= product.unit %></div>
                     </div>
         <!-- panier -->
                     <div class="container-compteur">
-                      <div class="basketz"><%= image_tag "picto/panier.svg", class: "nav-link picto", crop: :fill, width: 50 %></div>
-                      <div class="compteurz hidden">
+
+                      <div class="basket"><%= image_tag "picto/panier.svg", class: "nav-link picto", crop: :fill, width: 50 %></div>
+                      <div class="compteur hidden">
+
                         <button type="button" onclick="this.parentNode.querySelector('[type=number]').stepDown();">
                           -
                         </button>
@@ -98,19 +105,20 @@
                         <button type="button" onclick="this.parentNode.querySelector('[type=number]').stepUp();">
                           +
                         </button>
-                        <div class="submitz"></div>
+
+                        <div class="submit"></div>
                       </div>
                   </div>
-
+​
         <!-- panier end -->
                   </div>
                 </div>
-              <%# end %>
             </div>
           <% end %>
-
+​
           </div>
         </div>
+
 
         <%#= TEST END %>
 
@@ -166,46 +174,19 @@
   </div>
 </div>
 
-<!-- <div class="container-compteur card-trip-user">
-    <div id="basketz"><%= image_tag "picto/panier.svg", class: "nav-link picto", crop: :fill, width: 50 %></div>
-    <div id="compteurz" class="hidden">
-      <button type="button" onclick="this.parentNode.querySelector('[type=number]').stepDown();">
-        -
-      </button>
-      <input type="number" name="number" min="0" max="100" value="0">
-      <button type="button" onclick="this.parentNode.querySelector('[type=number]').stepUp();">
-        +
-      </button>
-      <div id="submitz"></div>
-    </div>
-</div> -->
 
 <script>
-    // On recup nos objets
-    // const basket   = document.querySelectorAll(".basketz");
-    const compteur = document.querySelectorAll(".compteurz");
-    const submit   = document.querySelectorAll(".submitz");
-    // Si on clique sur le panier basket on toggle entre le basket et le compteur
-    // basket.addEventListener("click", function() {
-    //   console.log("coucou")
-    //   compteur.classList.toggle("hidden");
-    //   basket.classList.toggle("hidden");
-    // });
-[...document.querySelectorAll('.basketz')].forEach(function(item) {
-  item.addEventListener('click', function() {
-    console.log(item.innerHTML);
-    item.classList.toggle("hidden");
-    // console.log(submit);
-    submit.forEach(function(item) {
-      console.log(submit);
-    submit.addEventListener("click", () => submit.classList.toggle("hidden"))
-    });
-  });
-});
 
-    // Si on clique sur la validation du panier on toggle dans l'autre sens
-    submit.addEventListener("click", function() {
-      compteur.classList.toggle("hidden");
-      basket.classList.toggle("hidden");
+
+var baskets = document.querySelectorAll(".basket");
+var counters = document.querySelectorAll(".compteur");
+
+baskets.forEach(function (basket, index) {
+    basket.addEventListener("click", function(){
+      basket.classList.toggle("main-cta");
+      counters[index].classList.toggle("show");
     });
+})
+
 </script>
+
