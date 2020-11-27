@@ -7,7 +7,7 @@
 		</div>
 		<p class="add-or-remove"><button><i class="fas fa-minus"></i></button> <%= order_line.quantity %> <button><i class="fas fa-plus"></i></button></p>
 		<div class="price">
-			<p><strong><%= humanized_money(order_line.subtotal_price_cents) %></strong><sup>€/<%= order_line.product.unit %></sup></p>
+			<p><strong><%= humanized_money(order_line.subtotal_price) %></strong><sup>€/<%= order_line.product.unit %></sup></p>
 		<p><span><%= order_line.product.price_cents %>€/<%= order_line.product.unit %></span></p>
 		</div>
 		<div>

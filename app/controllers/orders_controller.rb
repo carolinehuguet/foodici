@@ -1,13 +1,22 @@
 class OrdersController < ApplicationController
-  def update
-    order = Order.find(params[:id])
-    order.update(status: 'pending')
+  def create
+    order = current_user.orders.find_by(status: "cart")
+    order.status = "pending"
+    order_total = 0
+
+    order.order_shops.each do |order_shop|
+      order_shop.order_lines.each do |order_line|
+        order_total += order_line.subtotal_price_cents
+        end
+    end
 
     session = Stripe::Checkout::Session.create(
       payment_method_types: ['card'],
       line_items: [{
-        amount: order.price_cents,
+        amount: order_total,
         currency: 'eur',
+        quantity: 1,
+        name: "Food'ici"
       }],
       success_url: order_url(order),
       cancel_url: order_url(order)

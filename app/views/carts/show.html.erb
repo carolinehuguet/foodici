@@ -3,10 +3,12 @@
 	<%= render :partial => "shared/timeline" %>
 	<div class="row">
 		<div class="col-12 col-lg-8">
+    <% total_price = 0 %>
 			<% @order_lines.each do |category,order_lines| %>
 				<section>
 					<h3><%= category %></h3>
 					<% order_lines.each do |order_line| %>
+          <% total_price += order_line.subtotal_price %>
 						<%= render partial: "shared/card_product_cart", locals: { order_line: order_line } %>
 					<% end %>
 				</section>
@@ -15,21 +17,21 @@
 		<aside class="col-12 col-lg-4 recap">
 			<div>
 				<p class="overtitle">Adresse de départ</p>
-				<p class="address-and-date">17 rue des Oiseaux, Dinan</p>
+				<p class="address-and-date">1 Rue du Général Maurice Guillaudot, Rennes</p>
 			</div>
 			<div>
 				<p class="overtitle">Récupérez vos courses</p>
-				<p class="address-and-date">Le mercredi 25 novembre</p>
+				<p class="address-and-date">Le samedi 28 novembre</p>
 			</div>
 			<footer>
 				<p class="taxes">Taxes incluses</p>
 				<div id="total">
 					<p>3 articles</p>
-					<p>TOTAL : <strong> 13,43€ </strong></p>
+					<p>TOTAL : <strong>  <%= humanized_money total_price %> €</strong></p>
 				</div>
 			</footer>
         <%= form_tag orders_path do %>
-          <%= hidden_field_tag 'order_id', @order.id %>
+          <%= hidden_field_tag 'order_id', @order %>
           <%= submit_tag 'Payer', class: 'btn btn-primary main-btn btn-block' %>
         <% end %>
 		</aside>
