@@ -73,15 +73,14 @@
               <%#= link_to product, class: "link-product" do %>
 ​
                     <%= image_tag product.photo, crop: :fill, class: "img-product-card"%>
-              <%# end %>
-
+                <%# end %>
                     <% if product.organic == true %>
                     <div class="badge badge-success">
-                      <p>bio</p>
+                      <p>BIO</p>
                     </div>
                     <% end %>
 
-                  
+
                   <div class="card-trip-infos">
                     <div>
                       <p><small><%= product.shop.name %></small></p>
@@ -89,32 +88,35 @@
                     </div>
                     <div class="card-price">
 
-                      
+
                       <div class="price-currency"><strong><%= product.price %></strong> €/<%= product.unit %></div>
                     </div>
         <!-- panier -->
                     <div class="container-compteur">
-
                       <div class="basket"><%= image_tag "picto/panier.svg", class: "nav-link picto", crop: :fill, width: 50 %></div>
-                      <div class="compteur hidden">
+                      <div class= "main-cta hidden"><%= image_tag "picto/panier.svg", class: "nav-link picto", crop: :fill, width: 50 %></div>
 
+                      <div id="compteur" class="compteur hidden">
                         <button type="button" onclick="this.parentNode.querySelector('[type=number]').stepDown();">
                           -
                         </button>
+
                         <input type="number" name="number" min="0" max="100" value="0">
-                        <button type="button" onclick="this.parentNode.querySelector('[type=number]').stepUp();">
+
+                        <button type="button" onclick="this.parentNode.querySelector('[type=number]').stepUp();" class="">
                           +
                         </button>
 
-                        <div class="submit"></div>
                       </div>
-                  </div>
-​
+
+
+                    </div>
+
         <!-- panier end -->
                   </div>
                 </div>
             </div>
-          <% end %>
+              <% end %>
 ​
           </div>
         </div>
@@ -169,11 +171,21 @@
 
 var baskets = document.querySelectorAll(".basket");
 var counters = document.querySelectorAll(".compteur");
+var submits = document.querySelectorAll(".main-cta");
 
 baskets.forEach(function (basket, index) {
     basket.addEventListener("click", function(){
-      basket.classList.toggle("main-cta");
-      counters[index].classList.toggle("show");
+      basket.classList.add("hidden");
+      submits[index].classList.remove("hidden");
+      counters[index].classList.remove("hidden");
+
+            submits.forEach(function (submit, index) {
+          submit.addEventListener("click", function(){
+            basket.classList.remove("hidden");
+            submits[index].classList.add("hidden");
+            counters[index].classList.add("hidden");
+         });
+      })
     });
 })
 
