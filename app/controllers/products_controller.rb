@@ -3,6 +3,8 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
+    @order_line = OrderLine.new
+    session[:original_fullpath] = request.original_fullpath
 
     if params[:query].present?
       @products = Product.where("name ILIKE ?", "%#{params[:query]}%")
@@ -14,5 +16,6 @@ class ProductsController < ApplicationController
   def show
     @product = Product.find(params[:id])
     @order_line = OrderLine.new
+    session[:original_fullpath] = request.original_fullpath
   end
 end
