@@ -67,6 +67,11 @@ h3 {
 	color: $black-600;
 }
 
+.btn-custom{
+	text-align: center;
+	margin: 0 !important;
+}
+
 
 // ---------------------
 
@@ -78,7 +83,8 @@ h3 {
 	justify-content: space-evenly;
 	width: 600px;
 	height: 100px;
-	background-image: asset-url('line.png');
+	background-image: asset-url('cart/timeline.png');
+	background-repeat: repeat-x;
 }
 
 
