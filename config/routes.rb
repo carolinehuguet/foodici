@@ -24,5 +24,12 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :orders, only: [:show, :create] do
+    resources :payments, only: :new
+  end
+
   resource :dashboard, only: [:show]
+
+  # webhook Stripe pour mettre à jour le statut de la commande avec le paiement
+  mount StripeEvent::Engine, at: '/stripe-webhooks'
 end
