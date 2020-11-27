@@ -46,14 +46,15 @@
 }
 
   .form-group {
-    max-width: 120px;
+    max-width: 400px;
     position: absolute;
-    bottom: 20px;
-    right: -15px;
+    bottom: 10px;
+    right: 10px;
 
     .form-control {
       border-radius: 10px;
       border: none;
+      width: 100px;
     }
   }
 }
