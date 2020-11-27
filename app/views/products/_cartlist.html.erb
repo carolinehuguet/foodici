@@ -1,3 +1,4 @@
+<% if user_signed_in? %>
 <div class="cart-list">
   <% this_order = current_user.orders.find_by(status: "cart") %>
   <% this_order_price = 0 %>
@@ -24,3 +25,4 @@
   <%= link_to 'Voir mon panier', cart_path, class: "main-btn" %>
 </div>
 </div>
+<% end %>
