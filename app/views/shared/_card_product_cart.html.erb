@@ -7,11 +7,8 @@
 		</div>
 		<p class="add-or-remove"><button><i class="fas fa-minus"></i></button> <%= order_line.quantity %> <button><i class="fas fa-plus"></i></button></p>
 		<div class="price">
-			<p><strong><%= humanized_money(order_line.subtotal_price_cents) %></strong><sup>€/<%= order_line.product.unit %></sup></p>
+			<p><strong><%= humanized_money(order_line.subtotal_price) %></strong><sup>€/<%= order_line.product.unit %></sup></p>
 		<p><span><%= order_line.product.price %>€/<%= order_line.product.unit %></span></p>
-		</div>
-		<div>
-			<%= link_to(icon("far","far fa-trash-alt"), cart_path(@order_line) , method: :delete, data: { confirm: "Are you sure?" }) %>
 		</div>
 	</div>
 </article>
