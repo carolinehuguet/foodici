@@ -1,60 +1,55 @@
+
 .container-compteur {
   display:flex;
-  width:200px;
-  height:100%;
-  position:relative;
-  margin:20px auto;
+  position:absolute;
+  top: 0;
+  right: 50px;
 }
 
-input {
-  width:30px;
+.container-compteur input {
+  width:40px;
 }
 
 .basket {
-  background-color:tomato;
+  background-color:$green-accent;
+  border-radius:50%;
   position:absolute;
   right:0;
   width:48px;
   height:48px;
-  border-radius: 50%;
 }
+
+
 
 .main-cta {
-  background-color:green;
-  border-radius:30px;
-}
-.main-cta::after {
-  content: "🥳";
+  background-color:$orange-accent;
+  border-radius:50%;
   position:absolute;
-  top:15px;
-  left:13px;
+  right:0;
+  width:48px;
+  height:48px;
 }
 
+
 #compteur {
-   position:absolute;
-  left:20px;
-  top:15px;
+  position:absolute;
+  left:-150px;
+
 }
 
 .hidden {
     display:none;
 }
 
-.show {
-  display:block;
-}
 
-
-
-
-.submit {
-  background-color:green;
-  width:48px;
-  height:48px;
-}
 
 
 .badge {
+  font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 13px;
+line-height: 19px;
   position: relative;
   bottom: 180px;
   left: 230px;
