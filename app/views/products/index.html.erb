@@ -68,10 +68,11 @@
           <div class="row opacity-color">
           <% @products.each do |product| %>
             <div class="col-md-4 mb-4">
-              <%#= link_to product, class: "link-product" do %>
                 <div class="card-trip">
+              <%#= link_to product, class: "link-product" do %>
 ​
                     <%= image_tag product.photo, crop: :fill, class: "img-product-card"%>
+              <%# end %>
                     <% if product.organic == true %>
                     <div class="badge badge-success">
                       <p>bio</p>
@@ -105,7 +106,6 @@
         <!-- panier end -->
                   </div>
                 </div>
-              <%# end %>
             </div>
           <% end %>
 ​
