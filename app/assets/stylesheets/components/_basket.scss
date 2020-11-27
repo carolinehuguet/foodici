@@ -46,13 +46,16 @@
 
 .badge {
   font-family: Poppins;
-font-style: normal;
-font-weight: bold;
-font-size: 13px;
-line-height: 19px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
   position: relative;
   bottom: 180px;
   left: 230px;
   border-radius: 20px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  p {
+    color: white;
+  }
 }
+
