@@ -16,7 +16,7 @@ class OrderLinesController < ApplicationController
     @order_line.subtotal_price = @product.price * @order_line.quantity
 
     if @order_line.save!
-      redirect_to @product
+      redirect_to session[:original_fullpath]
     else
       render(
         html: "<script>alert('Désolé, ce produit n'est plus disponible.')</script>".html_safe,

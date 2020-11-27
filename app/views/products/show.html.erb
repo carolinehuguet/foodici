@@ -6,31 +6,38 @@
       <div>
         <div class="card img-product" style="width: 350px">
           <%= image_tag @product.photo, crop: :fill, width: 400 %>
-          <div class="form-group row">
+          <!-- <div class="form-group row">
             <div class="col-10">
               <input class="form-control" type="number" min= "0" value="0" id="example-number-input">
             </div>
+          </div> -->
+          <div>
           </div>
         </div>
-        <%= simple_form_for [@product, @order_line] do |f| %>
-          <%= f.input :quantity %>
-          <%= submit_tag 'Valider', class: 'btn btn-primary mt-3 mb-5 button-product' %>
-        <% end %>
+        <div>
+              <%= simple_form_for [@product, @order_line], html: { class: "form-show"} do |f| %>
+                <%= f.input :quantity, label: false, input_html: {value: f.object.quantity || '1'} %>
+                <%= submit_tag 'Valider', class: 'btn btn-primary mt-3 mb-5 button-product' %>
+              <% end %>
+            </div>
       </div>
       <div class="text-product px-4">
-        <div class="overtitle"><%= @product.amount %> <%= @product.unit %></div>
+        <div class= "d-flex justify-content-between">
+          <div class="overtitle"><%= @product.amount %> <%= @product.unit %></div>
+            <div class="card-price pr-5">
+              <h4 mr-1><%= @product.price %></h4>
+              <div class="price-currency">€</div>
+            </div>
+        </div>
         <h2><%= @product.name %></h2>
         <p><%= @product.shop.description %></p>
       </div>
-        <div class="card-price pr-5">
-          <h4 mr-1><%= @product.price %></h4>
-          <div class="price-currency">€</div>
-        </div>
       <div class="card courses">
           <div class="text-center p-3" id="border-bottom">
             Mes courses
           </div>
            <%= render 'cartlist' %>
+          </div>
         </div>
       </div>
   </div>
