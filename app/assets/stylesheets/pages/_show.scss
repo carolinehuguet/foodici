@@ -135,3 +135,34 @@
 
 }
 
+.cart-list {
+
+  ul {
+    padding: 10px;
+    list-style-type: none;
+  }
+
+  li {
+    padding-bottom: 0px;
+  }
+
+  .shop-cart {
+    line-height: 0.9;
+    opacity: 0.9;
+    font-size:14px;
+  }
+
+  .line-cart {
+    display: flex;
+    justify-content: space-between;
+    line-height: 0.9;
+    opacity: 0.8;
+    font-size: 12px;
+  }
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.9;
+}
