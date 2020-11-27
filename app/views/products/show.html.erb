@@ -6,16 +6,20 @@
       <div>
         <div class="card img-product" style="width: 350px">
           <%= image_tag @product.photo, crop: :fill, width: 400 %>
-          <div class="form-group row">
+          <!-- <div class="form-group row">
             <div class="col-10">
               <input class="form-control" type="number" min= "0" value="0" id="example-number-input">
             </div>
+          </div> -->
+          <div>
+            <div>
+              <%= simple_form_for [@product, @order_line] do |f| %>
+                <%= f.input :quantity %>
+                <%= submit_tag 'Valider', class: 'btn btn-primary mt-3 mb-5 button-product' %>
+              <% end %>
+            </div>
           </div>
         </div>
-        <%= simple_form_for [@product, @order_line] do |f| %>
-          <%= f.input :quantity %>
-          <%= submit_tag 'Valider', class: 'btn btn-primary mt-3 mb-5 button-product' %>
-        <% end %>
       </div>
       <div class="text-product px-4">
         <div class="overtitle"><%= @product.amount %> <%= @product.unit %></div>
