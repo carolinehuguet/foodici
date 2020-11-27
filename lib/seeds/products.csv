@@ -1,16 +1,16 @@
 name,organic,price,amount,unit,shop_index,description,image
 Ail,FALSE,1.8,250,g,0,,https://www.pngkit.com/png/full/36-368421_garlic-png.png
-Artichaut,TRUE,3.95,1,kg,0,,https://purepng.com/public/uploads/large/purepng.com-fresh-artichokevegetables-artichoke-9415247242087yoj7.png
-Asperge,TRUE,3.95,500,g,0,,https://purepng.com/public/uploads/large/purepng.com-asparagusvegetables-asparagus-spring-vegetable-941524711258kdhin.png
+Artichaut,TRUE,3.95,1,kg,0,Des artichauts produits en France, goutus, dont les feuilles peuvent être utilisées en infusion.,https://purepng.com/public/ploads/large/upurepng.com-fresh-artichokevegetables-artichoke-9415247242087yoj7.png
+Asperge,TRUE,3.95,500,g,0,Des artichauts produits en France, goutus, dont les pointes peuvent être utilisées en infusion.,https://purepng.com/public/uploads/large/purepng.com-asparagusvegetables-asparagus-spring-vegetable-941524711258kdhin.png
 Carotte,FALSE,2.1,1,kg,0,,https://pngimg.com/uploads/carrot/carrot_PNG4978.png
 Chou frisé,FALSE,1.8,1,pièce,0,,http://www.pngmart.com/files/5/Kale-PNG-File.png
 Echalotes,TRUE,1.25,250,g,0,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606323457/Echalotte_laba7i.png
 Fenouil,TRUE,1.5,500,g,0,,https://cdn.pixabay.com/photo/2018/09/06/08/30/fennel-3657761_1280.png
-Fraises Gariguette,TRUE,4,500,g,0,,https://pngimg.com/uploads/strawberry/strawberry_PNG2601.png
+Fraises Gariguette,TRUE,4,500,g,0,De bonnes fraises gariguettes cultivées en pleine terre sous le soleil breton, tendres et savoureuses, qui raviront les papilles des plus exigeants.,https://pngimg.com/uploads/strawberry/strawberry_PNG2601.png
 Oignon jaune,FALSE,0.75,500,g,0,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606323457/Oignon_jaune_oe1wcr.png
 Poire Guyot,TRUE,1.5,500,g,0,,https://pngimg.com/uploads/pear/pear_PNG3466.png
 Pomme Reinette,TRUE,1.25,500,g,0,,https://www.coteaux-nantais.com/sites/coteaux-nantais.com/files/reine-des-reinettes.png
-Pommes de terre Charlotte,TRUE,1.5,500,g,0,,https://freepngimg.com/thumb/potato/14-potato-png-images.png
+Pommes de terre Charlotte,TRUE,1.5,500,g,0,Nos pommes de terre ne sont pas traitées et garanties sans OGM. Parfait pour accompagner du poisson ou de la bonne viande.,https://freepngimg.com/thumb/potato/14-potato-png-images.png
 Chou-fleur,TRUE,2.5,1,pièce,0,,https://purepng.com/public/uploads/large/purepng.com-cauliflowerplantvegetablesgreencauliflower-1701527242875jefs2.png
 Chou rouge,TRUE,2.25,1,pièce,0,,https://purepng.com/public/uploads/large/purepng.com-red-cabbagevegetables-cabbage-red-cabbage-941524712345eyztg.png
 Epinards,TRUE,0.8,100,g,0,,https://pngimg.com/uploads/spinach/spinach_PNG20.png

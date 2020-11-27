@@ -30,7 +30,11 @@
             </div>
         </div>
         <h2><%= @product.name %></h2>
-        <p><%= @product.shop.description %></p>
+        <% if @product.description.present? %>
+          <p>@product.description</p>
+        <% else %>
+          <p>Un produit fait avec amour en France qui ravira les papilles des petits et grands.</p>
+        <% end %>
       </div>
       <div class="card courses">
           <div class="text-center p-3" id="border-bottom">
