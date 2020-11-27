@@ -1,0 +1,24 @@
+<div class="cart-list">
+  <% this_order = current_user.orders.find_by(status: "cart") %>
+  <% this_order_price = 0 %>
+
+  <ul>
+    <% unless current_user.orders.last.status != "cart" %>
+      <% this_order.order_shops.each do |order_shop| %>
+      <ul>
+        <li class="shop-cart"><%= order_shop.shop.name %></li>
+          <% order_shop.order_lines.each do |order_line| %>
+            <ul>
+              <li class="line-cart">
+                <div class="line-cart-name"><%= order_line.product.name %></div><div class="line-cart-name"><%= humanized_money_with_symbol order_line.subtotal_price %></div></li>
+                <% this_order_price += order_line.subtotal_price %>
+            </ul>
+          <% end %>
+        </ul>
+      <% end %>
+    <% end %>
+  </ul>
+  <br>
+
+  <div class="cart-total m-4 p"><div class="cart-total-text">TOTAL: </div><div class="cart-total-price"><%= this_order_price %></div></div>
+</div>
