@@ -11,7 +11,7 @@
 		<p><span><%= order_line.product.price_cents %>€/<%= order_line.product.unit %></span></p>
 		</div>
 		<div>
-			<%= link_to(icon("far","far fa-trash-alt"), order_lines_path(@order_line) , method: :delete, data: { confirm: "Are you sure?" }) %>
+			<%= link_to(icon("far","far fa-trash-alt"), cart_path(@order_line) , method: :delete, data: { confirm: "Are you sure?" }) %>
 		</div>
 	</div>
 </article>
