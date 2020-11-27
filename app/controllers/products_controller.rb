@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   def index
     @products = Product.all
     @order_line = OrderLine.new
+    @shops = Shop.all
     session[:original_fullpath] = request.original_fullpath
 
     if params[:query].present?
