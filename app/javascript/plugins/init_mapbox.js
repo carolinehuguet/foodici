@@ -34,7 +34,17 @@ const initMapbox = () => {
         .addTo(map);
     });
 
+    const startingMarker = JSON.parse(mapElement.dataset.startingMarker);
+    var el = document.createElement('div');
+    el.className = 'marker';
+
+    new mapboxgl.Marker(el)
+        .setLngLat([ startingMarker.lng, startingMarker.lat ])
+        .addTo(map);
+
+
     fitMapToMarkers(map, markers);
+    map.setCenter([startingMarker.lng, startingMarker.lat]);
 
     map.addControl(new MapboxGeocoder({ accessToken: mapboxgl.accessToken,
       mapboxgl: mapboxgl }));
