@@ -1,100 +1,34 @@
 <main class="container">
 	<h1>Panier</h1>
-	<div id="timeline">
-		<div class="step">
-			<p class="custom-active"><strong >1</strong></p>
-			<p class="color-text text-active">Panier</p>
-		</div>
-		<div class="step">
-			<p class="step-items"><strong>2</strong></p>
-			<p class="color-text">Paiement</p>
-		</div>
-		<div class="step">
-			<p class="step-items"><strong>3</strong></p>
-			<p class="color-text">Confirmation</p>
-		</div>
-	</div>
-	<h3>Boucherie</h3>
+	<%= render :partial => "shared/timeline" %>
 	<div class="row">
-		<section class="col-12 col-lg-8">
-			<div class="card-product">
-			  <%= image_tag "bavette-boeuf.png", alt: "image d'une pomme", width: 200 %>
-			  <div class="card-product-infos">
-			  	<div>
-			  		<h4>Bavette de boeuf</h4>
-			    	<p><span>250g</span></p>
-			  	</div>
-			  	<p class="add-or-remove"> -  2  + </p>
-			  	<div>
-			  		<p><strong>5</strong><sup>€/kg</sup></p>
-			    	<p><span>0,0€/kg</span></p>
-			  	</div>
-			  	<div>
-			  		<a href="#" title=""><i class="far fa-trash-alt"></i></a>
-			  	</div>
-			  </div>
-			</div>
-			<div class="card-product">
-			  <%= image_tag "agneau.png", alt: "image d'une pomme", width: 200 %>
-			  <div class="card-product-infos">
-			  	<div>
-			  		<h4>Côtes d'agneau</h4>
-			    	<p><span>150g</span></p>
-			  	</div>
-			  	<p class="add-or-remove"> -  2  + </p>
-			  	<div>
-			  		<p><strong>4,43</strong><sup>€/kg</sup></p>
-			    	<p><span>0,0€/kg</span></p>
-			  	</div>
-			  	<div>
-			  		<a href="#" title=""><i class="far fa-trash-alt"></i></a>
-			  	</div>
-			  </div>
-			</div>
-			<article>
-				<h3>Epicerie</h3>
-				<div class="card-product">
-				  <%= image_tag "pomme.png", alt: "image d'une pomme", width: 200 %>
-				  <div class="card-product-infos">
-				  	<div>
-				  		<h4>Pomme</h4>
-				    	<p><span>1 pièce</span></p>
-				  	</div>
-				  	<p class="add-or-remove"> -  2  + </p>
-				  	<div>
-				  		<p><strong>2</strong><sup>€/kg</sup></p>
-				    	<p><span>0,0€/kg</span></p>
-				  	</div>
-				  	<div>
-				  		<a href="#" title=""><i class="far fa-trash-alt"></i></a>
-				  	</div>
-				  </div>
-				</div>
-			</article>
-		</section>
-
+		<div class="col-12 col-lg-8">
+			<% @order_lines.each do |category,order_lines| %>
+				<section>
+					<h3><%= category %></h3>
+					<% order_lines.each do |order_line| %>
+						<%= render partial: "shared/card_product_cart", locals: { order_line: order_line } %>
+					<% end %>
+				</section>
+			<% end %>
+		</div>
 		<aside class="col-12 col-lg-4 recap">
 			<div>
-				<div>
-					<p class="overtitle">Adresse de départ</p>
-					<p class="address-and-date">17 rue des Oiseaux, Dinan</p>
-				</div>
-				<div>
-					<p class="overtitle">Récupérez vos courses</p>
-					<p class="address-and-date">Le mercredi 25 novembre</p>
-				</div>
-				<footer>
-					<p class="taxes">Taxes incluses</p>
-					<div id="total">
-						<p>3 articles</p>
-						<p>TOTAL : <strong> 13,43€ </strong></p>
-					</div>
-				</footer>
-        <%= form_tag orders_path(@order) do %>
-          <%= hidden_field_tag 'order_id', order.params[:id] %>
-          <%= submit_tag 'Valider', class: 'btn btn-primary btn-block' %>
-        <% end %>
+				<p class="overtitle">Adresse de départ</p>
+				<p class="address-and-date">17 rue des Oiseaux, Dinan</p>
 			</div>
+			<div>
+				<p class="overtitle">Récupérez vos courses</p>
+				<p class="address-and-date">Le mercredi 25 novembre</p>
+			</div>
+			<footer>
+				<p class="taxes">Taxes incluses</p>
+				<div id="total">
+					<p>3 articles</p>
+					<p>TOTAL : <strong> 13,43€ </strong></p>
+				</div>
+			</footer>
+			<p><a href="#" class="btn btn-primary main-btn btn-block">Valider</a></p>
 		</aside>
 	</div>
 </main>

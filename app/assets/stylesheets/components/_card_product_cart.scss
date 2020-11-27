@@ -17,21 +17,20 @@
   background-color: #EAE9E4;
 }
 
-.card-product h4 {
-  font-family: "Poppins", arial, sans-serif;
-  font-size: 21px;
+.product-name {
+  font-size: 21px !important;
   margin: 0;
-  color: #1B391F;
+  color: $green-900;
 }
 
 .card-product span {
-  font-family: "Poppins", arial, sans-serif;
+  font-family: $body-font;
   color: #AAADAB;
-  font-size: 1.3em;
+  font-size: 14px !important;
 }
 
 .card-product strong{
-  font-size: 2em;
+  font-size: 1.4em !important;
   color: #1B391F;
 }
 
@@ -40,7 +39,7 @@
 }
 
 .card-product i {
-  font-size: 1.6em;
+  font-size: 1.3em;
   color: #AAADAB;
   transition: 500ms;
 }
@@ -50,6 +49,13 @@
   line-height: 1.4;
   opacity: .7;
   margin: 0;
+}
+
+.card-product .price{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
 }
 
 .card-product .card-product-infos {
@@ -68,10 +74,20 @@
   border-radius: 20px;
 }
 
+.add-or-remove i {
+  font-size: 1em !important;
+  margin: 0 5px;
+}
+
+.add-or-remove button {
+  border: none;
+  background-color: transparent;
+}
+
 // ------- PSEUDO CLASSES ------
 
 .card-product:hover {
-  transform: scale(1.02);
+  // transform: scale(1);
   transition: 500ms;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
