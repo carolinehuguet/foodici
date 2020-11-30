@@ -1,9 +1,12 @@
 <main class="container">
+	<div id="back">
+		<%= link_to("< Voir la liste des produits", products_path, class: "back-text") %>
+	</div>
 	<h1 id="title">Panier</h1>
 	<%= render :partial => "shared/timelinebasket" %>
 	<div class="row main-content">
+		<% if @order_lines.count != 0 %>
 		<div class="col-12 col-lg-8">
-			<%= link_to("< Retour à la liste", products_path, class: "back-text") %>
 		    <% total_price = 0 %>
 			<% @order_lines.each do |category,order_lines| %>
 				<section>
@@ -42,5 +45,14 @@
           <%= submit_tag 'Payer', class: 'btn btn-primary main-btn btn-block btn-custom' %>
         <% end %>
 		</aside>
+		
+		<% else %>
+		<div class="col-12">
+			<figure class="illustration">
+				<%= image_tag("illustrations/empty.svg", width: "500px") %>
+			</figure>
+			<p class="empty">Votre panier est vide...</p>
+		</div>
+		<% end %>
 	</div>
 </main>
