@@ -6,7 +6,7 @@
 
 
   <div data-controller="map">
-    <%= form_tag root_path, method: :get do %>
+    <%= form_tag products_path, method: :get do %>
       <div class="container form-wrapper my-5">
         <h3>Quel sera votre point de départ ?</h3>
 
@@ -68,18 +68,19 @@
         </div>
     </div>
     <%#= submit_tag "Search", class: "line-btn" %>
-    <%= submit_tag 'Voir les produits', class: "main-btn" %>
-   <% end %>
 
   </div>
 </main>
 
-<div class="container form-wrapper col-8 my-5 text-center">
-  <h3>Les commerçants à proximité</h3>
-  <div id="map"
-    style="width: 100%; height: 600px;"
-    data-markers="<%= @markers.to_json %>"
-    data-starting-marker="<%= @starting_marker.to_json %>"
-    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+  <div class="container form-wrapper col-8 my-5 text-center">
+    <h3>Les commerçants à proximité</h3>
+    <div id="map"
+      style="width: 100%; height: 600px;"
+      data-markers="<%= @markers.to_json %>"
+      data-starting-marker="<%= @starting_marker.to_json %>"
+      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
+    <%= submit_tag 'Voir les produits', class: "main-btn" %>
   </div>
-</div>
+
+   <% end %>
