@@ -5,7 +5,7 @@ class PagesController < ApplicationController
     if params[:transportation] == "small_walk"
       @radius = 0.5
     elsif params[:transportation] == "bicycle"
-      @radius = 5
+      @radius = 3
     elsif params[:transportation] == "car"
       @radius = 10
     else
@@ -18,7 +18,6 @@ class PagesController < ApplicationController
           lat: starting_data["lat"],
           lng: starting_data["lon"]
         }
-
       @shops = Shop.near(params[:query], @radius)
     else
       @shops = Shop.all
