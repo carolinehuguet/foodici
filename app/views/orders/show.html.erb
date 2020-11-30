@@ -1,1 +1,17 @@
-<h1>SUCCESS PAGE</h1>
+<div class="container">
+  <br>
+  <%= render "shared/timelineconfirmation"%>
+  <br>
+  <div class="text-center">
+    <h2>L'afaire est (presque) dans le sac !</h1>
+    <p>Votre commande va maintenant être traitée par les commerçants. Vous recevrez une notification une fois qu’elles seront toutes prêtes. Vous pourrez ensuite commencer votre itinéraire.</p>
+    <br>
+    <%= link_to 'Voir ma commande', order_path, class: "main-btn" %>
+  </div>
+  <div class="text-center itinerary">
+  <br>
+    <p>Voir mon itinéraire</p>
+    <% this_order = Order.find(params[:id]) %>
+    <%= link_to 'Google Maps', @order.itinerary(this_order), class: "main-btn", target: :_blank %>
+  </div>
+</div>

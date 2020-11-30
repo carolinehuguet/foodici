@@ -14,4 +14,14 @@ class Order < ApplicationRecord
   def cart?
     return status == "cart"
   end
+
+  def itinerary(order)
+    coordonates = []
+    order.order_shops.each do |order_shop|
+      shop_coordonates = "#{order_shop.shop.latitude},#{order_shop.shop.longitude}"
+      coordonates << shop_coordonates
+     end
+    url = "https://www.google.com/maps/dir/?api=1&waypoints=#{coordonates.join('|')}"
+    return url
+  end
 end
