@@ -7,11 +7,22 @@ class ProductsController < ApplicationController
     @shops = Shop.all
     session[:original_fullpath] = request.original_fullpath
 
-    if params[:query].present?
-      @products = Product.where("name ILIKE ?", "%#{params[:query]}%")
-    else
+    if !params[:product].present? || params[:product] == "all"
       @products = Product.all
     end
+
+    if params[:product] == "boucherie"
+      @products = @products.joins(:shop).where(shops: {category: "Boucher"})
+    end
+
+    if params[:bio] == "true"
+      @products = @products.where(organic: true)
+    end
+
+    if params[:query].present?
+      @products = @products.where("products.name ILIKE ?", "%#{params[:query]}%")
+    end
+
   end
 
   def show
