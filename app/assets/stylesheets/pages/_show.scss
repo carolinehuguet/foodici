@@ -69,12 +69,15 @@
 //     }
 // }
 
+.cart-list {
+  height: auto;
+}
+
 .courses {
-  height:600px;
+  // min-height:600px;
   width:250px;
   background-color: white;
   border-radius: 20px;
-  // position: -webkit-sticky;
   position: fixed;
   top: 208px;
   right:17vw;
@@ -159,11 +162,12 @@
 
   ul {
     padding: 10px;
+    padding-bottom: 0;
     list-style-type: none;
   }
 
   li {
-    padding-bottom: 0px;
+    padding-bottom: 10px;
   }
 
   .shop-cart {
@@ -190,7 +194,5 @@
 }
 
 .div-total {
-  bottom:0;
-  position:absolute;
   padding-bottom:20px;
 }

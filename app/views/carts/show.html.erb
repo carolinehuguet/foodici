@@ -3,7 +3,8 @@
 	<%= render :partial => "shared/timelinebasket" %>
 	<div class="row">
 		<div class="col-12 col-lg-8">
-    <% total_price = 0 %>
+			<%= link_to("< Retour à la liste", products_path, class: "back-text") %>
+		    <% total_price = 0 %>
 			<% @order_lines.each do |category,order_lines| %>
 				<section>
 					<h3><%= category %></h3>
@@ -26,7 +27,13 @@
 			<footer>
 				<p class="taxes">Taxes incluses</p>
 				<div id="total">
-					<p>3 articles</p>
+					<p>
+						<%if @article == 1 %>
+							<%= @article %> article
+						<% else %>
+							<%= @article %> articles
+						<% end %>
+					</p>
 					<p>TOTAL : <strong>  <%= humanized_money total_price %> €</strong></p>
 				</div>
 			</footer>
