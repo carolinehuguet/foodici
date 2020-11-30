@@ -1,0 +1,36 @@
+.checkout-list {
+  width: 50%;
+  margin: 0 auto;
+
+  .buttons {
+    justify-content: space-between;
+  }
+
+  ul {
+    padding: 10px;
+    list-style-type: none;
+  }
+
+  li {
+    padding-bottom: 0px;
+  }
+
+  .shop-cart {
+    line-height: 0.9;
+    opacity: 0.9;
+    font-size:20px;
+  }
+
+  .line-cart {
+    display: flex;
+    justify-content: space-between;
+    line-height: 0.9;
+    opacity: 0.8;
+    font-size: 16px;
+  }
+  .cart-total {
+    opacity: 0.9;
+    bottom:0;
+    display: flex;
+  }
+}

@@ -1,8 +1,42 @@
 <div class="container">
   <div class="row py-4">
     <div class="col">
-      <h1>Checkout summary</h1>
-      <button id="pay" class="btn btn-primary">Payer</button>
+      <%= render "shared/timelinepayment" %>
+      <br>
+      <% if user_signed_in? %>
+        <div class="checkout-list">
+          <h2>Résumé de votre commande</h1>
+          <% this_order = current_user.orders.find_by(status: "cart") %>
+          <% this_order_price = 0 %>
+          <ul>
+            <% unless current_user.orders.last.status != "cart" %>
+              <% this_order.order_shops.each do |order_shop| %>
+              <ul>
+                <li class="shop-cart"><%= order_shop.shop.name %></li>
+                  <% order_shop.order_lines.each do |order_line| %>
+                    <ul>
+                      <li class="line-cart">
+                        <div class="line-cart-name"><%= order_line.product.name %> (<%= order_line.quantity*order_line.product.amount %><%= order_line.product.unit %>)</div><div class="line-cart-name"><%= humanized_money_with_symbol order_line.subtotal_price %></div></li>
+                        <% this_order_price += order_line.subtotal_price %>
+                    </ul>
+                  <% end %>
+                </ul>
+              <% end %>
+            <% end %>
+          </ul>
+          <br>
+            <div id="border-top">
+              <div class="cart-total m-4">
+                <h5>TOTAL:</h5>
+                <h5> <%= this_order_price %>€</h5>
+              </div>
+            </div>
+        <% end %>
+        <div class="buttons">
+          <button id="pay" class="main-btn">Payer</button>
+          <%= link_to "Modifier", cart_path %>
+        </div>
+      </div>
       <script src="https://js.stripe.com/v3/"></script>
       <script>
         const paymentButton = document.getElementById('pay');

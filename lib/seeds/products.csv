@@ -1,114 +1,114 @@
-name,organic,price,amount,unit,shop_index,description,image
-Ail,FALSE,1.8,250,g,0,,https://www.pngkit.com/png/full/36-368421_garlic-png.png
-Artichaut,TRUE,3.95,1,kg,0,,https://purepng.com/public/uploads/large/purepng.com-fresh-artichokevegetables-artichoke-9415247242087yoj7.png
-Asperge,TRUE,3.95,500,g,0,,https://purepng.com/public/uploads/large/purepng.com-asparagusvegetables-asparagus-spring-vegetable-941524711258kdhin.png
-Carotte,FALSE,2.1,1,kg,0,,https://pngimg.com/uploads/carrot/carrot_PNG4978.png
-Chou frisé,FALSE,1.8,1,pièce,0,,http://www.pngmart.com/files/5/Kale-PNG-File.png
-Echalotes,TRUE,1.25,250,g,0,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606323457/Echalotte_laba7i.png
-Fenouil,TRUE,1.5,500,g,0,,https://cdn.pixabay.com/photo/2018/09/06/08/30/fennel-3657761_1280.png
-Fraises Gariguette,TRUE,4,500,g,0,,https://pngimg.com/uploads/strawberry/strawberry_PNG2601.png
-Oignon jaune,FALSE,0.75,500,g,0,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606323457/Oignon_jaune_oe1wcr.png
-Poire Guyot,TRUE,1.5,500,g,0,,https://pngimg.com/uploads/pear/pear_PNG3466.png
-Pomme Reinette,TRUE,1.25,500,g,0,,https://www.coteaux-nantais.com/sites/coteaux-nantais.com/files/reine-des-reinettes.png
-Pommes de terre Charlotte,TRUE,1.5,500,g,0,,https://freepngimg.com/thumb/potato/14-potato-png-images.png
-Chou-fleur,TRUE,2.5,1,pièce,0,,https://purepng.com/public/uploads/large/purepng.com-cauliflowerplantvegetablesgreencauliflower-1701527242875jefs2.png
-Chou rouge,TRUE,2.25,1,pièce,0,,https://purepng.com/public/uploads/large/purepng.com-red-cabbagevegetables-cabbage-red-cabbage-941524712345eyztg.png
-Epinards,TRUE,0.8,100,g,0,,https://pngimg.com/uploads/spinach/spinach_PNG20.png
-Navet,FALSE,1.25,500,g,0,,https://purepng.com/public/uploads/large/purepng.com-turnipvegetablesroot-vegetable-rutabaga-turnip-neep-941524702929wkfry.png
-Potimarron,FALSE,1.75,500,g,0,,https://pngimg.com/uploads/pumpkin/pumpkin_PNG86660.png
-Laurier,FALSE,0.5,1,botte,0,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306127/Laurier_mqebc0.png
-Coriandre,FALSE,0.75,1,botte,0,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306084/coriandre_obzbi9.png
-Persil,TRUE,0.5,1,botte,0,,https://assets.stickpng.com/images/58bf1e50e443f41d77c734b0.png
-Thym,TRUE,1,1,botte,0,,https://cdn.shopify.com/s/files/1/0355/3483/1660/products/CKHThyme_1024x.png?v=1587733301
-Romarin,TRUE,1,1,botte,0,,https://www.pngarts.com/files/5/Rosemary-PNG-Background-Image.png
-Menthe,TRUE,0.5,1,botte,0,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306135/Menthe_kmbxnq.png
-Ciboulette,FALSE,1.25,1,botte,0,,https://www.tomatopiu.com/wp-content/uploads/2016/08/ERBA-CIPOLLINAsmall.png
-Estragon,FALSE,1.5,1,botte,0,,https://images.squarespace-cdn.com/content/v1/5dc8ae312502ee46b8870bd0/1592441567663-KZEHZ9J6426FAQ9TCBVQ/ke17ZwdGBToddI8pDm48kCpr5j7kb9yAvKiwkotdGG57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UUcd26xEibkaDnDtmphUMe3SldXNmZqVv9Ikv-BSjsHRoRwB-dUGsSquCnVTFQcaRg/tarragon.png
-Basilic,TRUE,1.75,1,botte,0,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305987/Basilic_ddqj2l.png
-Bavette de boeuf,TRUE,3.5,250,g,1,,https://www.lalouvrie.com/Files/128446/Img/06/biffeck-png-1200.png
-Côtes d'agneau,FALSE,4.5,250,g,1,,https://www.thefeta.com/wp-content/uploads/2020/06/5943.png
-Cuisse de poulet,TRUE,4,1,pièce,1,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305996/cuisse-de-poulet_cgpnj0.png
-Entrecôte de boeuf,TRUE,8.5,250,g,1,,https://img2.pngio.com/t-bone-steak-png-picture-453336-t-bone-steak-png-tbone-steak-png-1000_1000.png
-Epaule d'agneau,FALSE,3,250,g,1,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306005/epaule-d_agneau_mg8jwb.png
-Faux-filet de boeuf,TRUE,9,250,g,1,,https://pngimg.com/uploads/steak/steak_PNG9.png
-Filet de poulet,TRUE,4.5,1,pièce,1,,https://ziggystasmania.com.au/assets/img/Fresh%20Meat/Ziggys_Chicken-Breast.png
-Gigot d'agneau,FALSE,4.5,250,g,1,,https://images.squarespace-cdn.com/content/v1/5eb13157e6d7511bfd856dcb/1591737600418-AE62D3T3R2JSHAHUS6C7/ke17ZwdGBToddI8pDm48kFkiBJWxdjrfXjQcrdLzFu0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKckFDRWmOOCmVqPnOdjiFgxUg1AqA6lfTYwLXaxgrAOcF3rctOQfG4m_0uyxM2ml5h/MEATF1010-+LAMB+LEG+WHOLE.PNG
-Jarret de boeuf,TRUE,4.75,250,g,1,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306087/jarret-de-boeuf_gwjiue.png
-Merguez,FALSE,1.25,1,pièce,1,,https://img2.freepng.fr/20180927/kbp/kisspng-merguez-sausage-moroccan-cuisine-lamb-and-mutton-c-andiamo-pizza-combs-la-villa-livre-des-pizzas-c-5baceeb20a65f0.6631034715380599540426.jpg
-Paleron de boeuf,TRUE,3.75,250,g,1,,https://purepng.com/public/uploads/large/purepng.com-meatmeatanimalfleshchicken-1411527788194pmnvi.png
-Poulet rôti,TRUE,17,1,pièce,1,,https://purepng.com/public/uploads/large/purepng.com-grill-chickenfood-meat-chicken-grilled-941524616969gg9vh.png
-Filet de bar,FALSE,5.5,250,g,2,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305966/bar_lfbobx.png
-Dos de cabillaud,FALSE,7.8,250,g,2,,https://png2.cleanpng.com/sh/191947b919e9b68b446b07cf82df0e6c/L0KzQYm3VcE0N5p7iZH0aYP2gLBuTfZqe5kyftt3Z3X1PbT2hL1ncZ1xfeY2c3XkdrF2hL02aZc9UKQ5ZXPnSbO3V746QWc5SasAMUG4Qoe5U8U3PmM9TKQ7LoDxd1==/kisspng-fish-finger-cod-fillet-seafood-5af8820ecd9b07.9964195115262356628422.png
-Langoustines de Loctudy,FALSE,5,250,g,2,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306121/langoustines_rwayj0.png
-Filet de dorade,FALSE,5,250,g,2,,https://sharkseafoods.com/wp-content/uploads/2019/01/Sea-bream.png
-Homard,FALSE,36,1,pièce,2,,https://pngimg.com/uploads/lobster/lobster_PNG14234.png
-Huîtres plates de Belon,FALSE,7,1,demi-douzaine,2,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306035/hui%CC%82tre_avmjwn.png
-Queue de lotte,FALSE,6.5,250,g,2,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306115/Lotte_l5io36.png
-Filet de maquereau,FALSE,1.2,100,g,2,,https://www.seacoreseafood.com/pictures/product_tbn_ewvOiUuoXS.png
-Filet de merlan,FALSE,4.9,250,g,2,,https://www.biendecheznous.be/sites/default/files/ps_image/wijting.png
-Filet de rouget Barbet,FALSE,4.8,250,g,2,,https://www.biendecheznous.be/sites/default/files/ps_image/zeebarbeel.png
-Noix de Saint-Jacques,FALSE,5.9,100,g,2,,https://www.biendecheznous.be/sites/default/files/ps_image/st-jakobsschelp.png
-Sardine,FALSE,2,250,g,2,,https://www.lorpexfish.com/86-thickbox_01oslo/sardine.jpg
-Filet de sole,FALSE,4.5,250,g,2,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306109/fillet-de-sole_a7puyd.png
-Crémant de Loire But,TRUE,10.7,75,cl,3,,https://www.vinatis.com/42590-thickbox_default/cremant-de-loire-brut-diamant-de-loire.png
-Sancerre 2019 - Domaine La Perrière,FALSE,20.5,75,cl,3,,https://www.vinatis.com/49528-thickbox_default/sancerre-2019-domaine-la-perriere.png
-Fixin 2018 - Doudet-Nautin,TRUE,21.9,75,cl,3,,https://www.vinatis.com/48765-detail_default/fixin-2018-doudet-naudin.png
-Mezcal Amores,FALSE,42.9,70,cl,3,,https://www.vinatis.com/24098-detail_default/mezcal-amores.png
-Saint-Estèphe 2017 - Calon Ségur,FALSE,27.9,75,cl,3,,https://www.vinatis.com/49460-detail_default/saint-estephe-de-calon-segur-2017.png
-Le Mont Moelleux 2017 - Domaine Huet,TRUE,35.2,75,cl,3,,https://www.vinatis.com/50348-detail_default/le-mont-moelleux-2017-domaine-huet.png
-Le Gallon Balancelle - Pastis Ricard,FALSE,149.9,450,cl,3,,https://www.vinatis.com/24957-detail_default/le-gallon-balancelle-pastis-ricard.png
-Nonne IPA - Les Brasseurs Savoyards,TRUE,3.2,33,cl,3,,https://www.vinatis.com/32705-detail_default/nonne-ipa-bio-33cl-les-brasseurs-savoyards.png
-Punk IPA - Brew Dog,FALSE,3.5,33,cl,3,,https://www.vinatis.com/30687-fine_default/punk-ipa-33cl-brewdog.png
-Champagne Mumm - Cordon Rouge,TRUE,25.9,75,cl,3,,https://www.vinatis.com/31895-fine_default/champagne-mumm-cordon-rouge.png
-Lambrusco Secco - Quercioli Reggiano,TRUE,5.6,75,cl,3,,https://www.vinatis.com/47759-detail_default/lambrusco-secco-quercioli-reggiano-medici-ermete.png
-Côtes du Rhone 2019 - Domaine de la Guintrandy,TRUE,7.99,75,cl,3,,https://www.vinatis.com/48945-fine_default/cotes-du-rhone-2019-domaine-de-la-guintrandy.png
-Caviar,TRUE,83.26,50,g,4,,http://www.tendance-culinaire.com/wp-content/uploads/2016/03/AKI-Paddlefish-Caviar-3.png
-Confit de canard - cuisses,TRUE,15.78,750,g,4,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306014/Confit-de-canard_qzbjrf.png
-Crème de marrons,TRUE,6.22,350,g,4,,https://selaliqua.com/wp-content/uploads/2020/03/Creme-de-Marron-de-lArdeche-Medaille-Argent-2019-Colis-6-x-345-gr.png
-Fleur de sel,FALSE,3.52,125,g,4,,https://www.kehanfoodimports.com/uploads/3/2/0/1/32011437/s717088470361350286_p791_i1_w640.png
-Foie gras de canard,FALSE,22.45,300,g,4,,http://www.ferme-de-phalange.fr/wp-content/uploads/2014/04/Foie-gras-de-canard-entier-v110-copie.png
-Huile d'olive,TRUE,8.95,50,cl,4,,http://www.pngall.com/wp-content/uploads/2017/03/Olive-Oil-Free-PNG-Image.png
-Miel,TRUE,4.78,250,g,4,,http://miam-images.m.i.pic.centerblog.net/b9bc4bcf.png
-Pain d'épices,FALSE,19.56,1,kg,4,,https://www.protegere.fr/wp-content/uploads/2020/04/pain-d-epices.png
-Rillettes de thon,TRUE,5.5,150,g,4,,https://www.vinibee.com/wp-content/uploads/2018/10/rillettes-de-thon-fume-e1539083299762.png
-Salami,FALSE,8.17,250,g,4,,https://www.salumificiogalliremo.it/wp-content/uploads/2015/11/salame-napoli.png
-Speck,FALSE,26.99,1,kg,4,,https://www.fratelliberetta.com/wps/wcm/connect/www.fratelliberetta.com-26416/08260f1a-dc51-4200-a794-b5523827169a/speck.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_31D21O42L8N2F0ALC5JJJ410K1-08260f1a-dc51-4200-a794-b5523827169a-kAe97Wx
-Vinaigre balsamique,TRUE,13.19,25,cl,4,,https://www.maille.ca/fr/produits/vinaigres/img/balsamic-vinegar.png
-Appenzeler,TRUE,3.6,100,g,5,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305947/Appenzeler_a0whfv.png
-Bleu d'Auvergne,FALSE,2.3,100,g,5,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305957/Bleu_osyjde.png
-Crottin de Chavignol,TRUE,2.5,1,pièce,5,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305954/Chavignol_awywdl.png
-Cheddar,FALSE,3.25,100,g,5,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305940/Cheddar_murybd.png
-Chèvre frais,TRUE,3.3,1,pièce,5,,https://img2.pngio.com/milk-breakfast-goat-cheese-cheese-png-png-download-41022083-goat-cheese-png-4102_2083.png
-Comté 24 mois,TRUE,3.8,100,g,5,,https://oliveandgrain.com.au/wp-content/uploads/comte.png
-Humboldt fog,TRUE,3.75,100,g,5,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306085/humboldt-fog_rqcodu.png
-Morbier,FALSE,2.5,100,g,5,,https://www.fruitiere-comte.com/photos/produit-1336637719-1485336066.png
-Picodon,FALSE,2.75,1,pièce,5,,https://preprod.lespetiteslaiteries.fr/wp-content/uploads/2020/10/Picodon-Dieulefit-Les-Petites-Laiteries-1.png
-Pont l'Eveque,FALSE,3.2,100,g,5,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306126/Pont-l_eveque_tqirh3.png
-Reblochon,FALSE,2.7,100,g,5,,https://www.kaas.nl/wp-content/uploads/2020/03/114102_ReblochondeSavoie.png
-Tomme de Savoie,TRUE,2.5,100,g,5,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306137/tomme_uf8w2n.png
-Mont-dor,TRUE,13.5,1,pièce,5,,https://preprod.lespetiteslaiteries.fr/wp-content/uploads/2020/09/MONT-DOR.png
-Cidre brut,TRUE,4.5,75,cl,6,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606324206/cidre-brut_jz3zko.png
-Cidre demi-sec,TRUE,4.25,75,cl,6,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606324206/cidre-demi-sec_lkryb7.png
-Demi-douzaine blé noir,TRUE,2.3,1,demi-douzaine,6,,https://crepiote.fr/wp-content/uploads/2016/06/galette_sarrazin_000.png
-Demi-douzaine froments,TRUE,2.7,1,demi-douzaine,6,,https://img2.freepng.fr/20180529/xuh/kisspng-crpe-bretonne-pancake-blini-oladyi-crepes-5b0db93a44bae8.9554247915276260422815.jpg
-Douzaine blé noir,TRUE,4.5,1,douzaine,6,,https://crepiote.fr/wp-content/uploads/2016/06/galette_sarrazin_000.png
-Douzaine froments,TRUE,5,1,douzaine,6,,https://img2.freepng.fr/20180529/xuh/kisspng-crpe-bretonne-pancake-blini-oladyi-crepes-5b0db93a44bae8.9554247915276260422815.jpg
-Far aux pruneaux,TRUE,3,250,g,6,,http://lesillonfruitsec.fr/wp-content/uploads/2014/09/Pruneaux-408x345.png
-Gâteau breton,TRUE,12,1,pièce,6,,https://www.kouign-douarnenez.com/images/Image/gateaubreton2_1346342869.png
-Kouign amann,TRUE,17,1,pièce,6,,http://zoomsurlafrance.com/wp-content/uploads/2016/02/kouignamann2_1346342498.png
-Kouign bigouden,TRUE,1.1,1,pièce,6,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306050/Kouign-bigouden_mvzt9e.png
-Lambig,TRUE,24,75,cl,6,,https://www.kinkiz-terroir.bzh/wp-content/uploads/2017/03/Lambig_Vieux_MK_70cl.png
-Pommeau,TRUE,17.5,75,cl,6,,https://www.kinkiz-terroir.bzh/wp-content/uploads/2017/03/Pommeau_Bretagne_AOC_70cl.png
-Baguette classique,FALSE,1.05,1,pièce,7,,http://www.pngpix.com/wp-content/uploads/2016/08/PNGPIX-COM-Baguette-Bread-PNG-Transparent-Image.png
-Baguette tradition,FALSE,1.2,1,pièce,7,,http://patisserieau38.fr/wp-content/uploads/2017/09/tradition.png
-Brioche,FALSE,7,1,pièce,7,,http://www.brico.com.br/wp-content/uploads/2016/03/brioche.png
-Croissant,FALSE,0.95,1,pièce,7,,http://pngimg.com/uploads/croissant/croissant_PNG46722.png
-Epi,FALSE,1.45,1,pièce,7,,https://medias.bridordefrance.com/media/sys_master/images/h0b/hc0/8826511097886.png
-Pain au chocolat,FALSE,1.1,1,pièce,7,,https://clipartart.com/images/pain-au-chocolat-clipart-8.png
-Pain au son,FALSE,4.5,1,pièce,7,,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306106/Pain-au-son_yzkf4p.png
-Pain aux noix,FALSE,5.2,1,pièce,7,,https://www.boulangerielangelus.com/wp-content/uploads/2015/09/pain-aux-noix-bf.png
-Pain aux raisins,FALSE,1.3,1,pièce,7,,https://medias.bridordefrance.com/media/sys_master/images/hee/h90/8801942896670.png
-Pain bâtard,FALSE,3.8,1,pièce,7,,https://cdn.kreezalid.com/kreezalid/544992/catalog/8080/36/1000x1000_batard-nature-de-pain-boulangerie-patisserie-amiens-artisan-boulanger-removebg-preview_tjhos_1804480933.png
-Pain complet,FALSE,4.2,1,pièce,7,,https://www.lacledeschamps-manche.com/wp-content/uploads/2020/05/Grand-complet-1-1024x1024.png
-Pain de campagne,FALSE,3.7,1,pièce,7,,https://www.breadsmith.com/wp-content/uploads/2015/09/Pain-de-Campagne.png
-Pain de seigle,FALSE,4.8,1,pièce,7,,http://www.boulangerieperrinelle.com/sites/default/files/styles/affichage_grand/adaptive-image/public/photos/pain_seigle.png?itok=I-E3CiCd
+name$,organic$,price$,amount$,unit$,shop_index$,description$,image
+Ail$,FALSE$,1.8$,250$,g$,0$,$,https://www.pngkit.com/png/full/36-368421_garlic-png.png
+Artichaut$,TRUE$,3.95$,1$,kg$,0$,$,https://purepng.com/public/uploads/large/purepng.com-fresh-artichokevegetables-artichoke-9415247242087yoj7.png
+Asperge$,TRUE$,3.95$,500$,g$,0$,$,https://purepng.com/public/uploads/large/purepng.com-asparagusvegetables-asparagus-spring-vegetable-941524711258kdhin.png
+Carotte$,FALSE$,2.1$,1$,kg$,0$,$,https://pngimg.com/uploads/carrot/carrot_PNG4978.png
+Chou frisé$,FALSE$,1.8$,1$,pièce$,0$,$,http://www.pngmart.com/files/5/Kale-PNG-File.png
+Echalotes$,TRUE$,1.25$,250$,g$,0$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606323457/Echalotte_laba7i.png
+Fenouil$,TRUE$,1.5$,500$,g$,0$,$,https://cdn.pixabay.com/photo/2018/09/06/08/30/fennel-3657761_1280.png
+Fraises Gariguette$,TRUE$,4$,500$,g$,0$,$,https://pngimg.com/uploads/strawberry/strawberry_PNG2601.png
+Oignon jaune$,FALSE$,0.75$,500$,g$,0$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606323457/Oignon_jaune_oe1wcr.png
+Poire Guyot$,TRUE$,1.5$,500$,g$,0$,$,https://pngimg.com/uploads/pear/pear_PNG3466.png
+Pomme Reinette$,TRUE$,1.25$,500$,g$,0$,$,https://www.coteaux-nantais.com/sites/coteaux-nantais.com/files/reine-des-reinettes.png
+Pommes de terre Charlotte$,TRUE$,1.5$,500$,g$,0$,$,https://freepngimg.com/thumb/potato/14-potato-png-images.png
+Chou-fleur$,TRUE$,2.5$,1$,pièce$,0$,$,https://purepng.com/public/uploads/large/purepng.com-cauliflowerplantvegetablesgreencauliflower-1701527242875jefs2.png
+Chou rouge$,TRUE$,2.25$,1$,pièce$,0$,$,https://purepng.com/public/uploads/large/purepng.com-red-cabbagevegetables-cabbage-red-cabbage-941524712345eyztg.png
+Epinards$,TRUE$,0.8$,100$,g$,0$,$,https://pngimg.com/uploads/spinach/spinach_PNG20.png
+Navet$,FALSE$,1.25$,500$,g$,0$,$,https://purepng.com/public/uploads/large/purepng.com-turnipvegetablesroot-vegetable-rutabaga-turnip-neep-941524702929wkfry.png
+Potimarron$,FALSE$,1.75$,500$,g$,0$,$,https://pngimg.com/uploads/pumpkin/pumpkin_PNG86660.png
+Laurier$,FALSE$,0.5$,1$,botte$,0$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306127/Laurier_mqebc0.png
+Coriandre$,FALSE$,0.75$,1$,botte$,0$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306084/coriandre_obzbi9.png
+Persil$,TRUE$,0.5$,1$,botte$,0$,$,https://assets.stickpng.com/images/58bf1e50e443f41d77c734b0.png
+Thym$,TRUE$,1$,1$,botte$,0$,$,https://cdn.shopify.com/s/files/1/0355/3483/1660/products/CKHThyme_1024x.png?v=1587733301
+Romarin$,TRUE$,1$,1$,botte$,0$,$,https://www.pngarts.com/files/5/Rosemary-PNG-Background-Image.png
+Menthe$,TRUE$,0.5$,1$,botte$,0$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306135/Menthe_kmbxnq.png
+Ciboulette$,FALSE$,1.25$,1$,botte$,0$,$,https://www.tomatopiu.com/wp-content/uploads/2016/08/ERBA-CIPOLLINAsmall.png
+Estragon$,FALSE$,1.5$,1$,botte$,0$,$,https://images.squarespace-cdn.com/content/v1/5dc8ae312502ee46b8870bd0/1592441567663-KZEHZ9J6426FAQ9TCBVQ/ke17ZwdGBToddI8pDm48kCpr5j7kb9yAvKiwkotdGG57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UUcd26xEibkaDnDtmphUMe3SldXNmZqVv9Ikv-BSjsHRoRwB-dUGsSquCnVTFQcaRg/tarragon.png
+Basilic$,TRUE$,1.75$,1$,botte$,0$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305987/Basilic_ddqj2l.png
+Bavette de boeuf$,TRUE$,3.5$,250$,g$,1$,$,https://www.lalouvrie.com/Files/128446/Img/06/biffeck-png-1200.png
+Côtes d'agneau$,FALSE$,4.5$,250$,g$,1$,$,https://www.thefeta.com/wp-content/uploads/2020/06/5943.png
+Cuisse de poulet$,TRUE$,4$,1$,pièce$,1$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305996/cuisse-de-poulet_cgpnj0.png
+Entrecôte de boeuf$,TRUE$,8.5$,250$,g$,1$,$,https://img2.pngio.com/t-bone-steak-png-picture-453336-t-bone-steak-png-tbone-steak-png-1000_1000.png
+Epaule d'agneau$,FALSE$,3$,250$,g$,1$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306005/epaule-d_agneau_mg8jwb.png
+Faux-filet de boeuf$,TRUE$,9$,250$,g$,1$,$,https://pngimg.com/uploads/steak/steak_PNG9.png
+Filet de poulet$,TRUE$,4.5$,1$,pièce$,1$,$,https://ziggystasmania.com.au/assets/img/Fresh%20Meat/Ziggys_Chicken-Breast.png
+Gigot d'agneau$,FALSE$,4.5$,250$,g$,1$,$,https://images.squarespace-cdn.com/content/v1/5eb13157e6d7511bfd856dcb/1591737600418-AE62D3T3R2JSHAHUS6C7/ke17ZwdGBToddI8pDm48kFkiBJWxdjrfXjQcrdLzFu0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKckFDRWmOOCmVqPnOdjiFgxUg1AqA6lfTYwLXaxgrAOcF3rctOQfG4m_0uyxM2ml5h/MEATF1010-+LAMB+LEG+WHOLE.PNG
+Jarret de boeuf$,TRUE$,4.75$,250$,g$,1$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306087/jarret-de-boeuf_gwjiue.png
+Merguez$,FALSE$,1.25$,1$,pièce$,1$,$,https://img2.freepng.fr/20180927/kbp/kisspng-merguez-sausage-moroccan-cuisine-lamb-and-mutton-c-andiamo-pizza-combs-la-villa-livre-des-pizzas-c-5baceeb20a65f0.6631034715380599540426.jpg
+Paleron de boeuf$,TRUE$,3.75$,250$,g$,1$,$,https://purepng.com/public/uploads/large/purepng.com-meatmeatanimalfleshchicken-1411527788194pmnvi.png
+Poulet rôti$,TRUE$,17$,1$,pièce$,1$,$,https://purepng.com/public/uploads/large/purepng.com-grill-chickenfood-meat-chicken-grilled-941524616969gg9vh.png
+Filet de bar$,FALSE$,5.5$,250$,g$,2$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305966/bar_lfbobx.png
+Dos de cabillaud$,FALSE$,7.8$,250$,g$,2$,$,https://png2.cleanpng.com/sh/191947b919e9b68b446b07cf82df0e6c/L0KzQYm3VcE0N5p7iZH0aYP2gLBuTfZqe5kyftt3Z3X1PbT2hL1ncZ1xfeY2c3XkdrF2hL02aZc9UKQ5ZXPnSbO3V746QWc5SasAMUG4Qoe5U8U3PmM9TKQ7LoDxd1==/kisspng-fish-finger-cod-fillet-seafood-5af8820ecd9b07.9964195115262356628422.png
+Langoustines de Loctudy$,FALSE$,5$,250$,g$,2$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306121/langoustines_rwayj0.png
+Filet de dorade$,FALSE$,5$,250$,g$,2$,$,https://sharkseafoods.com/wp-content/uploads/2019/01/Sea-bream.png
+Homard$,FALSE$,36$,1$,pièce$,2$,$,https://pngimg.com/uploads/lobster/lobster_PNG14234.png
+Huîtres plates de Belon$,FALSE$,7$,1$,demi-douzaine$,2$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306035/hui%CC%82tre_avmjwn.png
+Queue de lotte$,FALSE$,6.5$,250$,g$,2$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306115/Lotte_l5io36.png
+Filet de maquereau$,FALSE$,1.2$,100$,g$,2$,$,https://www.seacoreseafood.com/pictures/product_tbn_ewvOiUuoXS.png
+Filet de merlan$,FALSE$,4.9$,250$,g$,2$,$,https://www.biendecheznous.be/sites/default/files/ps_image/wijting.png
+Filet de rouget Barbet$,FALSE$,4.8$,250$,g$,2$,$,https://www.biendecheznous.be/sites/default/files/ps_image/zeebarbeel.png
+Noix de Saint-Jacques$,FALSE$,5.9$,100$,g$,2$,$,https://www.biendecheznous.be/sites/default/files/ps_image/st-jakobsschelp.png
+Sardine$,FALSE$,2$,250$,g$,2$,$,https://www.lorpexfish.com/86-thickbox_01oslo/sardine.jpg
+Filet de sole$,FALSE$,4.5$,250$,g$,2$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306109/fillet-de-sole_a7puyd.png
+Crémant de Loire But$,TRUE$,10.7$,75$,cl$,3$,$,https://www.vinatis.com/42590-thickbox_default/cremant-de-loire-brut-diamant-de-loire.png
+Sancerre 2019 - Domaine La Perrière$,FALSE$,20.5$,75$,cl$,3$,$,https://www.vinatis.com/49528-thickbox_default/sancerre-2019-domaine-la-perriere.png
+Fixin 2018 - Doudet-Nautin$,TRUE$,21.9$,75$,cl$,3$,$,https://www.vinatis.com/48765-detail_default/fixin-2018-doudet-naudin.png
+Mezcal Amores$,FALSE$,42.9$,70$,cl$,3$,$,https://www.vinatis.com/24098-detail_default/mezcal-amores.png
+Saint-Estèphe 2017 - Calon Ségur$,FALSE$,27.9$,75$,cl$,3$,$,https://www.vinatis.com/49460-detail_default/saint-estephe-de-calon-segur-2017.png
+Le Mont Moelleux 2017 - Domaine Huet$,TRUE$,35.2$,75$,cl$,3$,$,https://www.vinatis.com/50348-detail_default/le-mont-moelleux-2017-domaine-huet.png
+Le Gallon Balancelle - Pastis Ricard$,FALSE$,149.9$,450$,cl$,3$,$,https://www.vinatis.com/24957-detail_default/le-gallon-balancelle-pastis-ricard.png
+Nonne IPA - Les Brasseurs Savoyards$,TRUE$,3.2$,33$,cl$,3$,$,https://www.vinatis.com/32705-detail_default/nonne-ipa-bio-33cl-les-brasseurs-savoyards.png
+Punk IPA - Brew Dog$,FALSE$,3.5$,33$,cl$,3$,$,https://www.vinatis.com/30687-fine_default/punk-ipa-33cl-brewdog.png
+Champagne Mumm - Cordon Rouge$,TRUE$,25.9$,75$,cl$,3$,$,https://www.vinatis.com/31895-fine_default/champagne-mumm-cordon-rouge.png
+Lambrusco Secco - Quercioli Reggiano$,TRUE$,5.6$,75$,cl$,3$,$,https://www.vinatis.com/47759-detail_default/lambrusco-secco-quercioli-reggiano-medici-ermete.png
+Côtes du Rhone 2019 - Domaine de la Guintrandy$,TRUE$,7.99$,75$,cl$,3$,$,https://www.vinatis.com/48945-fine_default/cotes-du-rhone-2019-domaine-de-la-guintrandy.png
+Caviar$,TRUE$,83.26$,50$,g$,4$,$,http://www.tendance-culinaire.com/wp-content/uploads/2016/03/AKI-Paddlefish-Caviar-3.png
+Confit de canard - cuisses$,TRUE$,15.78$,750$,g$,4$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306014/Confit-de-canard_qzbjrf.png
+Crème de marrons$,TRUE$,6.22$,350$,g$,4$,$,https://selaliqua.com/wp-content/uploads/2020/03/Creme-de-Marron-de-lArdeche-Medaille-Argent-2019-Colis-6-x-345-gr.png
+Fleur de sel$,FALSE$,3.52$,125$,g$,4$,$,https://www.kehanfoodimports.com/uploads/3/2/0/1/32011437/s717088470361350286_p791_i1_w640.png
+Foie gras de canard$,FALSE$,22.45$,300$,g$,4$,$,http://www.ferme-de-phalange.fr/wp-content/uploads/2014/04/Foie-gras-de-canard-entier-v110-copie.png
+Huile d'olive$,TRUE$,8.95$,50$,cl$,4$,$,http://www.pngall.com/wp-content/uploads/2017/03/Olive-Oil-Free-PNG-Image.png
+Miel$,TRUE$,4.78$,250$,g$,4$,$,http://miam-images.m.i.pic.centerblog.net/b9bc4bcf.png
+Pain d'épices$,FALSE$,19.56$,1$,kg$,4$,$,https://www.protegere.fr/wp-content/uploads/2020/04/pain-d-epices.png
+Rillettes de thon$,TRUE$,5.5$,150$,g$,4$,$,https://www.vinibee.com/wp-content/uploads/2018/10/rillettes-de-thon-fume-e1539083299762.png
+Salami$,FALSE$,8.17$,250$,g$,4$,$,https://www.salumificiogalliremo.it/wp-content/uploads/2015/11/salame-napoli.png
+Speck$,FALSE$,26.99$,1$,kg$,4$,$,https://www.fratelliberetta.com/wps/wcm/connect/www.fratelliberetta.com-26416/08260f1a-dc51-4200-a794-b5523827169a/speck.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_31D21O42L8N2F0ALC5JJJ410K1-08260f1a-dc51-4200-a794-b5523827169a-kAe97Wx
+Vinaigre balsamique$,TRUE$,13.19$,25$,cl$,4$,$,https://www.maille.ca/fr/produits/vinaigres/img/balsamic-vinegar.png
+Appenzeler$,TRUE$,3.6$,100$,g$,5$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305947/Appenzeler_a0whfv.png
+Bleu d'Auvergne$,FALSE$,2.3$,100$,g$,5$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305957/Bleu_osyjde.png
+Crottin de Chavignol$,TRUE$,2.5$,1$,pièce$,5$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305954/Chavignol_awywdl.png
+Cheddar$,FALSE$,3.25$,100$,g$,5$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305940/Cheddar_murybd.png
+Chèvre frais$,TRUE$,3.3$,1$,pièce$,5$,$,https://img2.pngio.com/milk-breakfast-goat-cheese-cheese-png-png-download-41022083-goat-cheese-png-4102_2083.png
+Comté 24 mois$,TRUE$,3.8$,100$,g$,5$,$,https://oliveandgrain.com.au/wp-content/uploads/comte.png
+Humboldt fog$,TRUE$,3.75$,100$,g$,5$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306085/humboldt-fog_rqcodu.png
+Morbier$,FALSE$,2.5$,100$,g$,5$,$,https://www.fruitiere-comte.com/photos/produit-1336637719-1485336066.png
+Picodon$,FALSE$,2.75$,1$,pièce$,5$,$,https://preprod.lespetiteslaiteries.fr/wp-content/uploads/2020/10/Picodon-Dieulefit-Les-Petites-Laiteries-1.png
+Pont l'Eveque$,FALSE$,3.2$,100$,g$,5$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306126/Pont-l_eveque_tqirh3.png
+Reblochon$,FALSE$,2.7$,100$,g$,5$,$,https://www.kaas.nl/wp-content/uploads/2020/03/114102_ReblochondeSavoie.png
+Tomme de Savoie$,TRUE$,2.5$,100$,g$,5$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306137/tomme_uf8w2n.png
+Mont-dor$,TRUE$,13.5$,1$,pièce$,5$,$,https://preprod.lespetiteslaiteries.fr/wp-content/uploads/2020/09/MONT-DOR.png
+Cidre brut$,TRUE$,4.5$,75$,cl$,6$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606324206/cidre-brut_jz3zko.png
+Cidre demi-sec$,TRUE$,4.25$,75$,cl$,6$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606324206/cidre-demi-sec_lkryb7.png
+Demi-douzaine blé noir$,TRUE$,2.3$,1$,demi-douzaine$,6$,$,https://crepiote.fr/wp-content/uploads/2016/06/galette_sarrazin_000.png
+Demi-douzaine froments$,TRUE$,2.7$,1$,demi-douzaine$,6$,$,https://img2.freepng.fr/20180529/xuh/kisspng-crpe-bretonne-pancake-blini-oladyi-crepes-5b0db93a44bae8.9554247915276260422815.jpg
+Douzaine blé noir$,TRUE$,4.5$,1$,douzaine$,6$,$,https://crepiote.fr/wp-content/uploads/2016/06/galette_sarrazin_000.png
+Douzaine froments$,TRUE$,5$,1$,douzaine$,6$,$,https://img2.freepng.fr/20180529/xuh/kisspng-crpe-bretonne-pancake-blini-oladyi-crepes-5b0db93a44bae8.9554247915276260422815.jpg
+Far aux pruneaux$,TRUE$,3$,250$,g$,6$,$,http://lesillonfruitsec.fr/wp-content/uploads/2014/09/Pruneaux-408x345.png
+Gâteau breton$,TRUE$,12$,1$,pièce$,6$,$,https://www.kouign-douarnenez.com/images/Image/gateaubreton2_1346342869.png
+Kouign amann$,TRUE$,17$,1$,pièce$,6$,$,http://zoomsurlafrance.com/wp-content/uploads/2016/02/kouignamann2_1346342498.png
+Kouign bigouden$,TRUE$,1.1$,1$,pièce$,6$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306050/Kouign-bigouden_mvzt9e.png
+Lambig$,TRUE$,24$,75$,cl$,6$,$,https://www.kinkiz-terroir.bzh/wp-content/uploads/2017/03/Lambig_Vieux_MK_70cl.png
+Pommeau$,TRUE$,17.5$,75$,cl$,6$,$,https://www.kinkiz-terroir.bzh/wp-content/uploads/2017/03/Pommeau_Bretagne_AOC_70cl.png
+Baguette classique$,FALSE$,1.05$,1$,pièce$,7$,$,http://www.pngpix.com/wp-content/uploads/2016/08/PNGPIX-COM-Baguette-Bread-PNG-Transparent-Image.png
+Baguette tradition$,FALSE$,1.2$,1$,pièce$,7$,$,http://patisserieau38.fr/wp-content/uploads/2017/09/tradition.png
+Brioche$,FALSE$,7$,1$,pièce$,7$,$,http://www.brico.com.br/wp-content/uploads/2016/03/brioche.png
+Croissant$,FALSE$,0.95$,1$,pièce$,7$,$,http://pngimg.com/uploads/croissant/croissant_PNG46722.png
+Epi$,FALSE$,1.45$,1$,pièce$,7$,$,https://medias.bridordefrance.com/media/sys_master/images/h0b/hc0/8826511097886.png
+Pain au chocolat$,FALSE$,1.1$,1$,pièce$,7$,$,https://clipartart.com/images/pain-au-chocolat-clipart-8.png
+Pain au son$,FALSE$,4.5$,1$,pièce$,7$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306106/Pain-au-son_yzkf4p.png
+Pain aux noix$,FALSE$,5.2$,1$,pièce$,7$,$,https://www.boulangerielangelus.com/wp-content/uploads/2015/09/pain-aux-noix-bf.png
+Pain aux raisins$,FALSE$,1.3$,1$,pièce$,7$,$,https://medias.bridordefrance.com/media/sys_master/images/hee/h90/8801942896670.png
+Pain bâtard$,FALSE$,3.8$,1$,pièce$,7$,$,https://cdn.kreezalid.com/kreezalid/544992/catalog/8080/36/1000x1000_batard-nature-de-pain-boulangerie-patisserie-amiens-artisan-boulanger-removebg-preview_tjhos_1804480933.png
+Pain complet$,FALSE$,4.2$,1$,pièce$,7$,$,https://www.lacledeschamps-manche.com/wp-content/uploads/2020/05/Grand-complet-1-1024x1024.png
+Pain de campagne$,FALSE$,3.7$,1$,pièce$,7$,$,https://www.breadsmith.com/wp-content/uploads/2015/09/Pain-de-Campagne.png
+Pain de seigle$,FALSE$,4.8$,1$,pièce$,7$,$,http://www.boulangerieperrinelle.com/sites/default/files/styles/affichage_grand/adaptive-image/public/photos/pain_seigle.png?itok=I-E3CiCd
