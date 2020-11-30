@@ -25,7 +25,7 @@
   </div>
 </div>
 
-<div class="m-5 d-flex justify-content-around">
+<div class="m-5 d-flex products-list-wrapper">
   <ul class="nav nav-pills mb-3">
     <li class="nav-item">
       <% is_products_all = !params[:product].present? || params[:product] == "all" %>
@@ -36,44 +36,43 @@
       <%= link_to "Boucherie", products_path(product: "boucherie", bio: params[:bio], query: params[:query]), class: "nav-link #{"active" if is_products_boucherie}" %>
     </li>
     <li class="nav-item">
+      <% is_products_maraicher = params[:product] == "maraîcher" %>
+      <%= link_to "Maraîcher", products_path(product: "maraîcher", bio: params[:bio], query: params[:query]), class: "nav-link #{"active" if is_products_maraicher}" %>
+    </li>
+    <li class="nav-item">
+      <% is_products_vin = params[:product] == "vins et spiritueux" %>
+      <%= link_to "Vins et spiritueux", products_path(product: "vins et spiritueux", bio: params[:bio], query: params[:query]), class: "nav-link #{"active" if is_products_vin}" %>
+    </li>
+    <li class="nav-item">
+      <% is_products_epicerie = params[:product] == "epicerie fine" %>
+      <%= link_to "Epicerie fine", products_path(product: "epicerie fine", bio: params[:bio], query: params[:query]), class: "nav-link #{"active" if is_products_epicerie}" %>
+    </li>
+    <li class="nav-item">
+      <% is_products_boulangerie = params[:product] == "boulangerie" %>
+      <%= link_to "Boulangerie", products_path(product: "boulangerie", bio: params[:bio], query: params[:query]), class: "nav-link #{"active" if is_products_boulangerie}" %>
+    </li>
+    <li class="nav-item">
+      <% is_products_poissonnerie = params[:product] == "poissonnerie" %>
+      <%= link_to "Poissonnerie", products_path(product: "poissonnerie", bio: params[:bio], query: params[:query]), class: "nav-link #{"active" if is_products_poissonnerie}" %>
+    </li>
+    <li class="nav-item">
+      <% is_products_cremerie = params[:product] == "crémerie" %>
+      <%= link_to "Crémerie", products_path(product: "crémerie", bio: params[:bio], query: params[:query]), class: "nav-link #{"active" if is_products_cremerie}" %>
+    </li>
+    <li class="nav-item">
+      <% is_products_crepier = params[:product] == "produits régionaux" %>
+      <%= link_to "Produits régionaux", products_path(product: "produits régionaux", bio: params[:bio], query: params[:query]), class: "nav-link #{"active" if is_products_crepier}" %>
+    </li>
+    <li class="nav-item">
       <% is_bio = params[:bio] == "true" %>
       <%= link_to "Bio", products_path(product: params[:product], bio: !is_bio, query: params[:query]), class: "nav-link #{"active" if is_bio}" %>
     </li>
   </ul>
-
 </div>
 
   <div class="">
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-
-
-      <li class="nav-item">
-        <a class="nav-link" id="pills-maraîcher-tab" data-toggle="pill" href="#pills-maraîcher" role="tab" aria-controls="pills-maraîcher" aria-selected="false">Maraîcher</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-vins-et-spiritueux-tab" data-toggle="pill" href="#pills-vins-et-spiritueux" role="tab" aria-controls="pills-vins-et-spiritueux" aria-selected="false">Vins et spiritueux</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-epicerie-fine-tab" data-toggle="pill" href="#pills-epicerie-fine" role="tab" aria-controls="pills-epicerie-fine" aria-selected="true">Epicerie fine</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-boulangerie-tab" data-toggle="pill" href="#pills-boulangerie" role="tab" aria-controls="pills-boulangerie" aria-selected="true">Boulangerie</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-poissonnerie-tab" data-toggle="pill" href="#pills-poissonnerie" role="tab" aria-controls="pills-poissonnerie" aria-selected="true">Poissonnerie</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-cremerie-tab" data-toggle="pill" href="#pills-cremerie" role="tab" aria-controls="pills-cremerie" aria-selected="true">Crémerie</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-produits-regionaux-tab" data-toggle="pill" href="#pills-produits-regionaux" role="tab" aria-controls="pills-produits-regionaux" aria-selected="true">Produits régionaux</a>
-      </li>
-    </ul>
     <div class="d-flex">
       <div class="products-list-wrapper">
-
-
-          <%#= TOUT %>
 
 
         <div class="d-flex justify-content-around m-4">

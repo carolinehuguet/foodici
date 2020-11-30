@@ -15,6 +15,34 @@ class ProductsController < ApplicationController
       @products = @products.joins(:shop).where(shops: {category: "Boucher"})
     end
 
+    if params[:product] == "maraîcher"
+      @products = @products.joins(:shop).where(shops: {category: "Fruits et légumes"})
+    end
+
+    if params[:product] == "vins et spiritueux"
+      @products = @products.joins(:shop).where(shops: {category: "Caviste"})
+    end
+
+    if params[:product] == "epicerie fine"
+      @products = @products.joins(:shop).where(shops: {category: "Epicerie fine"})
+    end
+
+    if params[:product] == "boulangerie"
+      @products = @products.joins(:shop).where(shops: {category: "Boulanger"})
+    end
+
+    if params[:product] == "poissonnerie"
+      @products = @products.joins(:shop).where(shops: {category: "Poissonier"})
+    end
+
+    if params[:product] == "crémerie"
+      @products = @products.joins(:shop).where(shops: {category: "Fromager"})
+    end
+
+    if params[:product] == "produits régionaux"
+      @products = @products.joins(:shop).where(shops: {category: "Crêpier"})
+    end
+
     if params[:bio] == "true"
       @products = @products.where(organic: true)
     end
