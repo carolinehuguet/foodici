@@ -1,0 +1,52 @@
+<div class="card-trip" data-controller="counter">
+  <%= link_to product, class: "link-product" do %>
+​
+    <%= image_tag product.photo, crop: :fill, class: "img-product-card"%>
+  <% end %>
+    <% if product.organic == true %>
+    <div class="badge badge-success">
+      <p>BIO</p>
+    </div>
+    <% end %>
+
+  <%= link_to product, class: "link-product" do %>
+    <div class="card-trip-infos">
+      <div>
+        <p><small><%= product.shop.name %></small></p>
+        <h5><%= product.name %></h5>
+      </div>
+      <div class="card-price">
+  <% end %>
+
+      <div class="price-currency"><strong><%= product.price %></strong> €/
+      <% if product.unit == "g" || product.unit == "cl" %>
+      <%= product.amount %>
+      <% end %>
+      <%= product.unit %>
+      </div>
+    </div>
+<!-- panier -->
+    <div class="container-compteur">
+      <%= simple_form_for [product, @order_line] do |f| %>
+        <div class="basket" data-action="click->counter#clickBasket" data-target="counter.basketButton"><%= image_tag "picto/panier.svg", class: "nav-link picto", crop: :fill, width: 50 %></div>
+        <button type="submit" class= "main-cta counter-submit hidden" data-target="counter.submitButton" data-action="click->counter#clickSubmit"><%= image_tag "picto/panier.svg", class: "nav-link picto", crop: :fill, width: 50 %></button>
+
+        <div class="compteur hidden" data-target="counter.counter">
+          <button type="button" data-action="click->counter#decrease" class="value-button decrease">
+            -
+          </button>
+
+          <input class="counter-value" value="0" data-target="counter.input" type="number" step="1" name="order_line[quantity]" id="order_line_quantity">
+
+          <button type="button" data-action="click->counter#increase" class="value-button increase">
+            +
+          </button>
+
+        </div>
+      <% end %>
+
+    </div>
+
+<!-- panier end -->
+  </div>
+</div>

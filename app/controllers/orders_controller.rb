@@ -1,7 +1,6 @@
 class OrdersController < ApplicationController
   def create
     order = current_user.orders.find_by(status: "cart")
-    order.status = "pending"
     order_total = 0
 
     order.order_shops.each do |order_shop|
@@ -12,6 +11,7 @@ class OrdersController < ApplicationController
 
     session = Stripe::Checkout::Session.create(
       payment_method_types: ['card'],
+      locale: "fr",
       line_items: [{
         amount: order_total,
         currency: 'eur',

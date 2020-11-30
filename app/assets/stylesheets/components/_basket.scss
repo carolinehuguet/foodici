@@ -17,6 +17,7 @@
   right:0;
   width:48px;
   height:48px;
+  border-width: 0px;
 }
 
 
@@ -28,21 +29,86 @@
   right:0;
   width:48px;
   height:48px;
+  border-width: 0px;
 }
 
 
-#compteur {
+.compteur {
   position:absolute;
   left:-150px;
-
+  top: -70px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  display:flex;
+  align-items:center;
 }
 
 .hidden {
-    display:none;
+    display:none !important;
 }
 
+.value-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  color:white;
+  background: #2A5730;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-width: 0;
 
+  &:focus {
+    outline: 0;
+  }
+}
 
+.value-button:hover {
+  cursor: pointer;
+}
+
+.value-button.decrease {
+  margin-right: -16px;
+  border-radius: 50px 0 0 50px;
+}
+
+.value-button.increase {
+  margin-left: -14px;
+  border-radius: 0 50px 50px 0;
+}
+
+.counter-value {
+  text-align: center;
+  border: none;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  background-color:#2A5730;
+  color:white;
+  padding: 1px 2px;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.counter-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .badge {
   font-family: Poppins;

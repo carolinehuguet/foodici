@@ -14,6 +14,15 @@
   font-weight: 300;
 }
 
+// CONTAINER FORMULAIRE
+
+.form-wrapper {
+  background-color: white;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 10px 5px rgba(80, 80, 80, 0.05);
+}
+
 // CHECKBOX - Vous vous déplacez...
 .form-check-label {
   color: $black-900;
@@ -55,19 +64,7 @@
   background-color: $orange-600;
 }
 
-// TEST 1 ----------------------------------------------------------
-// #toggle:checked ~ .form-picto-wrapper {
-//   border: 2.5px solid $green-900;
-//   border-radius: 10%;
-//   background-color: $orange-600;
-// }
-
-// .visually-hidden {
-//   opacity: 0;
-// }
-
-// TEST 2 ----------------------------------------------------------
-/* Base for label styling */
+/* Checked/unchecked transportation */
 [type="radio"]:not(:checked),
 [type="radio"]:checked {
   opacity: 0;
