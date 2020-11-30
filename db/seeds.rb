@@ -18,7 +18,7 @@ Product.destroy_all
 Shop.destroy_all
 puts "Database is clean!"
 
-csv_options = { col_sep: ',', headers: :first_row }
+csv_options = { col_sep: '$,', headers: :first_row }
 filepath_users    = 'lib/seeds/users.csv'
 filepath_shops    = 'lib/seeds/shops.csv'
 filepath_orders    = 'lib/seeds/orders.csv'

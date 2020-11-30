@@ -35,6 +35,23 @@ class OrderLinesController < ApplicationController
     redirect_to cart_path
   end
 
+  def decrease_quantity
+    @order_line = OrderLine.find(params[:id])
+    if @order_line.quantity > 0
+      @order_line.quantity -= 1
+    end
+    @order_line.save
+    redirect_to cart_path
+  end
+
+  def increase_quantity
+    @order_line = OrderLine.find(params[:id])
+    @order_line.quantity += 1
+    @order_line.save
+    redirect_to cart_path
+  end
+
+
 
   private
   def order_line_params

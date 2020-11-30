@@ -1,7 +1,7 @@
 <main class="container">
-	<h1>Panier</h1>
-	<%= render :partial => "shared/timeline" %>
-	<div class="row">
+	<h1 id="title">Panier</h1>
+	<%= render :partial => "shared/timelinebasket" %>
+	<div class="row main-content">
 		<div class="col-12 col-lg-8">
 			<%= link_to("< Retour à la liste", products_path, class: "back-text") %>
 		    <% total_price = 0 %>
@@ -9,7 +9,7 @@
 				<section>
 					<h3><%= category %></h3>
 					<% order_lines.each do |order_line| %>
-          <% total_price += order_line.subtotal_price %>
+          				<% total_price += order_line.subtotal_price %>
 						<%= render partial: "shared/card_product_cart", locals: { order_line: order_line } %>
 					<% end %>
 				</section>
@@ -34,12 +34,12 @@
 							<%= @article %> articles
 						<% end %>
 					</p>
-					<p>TOTAL : <strong>  <%= humanized_money total_price %> €</strong></p>
+					<p>TOTAL : <strong><%= humanized_money total_price %> €</strong></p>
 				</div>
 			</footer>
         <%= form_tag orders_path do %>
           <%= hidden_field_tag 'order_id', @order %>
-          <%= submit_tag 'Payer', class: 'btn btn-primary main-btn btn-block' %>
+          <%= submit_tag 'Payer', class: 'btn btn-primary main-btn btn-block btn-custom' %>
         <% end %>
 		</aside>
 	</div>
