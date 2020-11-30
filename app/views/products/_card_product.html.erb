@@ -19,7 +19,7 @@
   <% end %>
 
       <div class="price-currency"><strong><%= product.price %></strong> €/
-      <% if product.unit == "g" %>
+      <% if product.unit == "g" || product.unit == "cl" %>
       <%= product.amount %>
       <% end %>
       <%= product.unit %>
