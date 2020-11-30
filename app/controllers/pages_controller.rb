@@ -2,7 +2,6 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :home ]
 
   def home
-    # ?query=9+Rue+Jean+Jaurès%2C+Nantes%2C+Pays-de-la-Loire%2C+France&transportation=normal_walk&commit=Search
     if params[:transportation] == "small_walk"
       @radius = 0.5
     elsif params[:transportation] == "bicycle"
@@ -30,7 +29,8 @@ class PagesController < ApplicationController
       {
         lat: shop.latitude,
         lng: shop.longitude,
-        infoWindow: render_to_string(partial: "info_window", locals: { shop: shop })
+        infoWindow: render_to_string(partial: "info_window", locals: { shop: shop }),
+        image_url: helpers.asset_url('picto/marker.svg')
       }
     end
 
