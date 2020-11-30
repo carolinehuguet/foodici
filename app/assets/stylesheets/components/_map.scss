@@ -1,12 +1,34 @@
+// INFO WINDOWS ----------------------------------------------------------------
 .mapboxgl-popup {
   max-width: 200px;
 }
 
 .mapboxgl-popup-content {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  padding: 20px;
 }
 
+.mapboxgl-popup-content h3 {
+  font-size: 23px!important;
+  font-weight: 700!important;
+}
+
+.mapboxgl-popup-content p {
+  font-size: 14px!important;
+  margin-bottom: 0px!important;
+}
+
+.mapboxgl-popup-content .overtitle {
+  font-size: 12px!important;
+  padding-bottom: 5px;
+}
+
+.mapboxgl-popup-close-button{
+  font-size: 14px;
+  color: $green-900;
+}
+
+// MARKERS ---------------------------------------------------------------------
 .starting-marker {
   background-image: url('picto/starting-marker.svg');
   background-size: contain;
@@ -20,7 +42,13 @@
   background-image: url('picto/marker.svg');
   background-size: contain;
   background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.marker:hover {
   width: 50px;
   height: 50px;
-  cursor: pointer;
 }

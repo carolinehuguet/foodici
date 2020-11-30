@@ -50,9 +50,6 @@ const initMapbox = () => {
 
     fitMapToMarkers(map, markers);
     map.setCenter([startingMarker.lng, startingMarker.lat]);
-
-    map.addControl(new MapboxGeocoder({ accessToken: mapboxgl.accessToken,
-      mapboxgl: mapboxgl }));
   }
 
 };
