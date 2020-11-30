@@ -8,8 +8,8 @@
     <div class="container my-5">
       <h3>Quel sera votre point de départ ?</h3>
 
-      <%= text_field_tag :query,
-        params[:query],
+      <%= text_field_tag :address,
+        params[:address],
         class: "form-control search-form-control form-group col-6 mt-4",
         id: "address_input",
         placeholder: "22 rue des Ursulines, 22100 Dinan"
@@ -67,6 +67,7 @@
     </div>
     <%= submit_tag "Search", class: "line-btn" %>
   <% end %>
+
   <%= link_to 'Voir les produits', products_path, class: "main-btn" %>
 
   <div class="container my-5">
