@@ -4,7 +4,7 @@
     <p class="text-large">Retrouvez les commerçants de votre ville et passez commande en quelques clics.</p>
   </div>
 
-  <%= form_tag root_path, method: :get do %>
+  <%= form_tag products_path, method: :get do %>
     <div class="container my-5">
       <h3>Quel sera votre point de départ ?</h3>
 
@@ -65,10 +65,10 @@
           <p>rayon de 10km</p>
         </div>
     </div>
-    <%= submit_tag "Search", class: "line-btn" %>
+    <%#= submit_tag "Search", class: "line-btn" %>
+  <%= submit_tag 'Voir les produits', class: "main-btn" %>
   <% end %>
 
-  <%= link_to 'Voir les produits', products_path, class: "main-btn" %>
 
   <div class="container my-5">
     <h3 class="m-5">Les commerçants à proximité</h3>
