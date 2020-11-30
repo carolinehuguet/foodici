@@ -18,7 +18,12 @@
       <div class="card-price">
   <% end %>
 
-      <div class="price-currency"><strong><%= product.price %></strong> €/<%= product.unit %></div>
+      <div class="price-currency"><strong><%= product.price %></strong> €/
+      <% if product.unit == "g" %>
+      <%= product.amount %>
+      <% end %>
+      <%= product.unit %>
+      </div>
     </div>
 <!-- panier -->
     <div class="container-compteur">
@@ -45,4 +50,3 @@
 <!-- panier end -->
   </div>
 </div>
-
