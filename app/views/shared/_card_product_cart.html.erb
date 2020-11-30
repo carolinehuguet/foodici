@@ -5,13 +5,22 @@
 			<p class="product-name"><%= order_line.product.name %></p>
 		<p><span><%= order_line.product.amount %> <%= order_line.product.unit %></span></p>
 		</div>
-		<p class="add-or-remove"><button><i class="fas fa-minus"></i></button> <%= order_line.quantity %> <button><i class="fas fa-plus"></i></button></p>
+		<p class="add-or-remove"><%= link_to decrease_quantity_order_line_path(order_line), method: :patch do %>
+				<i class="fas fa-minus"></i>
+			<% end %>
+			<span class="quantity">
+			<%= order_line.quantity %></span>
+			<%= link_to(increase_quantity_order_line_path(order_line), method: :patch) do %>		<i class="fas fa-plus"></i>
+			<% end %>
+		</p>
 		<div class="price">
-			<p><strong><%= humanized_money(order_line.subtotal_price) %></strong><sup>€/<%= order_line.product.unit %></sup></p>
-		<p><span><%= order_line.product.price_cents %>€/<%= order_line.product.unit %></span></p>
+			<p><strong><%= humanized_money(order_line.subtotal_price) %></strong><sup>€</sup></p>
+		<p><span><%= order_line.product.price %>€/<%= order_line.product.unit %></span></p>
 		</div>
 		<div>
-		<%= link_to(icon("far","far fa-trash-alt"), order_line_path(order_line), method: :delete, data: { confirm: "Are you sure?" }) %>
+			<p>
+				<%= link_to(icon("far","far fa-trash-alt"), order_line_path(order_line), method: :delete, data: { confirm: "Are you sure?" }) %>
+			</p>
 		</div>
 	</div>
 </article>

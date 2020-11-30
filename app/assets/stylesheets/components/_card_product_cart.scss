@@ -26,7 +26,13 @@
 .card-product span {
   font-family: $body-font;
   color: #AAADAB;
-  font-size: 14px !important;
+  // font-size: 14px !important;
+}
+
+.quantity {
+    font-size: 1.1em !important;
+    color: $green-900 !important;
+    font-weight: 400;
 }
 
 .card-product strong{
@@ -59,9 +65,9 @@
 }
 
 .card-product .card-product-infos {
-  padding: 16px;
+  padding: 16px 30px;
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%
 }
@@ -79,10 +85,11 @@
   margin: 0 5px;
 }
 
-.add-or-remove button {
-  border: none;
-  background-color: transparent;
-}
+// .add-or-remove button {
+//   border: none;
+//   background-color: transparent;
+// }
+
 
 // ------- PSEUDO CLASSES ------
 
