@@ -26,7 +26,7 @@
 
 
 // ----------- ASIDE CART PAGE --------------
-.recap{
+.recap {
 	background-color: #fff;
 	border-radius: 20px;
 	padding: 30px;
@@ -35,16 +35,16 @@
 	margin-top: 92px;
 }
 
-.overtitle{
-	font-family: $body-font;
-	font-weight: lighter;
-	color: $black-600;
-	text-transform: uppercase;
-	font-size: 16px;
-	margin: 0;
-}
+// .overtitle {
+// 	font-family: $body-font;
+// 	font-weight: lighter;
+// 	color: $black-600;
+// 	text-transform: uppercase;
+// 	font-size: 16px;
+// 	margin: 0;
+// }
 
-.address-and-date{
+.address-and-date {
 	font-size: 23px !important;
 	margin-bottom: 15px;
 	font-family: $headers-font;
@@ -62,7 +62,6 @@
 	justify-content: space-between;
 
 }
-
 
 #total p{
 	display: flex;
@@ -83,10 +82,6 @@
 	margin: 0 !important;
 }
 
-
-// ---------------------
-
-
 // ----- TIMELINE --------
 #timeline{
 	margin: 0 auto;
@@ -97,7 +92,6 @@
 	background-image: asset-url('cart/timeline.png');
 	background-repeat: repeat-x;
 }
-
 
 .step{
 	display: flex;
