@@ -12,6 +12,18 @@
 //   margin-top: 50px;
 //   margin-bottom: 15px;
 // }
+#title {
+    text-align: center;
+    margin: 100px 0 50px 0;
+}
+
+.main-content{
+	margin-top: 80px;
+	h3{
+		margin-top: 30px;
+	}
+}
+
 
 // ----------- ASIDE CART PAGE --------------
 .recap{
@@ -20,7 +32,7 @@
 	padding: 30px;
 	box-shadow: 0 0 5px rgba(0,0,0,0.1);
 	height: 376px;
-	margin-top: 95px;
+	margin-top: 92px;
 }
 
 .overtitle{
@@ -68,7 +80,6 @@
 }
 
 .btn-custom{
-	text-align: center;
 	margin: 0 !important;
 }
 
@@ -80,7 +91,7 @@
 #timeline{
 	margin: 0 auto;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	width: 600px;
 	height: 100px;
 	background-image: asset-url('cart/timeline.png');
@@ -106,15 +117,15 @@
 .color-text {
 	color: $green-700;
 	font-family: $body-font;
-	font-size: 0.9em;
+	font-size: 0.8em !important;
 	margin: 5px 0;
 }
 
 .text-active{
-	font-weight: bold;
+	font-weight: 700 !important;
 	color: $green-800;
 	margin: 5px 0;
-	font-size: 1em;
+	font-size: 1em !important;
 }
 
 .custom-active{
