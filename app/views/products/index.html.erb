@@ -3,15 +3,35 @@
 <br>
 <br>
 <div class="ml-5 border-bottom">
-  <div>
-    <h5>ADRESSE DE DEPART 🖊</h5>
-    <p>17 rue des Oiseaux, Dinan</p>
+  <div class="d-flex">
+    <div class="mr-3">
+      <%= if params[:transportation] == "small_walk"
+        image_tag("picto/small_walk.svg")
+      elsif params[:transportation] == "bicycle"
+        image_tag("picto/bicycle.svg")
+      elsif params[:transportation] == "car"
+        image_tag("picto/car.svg")
+      else
+        image_tag("picto/normal_walk.svg")
+      end%>
+    </div>
+    <div>
+      <h5>ADRESSE DE DEPART</h5>
+      <div>
+        <%= form_tag products_path, method: :get do %>
+          <%= text_field_tag :address,
+            params[:address],
+            class: "form-control search-form-control form-group",
+            id: "address_input",
+            placeholder: params[:address]
+          %>
+          <%= submit_tag 'Voir les produits', class: "main-btn" %>
+        <% end %>
+      </div>
+    </div>
   </div>
-  <%#= cl_image_tag à petit pas %>
-  <%#= cl_image_tag à pied %>
-  <%#= cl_image_tag à vélo%>
-  <%#= cl_image_tag en voiture %>
 </div>
+
 <div class="ml-5 mt-3 ">
   <div class="form-inline mt-3">
     <%= form_tag products_path, method: :get do %>
@@ -26,46 +46,47 @@
 </div>
 
 <div class="m-5 d-flex products-list-wrapper">
-  <ul class="nav nav-pills mb-3">
+  <ul class="nav nav-pills">
     <li class="nav-item">
+      <% filters = params.permit(:product, :bio, :query, :address, :transportation) %>
       <% is_products_all = !params[:product].present? || params[:product] == "all" %>
-      <%= link_to "Tout", products_path(product: "all", bio: params[:bio], query: params[:query]), class: "nav-link #{"active" if is_products_all}" %>
+      <%= link_to "Tout", products_path( filters.merge({product: "all"}) ), class: "nav-link #{"active" if is_products_all}" %>
     </li>
     <li class="nav-item">
       <% is_products_boucherie = params[:product] == "boucherie" %>
-      <%= link_to "Boucherie", products_path(product: "boucherie", bio: params[:bio], query: params[:query]), class: "nav-link #{"active" if is_products_boucherie}" %>
+      <%= link_to "Boucherie", products_path( filters.merge({product: "boucherie"}) ), class: "nav-link #{"active" if is_products_boucherie}" %>
     </li>
     <li class="nav-item">
       <% is_products_maraicher = params[:product] == "maraîcher" %>
-      <%= link_to "Maraîcher", products_path(product: "maraîcher", bio: params[:bio], query: params[:query]), class: "nav-link #{"active" if is_products_maraicher}" %>
+      <%= link_to "Maraîcher", products_path( filters.merge({product: "maraîcher"}) ), class: "nav-link #{"active" if is_products_maraicher}" %>
     </li>
     <li class="nav-item">
       <% is_products_vin = params[:product] == "vins et spiritueux" %>
-      <%= link_to "Vins et spiritueux", products_path(product: "vins et spiritueux", bio: params[:bio], query: params[:query]), class: "nav-link #{"active" if is_products_vin}" %>
+      <%= link_to "Vins et spiritueux", products_path( filters.merge({product: "vins et spiritueux"}) ), class: "nav-link #{"active" if is_products_vin}" %>
     </li>
     <li class="nav-item">
       <% is_products_epicerie = params[:product] == "epicerie fine" %>
-      <%= link_to "Epicerie fine", products_path(product: "epicerie fine", bio: params[:bio], query: params[:query]), class: "nav-link #{"active" if is_products_epicerie}" %>
+      <%= link_to "Epicerie fine", products_path( filters.merge({product: "epicerie fine"}) ), class: "nav-link #{"active" if is_products_epicerie}" %>
     </li>
     <li class="nav-item">
       <% is_products_boulangerie = params[:product] == "boulangerie" %>
-      <%= link_to "Boulangerie", products_path(product: "boulangerie", bio: params[:bio], query: params[:query]), class: "nav-link #{"active" if is_products_boulangerie}" %>
+      <%= link_to "Boulangerie", products_path( filters.merge({product: "boulangerie"}) ), class: "nav-link #{"active" if is_products_boulangerie}" %>
     </li>
     <li class="nav-item">
       <% is_products_poissonnerie = params[:product] == "poissonnerie" %>
-      <%= link_to "Poissonnerie", products_path(product: "poissonnerie", bio: params[:bio], query: params[:query]), class: "nav-link #{"active" if is_products_poissonnerie}" %>
+      <%= link_to "Poissonnerie", products_path( filters.merge({product: "poissonnerie"}) ), class: "nav-link #{"active" if is_products_poissonnerie}" %>
     </li>
     <li class="nav-item">
       <% is_products_cremerie = params[:product] == "crémerie" %>
-      <%= link_to "Crémerie", products_path(product: "crémerie", bio: params[:bio], query: params[:query]), class: "nav-link #{"active" if is_products_cremerie}" %>
+      <%= link_to "Crémerie", products_path( filters.merge({product: "crémerie",}) ), class: "nav-link #{"active" if is_products_cremerie}" %>
     </li>
     <li class="nav-item">
       <% is_products_crepier = params[:product] == "produits régionaux" %>
-      <%= link_to "Produits régionaux", products_path(product: "produits régionaux", bio: params[:bio], query: params[:query]), class: "nav-link #{"active" if is_products_crepier}" %>
+      <%= link_to "Produits régionaux", products_path( filters.merge({product: "produits régionaux"}) ), class: "nav-link #{"active" if is_products_crepier}" %>
     </li>
     <li class="nav-item">
       <% is_bio = params[:bio] == "true" %>
-      <%= link_to "Bio", products_path(product: params[:product], bio: !is_bio, query: params[:query]), class: "nav-link #{"active" if is_bio}" %>
+      <%= link_to "Bio", products_path(product: params[:product], bio: !is_bio, query: params[:query], address: params[:address], transportation: params[:transportation]), class: "nav-link #{"active" if is_bio}" %>
     </li>
   </ul>
 </div>
@@ -101,7 +122,4 @@
     </div>
   </div>
 </div>
-
-
-
 
