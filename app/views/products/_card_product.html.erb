@@ -28,8 +28,8 @@
 <!-- panier -->
     <div class="container-compteur">
       <%= simple_form_for [product, @order_line] do |f| %>
-        <div class="basket" data-action="click->counter#clickBasket" data-target="counter.basketButton"><%= image_tag "picto/panier.svg", class: "nav-link picto", crop: :fill, width: 50 %></div>
-        <button type="submit" class= "main-cta counter-submit hidden" data-target="counter.submitButton" data-action="click->counter#clickSubmit"><%= image_tag "picto/panier.svg", class: "nav-link picto", crop: :fill, width: 50 %></button>
+        <div class="basket" data-action="click->counter#clickBasket" data-target="counter.basketButton"><%= image_tag "picto/panier.svg", class: "nav-link picto picto-basket", crop: :fill, width: 50 %></div>
+        <button type="submit" class= "main-cta counter-submit hidden" data-target="counter.submitButton" data-action="click->counter#clickSubmit"><%= image_tag "picto/panier.svg", class: "nav-link picto picto-basket", crop: :fill, width: 50 %></button>
 
         <div class="compteur hidden" data-target="counter.counter">
           <button type="button" data-action="click->counter#decrease" class="value-button decrease">

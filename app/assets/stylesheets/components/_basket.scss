@@ -14,7 +14,8 @@
   background-color:$green-accent;
   border-radius:50%;
   position:absolute;
-  right:0;
+  right: -29px;
+  bottom: -25px;
   width:48px;
   height:48px;
   border-width: 0px;
@@ -26,7 +27,8 @@
   background-color:$orange-accent;
   border-radius:50%;
   position:absolute;
-  right:0;
+  bottom: -25px;
+  right:-30px;
   width:48px;
   height:48px;
   border-width: 0px;
@@ -110,18 +112,26 @@
   justify-content: center;
 }
 
-.badge {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 19px;
-  position: relative;
-  bottom: 180px;
-  left: 230px;
-  border-radius: 20px;
-  p {
-    color: white;
+.card-trip {
+  .badge {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    position: absolute;
+    left: 242px;
+    bottom: 238px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        p {
+      color: white;
+    }
   }
+}
+
+.picto-basket {
+  position: absolute;
+  bottom: 9px;
 }
 
