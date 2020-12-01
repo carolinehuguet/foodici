@@ -10,9 +10,11 @@ class OrderLinesController < ApplicationController
       order: @cart,
       shop: @shop
     )
-    @order_line = OrderLine.new(order_line_params)
-    @order_line.product = @product
-    @order_line.order_shop = @order_shop
+    @order_line = OrderLine.find_or_create_by(
+      order_shop: @order_shop,
+      product: @product
+    )
+    @order_line.quantity = order_line_params[:quantity]
     @order_line.subtotal_price = @product.price * @order_line.quantity
 
     if @order_line.save!

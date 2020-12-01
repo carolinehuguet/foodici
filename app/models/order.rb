@@ -16,12 +16,21 @@ class Order < ApplicationRecord
   end
 
   def itinerary(order)
-    coordonates = []
+    origin = [48.112160, -1.677671]
+    travelmode =
+    shops = []
+
     order.order_shops.each do |order_shop|
-      shop_coordonates = "#{order_shop.shop.latitude},#{order_shop.shop.longitude}"
-      coordonates << shop_coordonates
-     end
-    url = "https://www.google.com/maps/dir/?api=1&waypoints=#{coordonates.join('|')}"
+      shops << order_shop.shop
+    end
+
+    sorted_shops = shops.sort_by{ |shop| shop.distance_from(origin) }
+
+    sorted_coordinates = sorted_shops.map! do |sorted_shop|
+      sorted_shop = "#{sorted_shop.latitude}, #{sorted_shop.longitude}"
+    end
+
+    url = "https://www.google.com/maps/dir/?api=1&waypoints=#{sorted_coordinates.join('|')}&dir_action=navigate"
     return url
   end
 end
