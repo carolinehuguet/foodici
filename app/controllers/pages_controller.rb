@@ -2,6 +2,8 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :home ]
 
   def home
+    @shops = Shop.geocoded
+    
     if params[:transportation] == "small_walk"
       @radius = 0.5
     elsif params[:transportation] == "bicycle"
@@ -22,9 +24,8 @@ class PagesController < ApplicationController
     else
       @shops = Shop.all
     end
-
-    # the `geocoded` scope filters only flats with coordinates (latitude & longitude)
-    @markers = @shops.geocoded.map do |shop|
+    
+    @markers = @shops.map do |shop|
       {
         lat: shop.latitude,
         lng: shop.longitude,
