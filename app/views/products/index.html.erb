@@ -90,7 +90,7 @@
     </li>
     <li class="nav-item">
       <% is_bio = params[:bio] == "true" %>
-      <%= link_to "Bio", products_path(product: params[:product], bio: !is_bio, query: params[:query], address: params[:address], transportation: params[:transportation]), class: "nav-link #{"active" if is_bio}" %>
+      <%= link_to "Bio", products_path(product: params[:product], bio: !is_bio, query: params[:query], address: params[:address], transportation: params[:transportation]), class: "bio-color nav-link #{"active" if is_bio}" %>
     </li>
   </ul>
 </div>
