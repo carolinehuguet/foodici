@@ -1,9 +1,10 @@
+<div class="card-product-index" data-controller="counter">
+    <div class= "img-product-card">
+      <%= link_to product do %>
+​      <%= image_tag product.photo, crop: :fill, class: "img-product-index" %>
+      <% end %>
+    </div>
 
-<div class="card-trip card-height" data-controller="counter">
-  <%= link_to product, class: "link-product" do %>
-​
-    <%= image_tag product.photo, crop: :fill, class: "img-product-card"%>
-  <% end %>
     <% if product.organic == true %>
     <div class="badge badge-success">
       <p>BIO</p>
@@ -11,7 +12,7 @@
     <% end %>
 
   <%= link_to product, class: "link-product" do %>
-    <div class="card-trip-infos">
+    <div class="card-product-index-infos">
       <div>
         <p><small><%= product.shop.name %></small></p>
         <h5><%= product.name %></h5>
