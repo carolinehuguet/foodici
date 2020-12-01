@@ -33,6 +33,8 @@ gem 'cloudinary', '~> 1.16.0'
 # Gems for the map and search bar
 gem 'geocoder'
 
+gem 'rails-i18n'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
