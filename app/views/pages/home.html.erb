@@ -4,14 +4,13 @@
     <p class="text-large">Retrouvez les commerçants de votre ville et passez commande en quelques clics.</p>
   </div>
 
-
   <div data-controller="map">
     <%= form_tag products_path, method: :get do %>
       <div class="container form-wrapper my-5">
         <h3>Quel sera votre point de départ ?</h3>
 
-        <%= text_field_tag :address,
-          params[:address],
+        <%= text_field_tag :query,
+          params[:query],
           class: "form-control search-form-control form-group col-6 mt-4",
           id: "address_input",
           placeholder: "22 rue des Ursulines, 22100 Dinan",
@@ -54,6 +53,7 @@
             </label>
             <p>rayon de 3km</p>
           </div>
+
 
 
         <div class="form-check d-flex flex-column align-items-center">
