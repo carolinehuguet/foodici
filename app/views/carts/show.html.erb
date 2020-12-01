@@ -43,7 +43,7 @@
 					<% if total_price != 0 %>
 						<%= form_tag orders_path do %>
           					<%= hidden_field_tag 'order_id', @order %>
-          						<%= submit_tag 'Payer', class: 'btn btn-primary main-btn btn-block btn-custom' %>
+          						<%= submit_tag 'Payer', class: 'btn btn-primary main-btn btn-block btn-custom', :id => 'pay' %>
 		        		<% end %>
 		        	<% else %>
 		        		<%= form_tag orders_path do %>
@@ -62,5 +62,15 @@
 			<p class="empty">Votre panier est vide...</p>
 		</div>
 		<% end %>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+      const paymentButton = document.getElementById('pay');
+      paymentButton.addEventListener('click', () => {
+        const stripe = Stripe('<%= ENV['STRIPE_PUBLISHABLE_KEY'] %>');
+        stripe.redirectToCheckout({
+          sessionId: '<%= @cart.checkout_session_id %>'
+        });
+      });
+    </script>
 	</div>
 </main>
