@@ -12,15 +12,13 @@ class PagesController < ApplicationController
       @radius = 1
     end
 
-    if params[:address].present?
-      starting_data = Geocoder.search(params[:address]).first.data
+    if params[:query].present?
+      starting_data = Geocoder.search(params[:query]).first.data
       @starting_marker = {
           lat: starting_data["lat"],
           lng: starting_data["lon"]
         }
-
-      @shops = Shop.near(params[:address], @radius)
-
+      @shops = Shop.near(params[:query], @radius)
     else
       @shops = Shop.all
     end
