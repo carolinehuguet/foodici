@@ -7,7 +7,7 @@ class OrderLine < ApplicationRecord
 
   monetize :subtotal_price_cents
   before_save :update_subtotal
-  
+
   def update_subtotal
   	self.subtotal_price_cents = quantity * product.price_cents
   end

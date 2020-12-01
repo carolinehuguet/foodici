@@ -6,4 +6,9 @@ class OrderShopsController < ApplicationController
       end
     return counter
   end
+
+  def destroy
+    @order_shop = OrderLine.find(params[:id]).order_shop
+    @order_shop.destroy
+  end
 end

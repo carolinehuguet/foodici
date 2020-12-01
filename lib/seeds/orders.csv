@@ -1,9 +1,9 @@
 starting_address$,status$,user_index$,total_price
-"1 rue de Clisson$, 35000 Rennes"$,fulfilled$,0$,124.34
-"1 Rue du Général Maurice Guillaudot$, 35000 Rennes"$,fulfilled$,1$,36.22
-"5 Rue de la Motte Fablet$, 35000 Rennes"$,fulfilled$,2$,123.39
-"11 Place du Bas des Lices$, 35000 Rennes"$,pending$,3$,23.05
-"7 quai de la Prévalaye$, 35000 Rennes"$,pending$,4$,26.3
-"1 rue de Clisson$, 35000 Rennes"$,cart$,0$,20.45
-"1 Rue du Général Maurice Guillaudot$, 35000 Rennes"$,cart$,1$,6.8
-"5 Rue de la Motte Fablet$, 35000 Rennes"$,cart$,2$,24.05
+"1 rue de Clisson, 35000 Rennes"$,fulfilled$,0$,124.34
+"1 Rue du Général Maurice Guillaudot, 35000 Rennes"$,fulfilled$,1$,36.22
+"5 Rue de la Motte Fablet, 35000 Rennes"$,fulfilled$,2$,123.39
+"11 Place du Bas des Lices, 35000 Rennes"$,pending$,3$,23.05
+"7 quai de la Prévalaye, 35000 Rennes"$,pending$,4$,26.3
+"1 rue de Clisson, 35000 Rennes"$,cart$,0$,20.45
+"1 Rue du Général Maurice Guillaudot, 35000 Rennes"$,cart$,1$,6.8
+"5 Rue de la Motte Fablet, 35000 Rennes"$,cart$,2$,24.05
