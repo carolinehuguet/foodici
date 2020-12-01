@@ -1,17 +1,25 @@
 <div class="container">
-  <br>
-  <%= render "shared/timelineconfirmation"%>
-  <br>
-  <div class="text-center">
-    <h2>L'afaire est (presque) dans le sac !</h1>
+<div class="position-text justify-content-center  mt-5">
+    <h2>L'affaire est (presque) dans le sac !</h2>
+    <div class="mt-4 mb-4">
+    <%= render "shared/timelineconfirmation"%>
+    </div>
     <p>Votre commande va maintenant être traitée par les commerçants. Vous recevrez une notification une fois qu’elles seront toutes prêtes. Vous pourrez ensuite commencer votre itinéraire.</p>
     <br>
-    <%= link_to 'Voir ma commande', order_path, class: "main-btn" %>
   </div>
-  <div class="text-center itinerary">
-  <br>
-    <p>Voir mon itinéraire</p>
-    <% this_order = Order.find(params[:id]) %>
-    <%= link_to 'Google Maps', @order.itinerary(this_order), class: "main-btn", target: :_blank %>
+  <div class="itinerary d-flex justify-content-center mt-2">
+    <div>
+      <%= link_to 'Voir ma commande', order_path, class: "main-btn" %>
+    </div>
+    <div class="text-center">
+<!--       <p>Voir mon itinéraire</p> -->
+      <% this_order = Order.find(params[:id]) %>
+      <%= link_to 'Voir mon itinéraire', @order.itinerary(this_order), class: "main-btn", target: :_blank %>
+    </div>
+  </div>
+  <div class="container-2 mt-5 mb-5">
+    <div class="shape">
+      <img src="https://res.cloudinary.com/dlu9wclb0/image/upload/v1606824726/foodici-vert-3_tx7qj7.png">
+    </div>
   </div>
 </div>

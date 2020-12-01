@@ -111,17 +111,23 @@
 }
 
 .badge {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 19px;
-  position: relative;
-  bottom: 180px;
-  left: 230px;
+  height: 30px;
+  width: 50px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+
   p {
-    color: white;
+  color: white;
+  font-family: Poppins;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  letter-spacing: .2rem;
+  margin-left: 3px;
   }
 }
-

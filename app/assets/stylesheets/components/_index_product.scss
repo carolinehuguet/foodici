@@ -28,13 +28,58 @@
 
 .img-product-card {
   border: none;
-
   background: url("https://res.cloudinary.com/dlu9wclb0/image/upload/v1606313176/card-texture_ehqi5a.png");
   background-size: cover;
+  object-fit: cover;
+  height: 200px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .img-product-c {
   width: 100px;
   border-radius: 20px 20px 0 0;
 
+}
+
+.img-product-index {
+  width:60% !important;
+  object-fit: cover;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  position: relative;
+  z-index: 1 !important;
+  margin: 0 auto;
+}
+
+.card-product-index {
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 20px;
+}
+
+.card-product-index h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product-index p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-product-index .card-product-index-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: #fff;
+  position: relative;
+  z-index: 999 !important;
 }

@@ -27,9 +27,14 @@
 
 .page-footer {
   // background-color: #fff;
-  width:100vw !important;
+  // width:100vw !important;
   overflow: hidden;
   z-index: 999;
+  padding-right: 5%;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  margin: 0;
 
   p {
     text-transform: none;
