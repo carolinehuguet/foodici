@@ -1,0 +1,43 @@
+<div class="form-check d-flex flex-column align-items-center">
+  <input class="form-check-input visually-hidden" type="radio" value="small_walk" name="transportation" id="small_walk">
+  <label class="form-check-label" data-action="click->map#triggerMap" for="small_walk">
+    <div class="form-picto-wrapper">
+      <%= image_tag("picto/small_walk.svg") %>
+    </div>
+    à petits pas
+  </label>
+  <p>rayon de 500m</p>
+</div>
+
+<div class="form-check d-flex flex-column align-items-center">
+  <input class="form-check-input" type="radio" name="transportation" id="normal_walk" value="normal_walk">
+  <label class="form-check-label" data-action="click->map#triggerMap" for="normal_walk">
+    <div class="form-picto-wrapper">
+      <%= image_tag("picto/normal_walk.svg") %>
+    </div>
+    à pied
+  </label>
+  <p>rayon de 1km</p>
+</div>
+
+<div class="form-check d-flex flex-column align-items-center">
+  <input class="form-check-input" type="radio" name="transportation" id="bicycle" value="bicycle">
+  <label class="form-check-label" data-action="click->map#triggerMap" for="bicycle">
+    <div class="form-picto-wrapper">
+      <%= image_tag("picto/bicycle.svg") %>
+    </div>
+    à vélo
+  </label>
+  <p>rayon de 3km</p>
+</div>
+
+<div class="form-check d-flex flex-column align-items-center">
+  <input class="form-check-input" type="radio" name="transportation" id="car" value="car">
+  <label class="form-check-label" data-action="click->map#triggerMap" for="car">
+    <div class="form-picto-wrapper">
+      <%= image_tag("picto/car.svg") %>
+    </div>
+    en voiture
+  </label>
+  <p>rayon de 10km</p>
+</div>

@@ -39,17 +39,7 @@ const initMapbox = () => {
           .addTo(map);
     });
 
-    // STARTING MARKER -----------------------------------------------------------------
-    const startingMarker = JSON.parse(mapElement.dataset.startingMarker);
-    var el = document.createElement('div');
-    el.className = 'starting-marker';
-
-    new mapboxgl.Marker(el)
-        .setLngLat([ startingMarker.lng, startingMarker.lat ])
-        .addTo(map);
-
     fitMapToMarkers(map, markers);
-    map.setCenter([startingMarker.lng, startingMarker.lat]);
   }
 
 };

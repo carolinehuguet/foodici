@@ -51,7 +51,7 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: width 0.3s, height 0.3s;
 }
 
 .marker:hover {

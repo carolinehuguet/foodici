@@ -1,0 +1,33 @@
+.pencil {
+  position: absolute;
+  left: 266px;
+  top: 208px;
+  color: $black-600;
+  background-color: white;
+}
+
+.btn-search {
+  position: absolute;
+  left: 492px;
+  top: 288px;
+  color: $black-600;
+}
+
+.form-group {
+  margin: 0px auto;
+}
+
+.search-form-controlv2.form-control {
+  height: 55px;
+  width: 500px;
+  border: 1.5px solid rgba(218, 225, 206, 0.5);
+  box-shadow: 0px 3px 5px 1px rgba(80, 80, 80, 0.03);
+  border-radius: 15px;
+}
+
+.search-form-controlv2.form-control:focus {
+  border: 1px solid $green-700;
+  outline: none !important;
+  box-shadow: 0 1px 6px rgba(42, 87, 48, 0.2);
+}
+
