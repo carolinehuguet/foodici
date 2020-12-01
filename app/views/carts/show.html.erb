@@ -21,11 +21,11 @@
 		<aside class="col-12 col-lg-4 recap">
 			<div>
 				<p class="overtitle">Adresse de départ</p>
-				<p class="address-and-date"><%= params[:address] %>Mettre adresse</p>
+				<p class="address-and-date"><%= @cart.starting_address %></p>
 			</div>
 			<div>
 				<p class="overtitle">Récupérez vos courses</p>
-				<p class="address-and-date">Le samedi 28 novembre</p>
+				<p class="address-and-date">Le <%= l(DateTime.tomorrow, format: :long) %></p>
 			</div>
 			<footer>
 				<p class="taxes">Taxes incluses</p>
