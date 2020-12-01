@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :shops, only: [:show]
+  resources :shops, only: [:show, :index]
 
   resources :products, only: [:index, :show] do
     resources :order_lines, only: [:create]
@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     member do
       patch :increase_quantity
       patch :decrease_quantity
- 
+
     end
   end
 

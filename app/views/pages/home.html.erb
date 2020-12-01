@@ -7,68 +7,23 @@
   <div data-controller="map">
     <%= form_tag products_path, method: :get do %>
       <div class="container form-wrapper my-5">
+        <%# Section ADDRESS %>
         <h3>Quel sera votre point de départ ?</h3>
-
-        <%= text_field_tag :query,
-          params[:query],
+        <%= text_field_tag :address,
+          params[:address],
           class: "form-control search-form-control form-group col-6 mt-4",
           id: "address_input",
           placeholder: "22 rue des Ursulines, 22100 Dinan",
           data: { target: "map.address" }
         %>
 
+        <%# Section TRANSPORTATION %>
         <h3 class="mt-5">Vous vous déplacez...</h3>
-
         <div class="d-flex justify-content-center my-4">
-
-          <div class="form-check d-flex flex-column align-items-center">
-            <input class="form-check-input visually-hidden" type="radio" value="small_walk" name="transportation" id="small_walk">
-            <label class="form-check-label" data-action="click->map#triggerMap" for="small_walk">
-              <div class="form-picto-wrapper">
-                <%= image_tag("picto/small_walk.svg") %>
-              </div>
-              à petits pas
-            </label>
-            <p>rayon de 500m</p>
-          </div>
-
-          <div class="form-check d-flex flex-column align-items-center">
-            <input class="form-check-input" type="radio" name="transportation" id="normal_walk" value="normal_walk">
-            <label class="form-check-label" for="normal_walk">
-              <div class="form-picto-wrapper">
-                <%= image_tag("picto/normal_walk.svg") %>
-              </div>
-              à pied
-            </label>
-            <p>rayon de 1km</p>
-          </div>
-
-          <div class="form-check d-flex flex-column align-items-center">
-            <input class="form-check-input" type="radio" name="transportation" id="bicycle" value="bicycle">
-            <label class="form-check-label" for="bicycle">
-              <div class="form-picto-wrapper">
-                <%= image_tag("picto/bicycle.svg") %>
-              </div>
-              à vélo
-            </label>
-            <p>rayon de 3km</p>
-          </div>
-
-
-
-        <div class="form-check d-flex flex-column align-items-center">
-          <input class="form-check-input" type="radio" name="transportation" id="car" value="car">
-          <label class="form-check-label" for="car">
-            <div class="form-picto-wrapper">
-              <%= image_tag("picto/car.svg") %>
-            </div>
-            en voiture
-          </label>
-          <p>rayon de 10km</p>
+          <%= render 'transportation' %>
         </div>
-    </div>
+      </div>
     <%#= submit_tag "Search", class: "line-btn" %>
-
   </div>
 </main>
 
