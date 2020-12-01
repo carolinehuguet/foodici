@@ -31,7 +31,12 @@ class OrderLinesController < ApplicationController
 
   def destroy
     @order_line = OrderLine.find(params[:id])
-    @order_line.destroy
+    if @order_line.order_shop.order_lines.count == 1
+      @order_line.destroy
+      @order_line.order_shop.destroy
+    else
+      @order_line.destroy
+    end
     redirect_to cart_path
   end
 
