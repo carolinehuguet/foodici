@@ -71,7 +71,9 @@ export default class extends Controller {
         fitMapToMarkers(map, markers);
         map.setCenter([startingMarker.lng, startingMarker.lat]);
       }
-// Scroller
+    // Scroller redirect_to root_path(anchor: "map-section")
+    document.getElementById("map-section").scrollIntoView();
+
     });
 
   }

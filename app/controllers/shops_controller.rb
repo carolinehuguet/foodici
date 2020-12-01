@@ -27,21 +27,16 @@ class ShopsController < ApplicationController
       @shops = Shop.all
     end
 
-    # the `geocoded` scope filters only flats with coordinates (latitude & longitude)
+    # filters shops with coordinates (latitude & longitude)
     @markers = @shops.geocoded.map do |shop|
       {
         lat: shop.latitude,
         lng: shop.longitude,
-        infoWindow: render_to_string(partial: "pages/info_window", locals: { shop: shop }),
+        infoWindow: render_to_string(partial: "info_window", formats: :html, layout: false, locals: { shop: shop }),
         image_url: helpers.asset_url('picto/marker.svg')
       }
     end
 
-    @shops = Shop.all
-    respond_to do |format|
-      format.html
-      format.json { render json: { markers: @markers, starting_marker: @starting_marker } }
-    end
-
+    render json: { markers: @markers, starting_marker: @starting_marker }
   end
 end
