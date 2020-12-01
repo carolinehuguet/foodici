@@ -60,3 +60,8 @@
     margin:0 25px 0 25px;
   }
 }
+
+.bio-color.active {
+  background-color:$green-600 !important;
+  color: $green-900 !important;
+}

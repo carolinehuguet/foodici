@@ -21,25 +21,30 @@
         <%= form_tag products_path, method: :get do %>
           <%= text_field_tag :address,
             params[:address],
-            class: "form-control search-form-control form-group",
+            class: "form-control search-form-control form-group mb-2",
             id: "address_input",
             placeholder: params[:address]
           %>
-          <%= submit_tag 'Voir les produits', class: "main-btn" %>
+          <button name="button" type="submit" class="btn pencil">
+            <i class="fas fa-pencil-alt"></i>
+          </button>
         <% end %>
       </div>
     </div>
   </div>
 </div>
+
 <div class="ml-5 mt-3 ">
   <div class="form-inline mt-3">
     <%= form_tag products_path, method: :get do %>
       <%= text_field_tag :query,
         params[:query],
-        class: "form-control",
+        class: "form-control search-form-controlv2 form-group",
         placeholder: "ingrédient"
       %>
-      <%= submit_tag "🔍", class: "btn btn-primary" %>
+      <button name="button" type="submit" class="btn btn-search">
+            <i class="fas fa-search"></i>
+          </button>
     <% end %>
   </div>
 </div>
@@ -85,7 +90,7 @@
     </li>
     <li class="nav-item">
       <% is_bio = params[:bio] == "true" %>
-      <%= link_to "Bio", products_path(product: params[:product], bio: !is_bio, query: params[:query], address: params[:address], transportation: params[:transportation]), class: "nav-link #{"active" if is_bio}" %>
+      <%= link_to "Bio", products_path(product: params[:product], bio: !is_bio, query: params[:query], address: params[:address], transportation: params[:transportation]), class: "bio-color nav-link #{"active" if is_bio}" %>
     </li>
   </ul>
 </div>
