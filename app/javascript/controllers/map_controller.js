@@ -73,9 +73,6 @@ export default class extends Controller {
       }
     // Scroller redirect_to root_path(anchor: "map-section")
     document.getElementById("map-section").scrollIntoView();
-
     });
-
   }
-  // this.stimulate("Map#nearby", address)
 }
