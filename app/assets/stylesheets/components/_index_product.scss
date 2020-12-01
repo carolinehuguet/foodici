@@ -28,7 +28,6 @@
 
 .img-product-card {
   border: none;
-
   background: url("https://res.cloudinary.com/dlu9wclb0/image/upload/v1606313176/card-texture_ehqi5a.png");
   background-size: cover;
 }
@@ -37,6 +36,27 @@
   width: 100px;
   border-radius: 20px 20px 0 0;
 
+}
+
+.card-product-indexv2 {
+  border: none;
+  border-radius: 20px;
+  height:400px;
+  width:300px;
+  background-image: asset-url('card-texture-2.jpg');
+  background-size: cover;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  &:hover img {
+    width: 83%;
+    transition: 0.5s;
+  }
+  img {
+    width:80%;
+    display: block;
+    transition: 0.5s;
+}
 }
 
 .courses-2 {
@@ -64,4 +84,8 @@
 .bio-color.active {
   background-color:$green-600 !important;
   color: $green-900 !important;
+}
+
+.card-height {
+  height: 300px;
 }
