@@ -7,15 +7,30 @@
       <div>
         <div class="card card-product-show" style="width: 350px">
           <%= image_tag @product.photo, crop: :fill, width: 400 %>
+          <div data-controller="counter" class="compteur-show">
+            <%= simple_form_for [@product, @order_line] do |f| %>
+
+              <div class="compteur" data-target="counter.counter">
+                <button type="button" data-action="click->counter#decrease" class="value-button decrease">
+                  -
+                </button>
+
+                <% if @cart.order_lines.find_by(product: @product) %>
+                  <input class="counter-value" value="<%= @cart.order_lines.find_by(product: @product).quantity %>" data-order-line-id="<%= @cart.order_lines.find_by(product: @product).id %>" data-product-id="<%= @product.id %>" data-target="counter.input" type="number" step="1" name="order_line[quantity]" id="order_line_quantity">
+                <% else %>
+                  <input class="counter-value" value="0" data-product-id="<%= @product.id %>" data-target="counter.input" type="number" step="1" name="order_line[quantity]" id="order_line_quantity">
+                <% end %>
+
+                <button type="button" data-action="click->counter#increase" class="value-button increase">
+                  +
+                </button>
+
+              </div>
+            <% end %>
+          </div>
           <div>
           </div>
         </div>
-        <div>
-              <%= simple_form_for [@product, @order_line], html: { class: "form-show"} do |f| %>
-                <%= f.input :quantity, label: false, input_html: {value: f.object.quantity || '1'} %>
-                <%= submit_tag 'Valider', class: 'btn btn-primary mt-3 mb-5 button-product' %>
-              <% end %>
-            </div>
       </div>
       <div class="text-product px-4">
         <div class= "d-flex justify-content-between">
@@ -37,7 +52,9 @@
           <div class="text-center p-3" id="border-bottom">
             Mes courses
           </div>
-           <%= render 'cartlist' %>
+          <div id="cartlist">
+            <%= render 'cartlist' %>
+          </div>
           </div>
         </div>
       </div>

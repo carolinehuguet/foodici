@@ -18,13 +18,19 @@ class OrderLinesController < ApplicationController
     @order_line.subtotal_price = @product.price * @order_line.quantity
 
     if @order_line.save!
-      redirect_to session[:original_fullpath]
+
+      respond_to do |format|
+        format.html { redirect_to session[:original_fullpath] }
+        format.json { render json: { order_line_id: @order_line.id, cartlist: render_to_string(partial: "products/cartlist", formats: :html, layout: false) } }
+      end
+
     else
       render(
         html: "<script>alert('Désolé, ce produit n'est plus disponible.')</script>".html_safe,
         layout: 'application'
       )
     end
+
   end
 
   def index
@@ -39,7 +45,10 @@ class OrderLinesController < ApplicationController
     else
       @order_line.destroy
     end
-    redirect_to cart_path
+    respond_to do |format|
+      format.html { redirect_to cart_path }
+      format.json { render json: { cartlist: render_to_string(partial: "products/cartlist", formats: :html, layout: false) } }
+    end
   end
 
   def decrease_quantity
