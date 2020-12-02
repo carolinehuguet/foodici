@@ -48,8 +48,8 @@
 
 .compteur-show {
   position:absolute;
-  bottom: 0 !important;
-  right: 70px !important;
+  bottom: 40px !important;
+  right: -40px !important;
 }
 
 .hidden {
@@ -132,6 +132,7 @@
 
   p {
   color: white;
+  opacity: 1;
   font-family: Poppins;
   font-weight: 500 !important;
   font-size: 14px !important;
