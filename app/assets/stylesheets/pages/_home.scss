@@ -3,24 +3,24 @@
 @import "components/map";
 
 .content-home {
-  margin-top: 70px;
+  margin-top: 90px;
 }
 
 .section-form-homepage {
-  margin-top: 400px;
+  margin-top: 600px;
 }
 
 .image-banner-homepage {
-  background-image: asset-url('home.jpg');
+  background-image: asset-url('home-2.jpg');
   padding: 30px 0px;
   position: absolute;
-  top: 0px;
+  top: 40px;
   left: 0px;
   z-index: -3;
   width: 100vw;
-  height: 720px;
+  height: 900px;
   background-size: cover;
-  background-position-y: 95%;
+  background-position-y: 50%;
 }
 
 .welcome-block{
@@ -28,14 +28,15 @@
 }
 
 .text-large {
-  // padding-top: 30px;
+  color: $green-accent;
+  padding-top: 20px;
   font-size: 17px!important;
-  font-weight: 300;
-  line-height: 2.2;
+  font-weight: 600!important;
+  line-height: 2;
 
   strong {
-    //color: $green-accent;
-    font-size: 19px;
+    font-size: 23px;
+    font-weight: 700!important;
     border-bottom: 3px solid $orange-accent;
   }
 }
