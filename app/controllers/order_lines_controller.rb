@@ -9,7 +9,6 @@ class OrderLinesController < ApplicationController
     @order_shop = OrderShop.find_or_create_by(
       order: @cart,
       shop: @shop,
-      status: ["pending", "completed"].sample
     )
     @order_line = OrderLine.find_or_create_by(
       order_shop: @order_shop,
