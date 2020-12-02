@@ -8,12 +8,12 @@ Echalotes$,TRUE$,1.25$,250$,g$,0$,$,https://res.cloudinary.com/dlu9wclb0/image/u
 Fenouil$,TRUE$,1.5$,500$,g$,0$,$,https://cdn.pixabay.com/photo/2018/09/06/08/30/fennel-3657761_1280.png
 Fraises Gariguette$,TRUE$,4$,500$,g$,0$,$,https://pngimg.com/uploads/strawberry/strawberry_PNG2601.png
 Oignon jaune$,FALSE$,0.75$,500$,g$,0$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606323457/Oignon_jaune_oe1wcr.png
-Poire Guyot$,TRUE$,1.5$,500$,g$,0$,$,https://pngimg.com/uploads/pear/pear_PNG3466.png
+Poire Guyot$,TRUE$,1.5$,500$,g$,0$,$,https://img.pngio.com/peer-png-3-png-image-peer-png-640_640.png
 Pomme Reinette$,TRUE$,1.25$,500$,g$,0$,$,https://www.coteaux-nantais.com/sites/coteaux-nantais.com/files/reine-des-reinettes.png
 Pommes de terre Charlotte$,TRUE$,1.5$,500$,g$,0$,$,https://freepngimg.com/thumb/potato/14-potato-png-images.png
 Chou-fleur$,TRUE$,2.5$,1$,pièce$,0$,$,https://purepng.com/public/uploads/large/purepng.com-cauliflowerplantvegetablesgreencauliflower-1701527242875jefs2.png
 Chou rouge$,TRUE$,2.25$,1$,pièce$,0$,$,https://purepng.com/public/uploads/large/purepng.com-red-cabbagevegetables-cabbage-red-cabbage-941524712345eyztg.png
-Epinards$,TRUE$,0.8$,100$,g$,0$,$,https://pngimg.com/uploads/spinach/spinach_PNG20.png
+Epinards$,TRUE$,0.8$,100$,g$,0$,$,https://pngimg.com/uploads/spinach/spinach_PNG33.png
 Navet$,FALSE$,1.25$,500$,g$,0$,$,https://purepng.com/public/uploads/large/purepng.com-turnipvegetablesroot-vegetable-rutabaga-turnip-neep-941524702929wkfry.png
 Potimarron$,FALSE$,1.75$,500$,g$,0$,$,https://pngimg.com/uploads/pumpkin/pumpkin_PNG86660.png
 Laurier$,FALSE$,0.5$,1$,botte$,0$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306127/Laurier_mqebc0.png
@@ -24,7 +24,7 @@ Romarin$,TRUE$,1$,1$,botte$,0$,$,https://www.pngarts.com/files/5/Rosemary-PNG-Ba
 Menthe$,TRUE$,0.5$,1$,botte$,0$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306135/Menthe_kmbxnq.png
 Ciboulette$,FALSE$,1.25$,1$,botte$,0$,$,https://www.tomatopiu.com/wp-content/uploads/2016/08/ERBA-CIPOLLINAsmall.png
 Estragon$,FALSE$,1.5$,1$,botte$,0$,$,https://images.squarespace-cdn.com/content/v1/5dc8ae312502ee46b8870bd0/1592441567663-KZEHZ9J6426FAQ9TCBVQ/ke17ZwdGBToddI8pDm48kCpr5j7kb9yAvKiwkotdGG57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UUcd26xEibkaDnDtmphUMe3SldXNmZqVv9Ikv-BSjsHRoRwB-dUGsSquCnVTFQcaRg/tarragon.png
-Basilic$,TRUE$,1.75$,1$,botte$,0$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305987/Basilic_ddqj2l.png
+Basilic$,TRUE$,1.75$,1$,botte$,0$,$,https://www.pages.fr/cache/images/content/30e51b512a119dbc2b1d1e614a307ad4-basilic-400x400-030718-33.png
 Bavette de boeuf$,TRUE$,3.5$,250$,g$,1$,$,https://www.lalouvrie.com/Files/128446/Img/06/biffeck-png-1200.png
 Côtes d'agneau$,FALSE$,4.5$,250$,g$,1$,$,https://www.thefeta.com/wp-content/uploads/2020/06/5943.png
 Cuisse de poulet$,TRUE$,4$,1$,pièce$,1$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305996/cuisse-de-poulet_cgpnj0.png
@@ -41,7 +41,7 @@ Filet de bar$,FALSE$,5.5$,250$,g$,2$,$,https://res.cloudinary.com/dlu9wclb0/imag
 Dos de cabillaud$,FALSE$,7.8$,250$,g$,2$,$,https://res.cloudinary.com/dfbaqmqxp/image/upload/v1606811967/r00fki6vk7ts9jv3fp2nm9do4433-1_zhmnw3.png
 Langoustines de Loctudy$,FALSE$,5$,250$,g$,2$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306121/langoustines_rwayj0.png
 Filet de dorade$,FALSE$,5$,250$,g$,2$,$,https://sharkseafoods.com/wp-content/uploads/2019/01/Sea-bream.png
-Homard$,FALSE$,36$,1$,pièce$,2$,$,https://pngimg.com/uploads/lobster/lobster_PNG14234.png
+Homard$,FALSE$,36$,1$,pièce$,2$,La qualité de sa chair et sa saveur unique font de ce homard un plat d'exception. Il se déguste aussi bien froid sur un plateau de fruits de mer que chaud en plat principal.$,https://pngimg.com/uploads/lobster/lobster_PNG14234.png
 Huîtres plates de Belon$,FALSE$,7$,1$,demi-douzaine$,2$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606820552/premium_gxowaz.png
 Queue de lotte$,FALSE$,6.5$,250$,g$,2$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306115/Lotte_l5io36.png
 Filet de maquereau$,FALSE$,1.2$,100$,g$,2$,$,https://www.seacoreseafood.com/pictures/product_tbn_ewvOiUuoXS.png
@@ -59,14 +59,14 @@ Le Mont Moelleux 2017 - Domaine Huet$,TRUE$,35.2$,75$,cl$,3$,$,https://www.vinat
 Le Gallon Balancelle - Pastis Ricard$,FALSE$,149.9$,450$,cl$,3$,$,https://www.vinatis.com/24957-detail_default/le-gallon-balancelle-pastis-ricard.png
 Nonne IPA - Les Brasseurs Savoyards$,TRUE$,3.2$,33$,cl$,3$,$,https://www.vinatis.com/32705-detail_default/nonne-ipa-bio-33cl-les-brasseurs-savoyards.png
 Punk IPA - Brew Dog$,FALSE$,3.5$,33$,cl$,3$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606820531/585e65cccb11b227491c3408_eibtez.png
-Champagne Mumm - Cordon Rouge$,TRUE$,25.9$,75$,cl$,3$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606820531/champagne-mumm-cordon-rouge_ktvhiq.png
+Champagne Mumm - Cordon Rouge$,TRUE$,25.9$,75$,cl$,3$,Souple et très fruité, ce champagne universel et bien composé offre des arômes de fruits frais, d’abricots secs, de zestes d’agrumes et de brioche grillée. Etendard de l’excellence de la Maison MUMM, la cuvée Cordon Rouge régale ses amateurs par sa fraîcheur, son intensité et sa constance gustative.$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606820531/champagne-mumm-cordon-rouge_ktvhiq.png
 Lambrusco Secco - Quercioli Reggiano$,TRUE$,5.6$,75$,cl$,3$,$,https://www.vinatis.com/47759-detail_default/lambrusco-secco-quercioli-reggiano-medici-ermete.png
 Côtes du Rhone 2019 - Domaine de la Guintrandy$,TRUE$,7.99$,75$,cl$,3$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606820561/les-meilleurs-vins-de-la-maison-delas-cotes-du-rhone-saint-esprit-2013_mjxgak.png
 Caviar$,TRUE$,83.26$,50$,g$,4$,$,http://www.tendance-culinaire.com/wp-content/uploads/2016/03/AKI-Paddlefish-Caviar-3.png
 Confit de canard - cuisses$,TRUE$,15.78$,750$,g$,4$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606306014/Confit-de-canard_qzbjrf.png
 Crème de marrons$,TRUE$,6.22$,350$,g$,4$,$,https://selaliqua.com/wp-content/uploads/2020/03/Creme-de-Marron-de-lArdeche-Medaille-Argent-2019-Colis-6-x-345-gr.png
 Fleur de sel$,FALSE$,3.52$,125$,g$,4$,$,https://www.kehanfoodimports.com/uploads/3/2/0/1/32011437/s717088470361350286_p791_i1_w640.png
-Foie gras de canard$,FALSE$,22.45$,300$,g$,4$,$,http://www.ferme-de-phalange.fr/wp-content/uploads/2014/04/Foie-gras-de-canard-entier-v110-copie.png
+Foie gras de canard$,FALSE$,22.45$,300$,g$,4$,Ce savoureux foie gras de canard entier a été soigneusement éveiné et assaisonné simplement de sel et poivre comme traditionnellement dans la région. Mettez-le au réfrigérateur pendant quelques heures et sortez le 20 minutes avant de le déguster.$,http://www.ferme-de-phalange.fr/wp-content/uploads/2014/04/Foie-gras-de-canard-entier-v110-copie.png
 Huile d'olive$,TRUE$,8.95$,50$,cl$,4$,$,http://www.pngall.com/wp-content/uploads/2017/03/Olive-Oil-Free-PNG-Image.png
 Miel$,TRUE$,4.78$,250$,g$,4$,$,http://miam-images.m.i.pic.centerblog.net/b9bc4bcf.png
 Pain d'épices$,FALSE$,19.56$,1$,kg$,4$,$,https://www.protegere.fr/wp-content/uploads/2020/04/pain-d-epices.png
@@ -74,7 +74,7 @@ Rillettes de thon$,TRUE$,5.5$,150$,g$,4$,$,https://www.vinibee.com/wp-content/up
 Salami$,FALSE$,8.17$,250$,g$,4$,$,https://www.salumificiogalliremo.it/wp-content/uploads/2015/11/salame-napoli.png
 Speck$,FALSE$,26.99$,1$,kg$,4$,$,https://www.fratelliberetta.com/wps/wcm/connect/www.fratelliberetta.com-26416/08260f1a-dc51-4200-a794-b5523827169a/speck.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_31D21O42L8N2F0ALC5JJJ410K1-08260f1a-dc51-4200-a794-b5523827169a-kAe97Wx
 Vinaigre balsamique$,TRUE$,13.19$,25$,cl$,4$,$,https://www.maille.ca/fr/produits/vinaigres/img/balsamic-vinegar.png
-Appenzeler$,TRUE$,3.6$,100$,g$,5$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305947/Appenzeler_a0whfv.png
+Appenzeler$,TRUE$,3.6$,100$,g$,5$,La région de production de l’Appenzeller est très limitée, ce qui garantit son goût unique: le fromage Appenzeller ne peut être fabriqué que dans les cantons d’Ap­penzell Rhodes Intérieures et dans certaines parties des cantons de St-Gall. Il est renommé pour son goût savoureux, avec une saumure à base d'herbes de montagne dont la recette est toujours secrètement gardée aujourd’hui.$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305947/Appenzeler_a0whfv.png
 Bleu d'Auvergne$,FALSE$,2.3$,100$,g$,5$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305957/Bleu_osyjde.png
 Crottin de Chavignol$,TRUE$,2.5$,1$,pièce$,5$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305954/Chavignol_awywdl.png
 Cheddar$,FALSE$,3.25$,100$,g$,5$,$,https://res.cloudinary.com/dlu9wclb0/image/upload/v1606305940/Cheddar_murybd.png
