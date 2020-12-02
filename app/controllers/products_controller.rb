@@ -4,7 +4,10 @@ class ProductsController < ApplicationController
   def index
     @products = Product.all
     @order_line = OrderLine.new
-    @cart = current_user.orders.find_by(status: "cart")
+    @cart = Order.find_or_create_by(
+      status: "cart",
+      user: current_user
+      )
     @shops = Shop.all
     session[:original_fullpath] = request.original_fullpath
 
