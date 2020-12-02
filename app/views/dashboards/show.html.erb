@@ -1,0 +1,38 @@
+<main class="container dashboard">
+
+	<header>
+		<h1 class="title-page">Ma commande</h1>
+	</header>
+	<section>
+		
+		
+		<article class="row">
+			<div class="col-12 col-lg-8">
+				<h3>Mon itinéraire</h3>
+				<p>Map</p>
+			</div>
+			<div class="col-12 col-lg-4">
+				<h3>Liste des commerçants</h3>
+				<ul>
+					<% @cart.order_shops.each do |order_shop| %>
+						<li class="shop"><span class="name-shop">
+							<header>
+								<span class="check"> <%= order_shop.status %> </span></br> 
+								<%= order_shop.shop.name %></span><br>
+								<span class="address-shop"><%= order_shop.shop.address %>
+							</header>
+</span>							<ul>
+								<% order_shop.order_lines.each do |order_line| %>
+									<% if order_line.subtotal_price != 0 %>
+										<li class="product-shop"><%= order_line.product.name %> <%= order_line.subtotal_price %> €</li>
+									<% end %>
+								<% end %>
+							</ul>
+						</li>
+					<% end %>
+				</ul>
+				<p>Total :  <%= @cart.total_price %> €</p>
+			</div>
+		</article>
+	</section>
+</main>

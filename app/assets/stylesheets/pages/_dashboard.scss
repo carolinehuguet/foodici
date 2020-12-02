@@ -1,0 +1,45 @@
+// ---- orders -----
+
+.dashboard ul {
+	list-style: none;
+	padding: 0;
+}
+
+.check{
+	background-color: $green-700;
+	height:15px;
+	width: 5px;
+}
+
+.dashboard .shop{
+	margin: 12px 0;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.dashboard .name-shop{
+	font-weight: 700;
+	color: $green-700;
+}
+
+.dashboard .address-shop{
+	color: $green-accent;
+	font-size: 0.9em;
+}
+
+.dashboard .product-shop{
+	font-size: 0.8em;
+	color: $black-700;
+	margin-left: 10px;
+}
+
+
+// ---- PSEUDO CLASS -----
+.dashboard .shop:hover {
+	transition: 500ms;
+  	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+// -----------
