@@ -1,127 +1,129 @@
-<div class="mt-5 ml-5 border-bottom d-flex">
-  <div class="d-flex">
-    <div class="mr-3">
-      <%= if params[:transportation] == "small_walk"
-        image_tag("picto/small_walk.svg")
-      elsif params[:transportation] == "bicycle"
-        image_tag("picto/bicycle.svg")
-      elsif params[:transportation] == "car"
-        image_tag("picto/car.svg")
-      else
-        image_tag("picto/normal_walk.svg")
-      end%>
-    </div>
-    <div>
-      <div class= "overtitle">ADRESSE DE DEPART</div>
+<div class="col-11 offset-1">
+  <div class="mt-5 ml-5 border-bottom">
+    <div class="d-flex">
+      <div class="mr-3">
+        <%= if params[:transportation] == "small_walk"
+          image_tag("picto/small_walk.svg")
+        elsif params[:transportation] == "bicycle"
+          image_tag("picto/bicycle.svg")
+        elsif params[:transportation] == "car"
+          image_tag("picto/car.svg")
+        else
+          image_tag("picto/normal_walk.svg")
+        end%>
+      </div>
       <div>
-        <%= form_tag products_path, method: :get do %>
-          <%= text_field_tag :address,
-            params[:address],
-            class: "form-control-index search-form-control form-group mb-2",
-            id: "address_input",
-            placeholder: params[:address]
-          %>
-          <button name="button" type="submit" class="btn pencil">
-            <i class="fas fa-pencil-alt"></i>
-          </button>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="ml-5 mt-3 ">
-  <div class="form-inline mt-3">
-    <%= form_tag products_path, method: :get do %>
-      <%= text_field_tag :query,
-        params[:query],
-        class: "form-control search-form-controlv2 form-group",
-        placeholder: "ingrédient"
-      %>
-      <button name="button" type="submit" class="btn btn-search">
-            <i class="fas fa-search"></i>
-          </button>
-    <% end %>
-  </div>
-</div>
-
-<div class="ml-5 mt-5 mb-3 d-flex products-list-wrapper">
-  <ul class="nav nav-pills">
-    <li class="nav-item">
-      <% filters = params.permit(:product, :bio, :query, :address, :transportation) %>
-      <% is_products_all = !params[:product].present? || params[:product] == "all" %>
-      <%= link_to "Tout", products_path( filters.merge({product: "all"}) ), class: "nav-link #{"active" if is_products_all}" %>
-    </li>
-    <li class="nav-item">
-      <% is_products_boucherie = params[:product] == "boucherie" %>
-      <%= link_to "Boucherie", products_path( filters.merge({product: "boucherie"}) ), class: "nav-link #{"active" if is_products_boucherie}" %>
-    </li>
-    <li class="nav-item">
-      <% is_products_maraicher = params[:product] == "maraîcher" %>
-      <%= link_to "Maraîcher", products_path( filters.merge({product: "maraîcher"}) ), class: "nav-link #{"active" if is_products_maraicher}" %>
-    </li>
-    <li class="nav-item">
-      <% is_products_vin = params[:product] == "vins et spiritueux" %>
-      <%= link_to "Vins et spiritueux", products_path( filters.merge({product: "vins et spiritueux"}) ), class: "nav-link #{"active" if is_products_vin}" %>
-    </li>
-    <li class="nav-item">
-      <% is_products_epicerie = params[:product] == "epicerie fine" %>
-      <%= link_to "Epicerie fine", products_path( filters.merge({product: "epicerie fine"}) ), class: "nav-link #{"active" if is_products_epicerie}" %>
-    </li>
-    <li class="nav-item">
-      <% is_products_boulangerie = params[:product] == "boulangerie" %>
-      <%= link_to "Boulangerie", products_path( filters.merge({product: "boulangerie"}) ), class: "nav-link #{"active" if is_products_boulangerie}" %>
-    </li>
-    <li class="nav-item">
-      <% is_products_poissonnerie = params[:product] == "poissonnerie" %>
-      <%= link_to "Poissonnerie", products_path( filters.merge({product: "poissonnerie"}) ), class: "nav-link #{"active" if is_products_poissonnerie}" %>
-    </li>
-    <li class="nav-item">
-      <% is_products_cremerie = params[:product] == "crémerie" %>
-      <%= link_to "Crémerie", products_path( filters.merge({product: "crémerie",}) ), class: "nav-link #{"active" if is_products_cremerie}" %>
-    </li>
-    <li class="nav-item">
-      <% is_products_crepier = params[:product] == "produits régionaux" %>
-      <%= link_to "Produits régionaux", products_path( filters.merge({product: "produits régionaux"}) ), class: "nav-link #{"active" if is_products_crepier}" %>
-    </li>
-    <li class="nav-item">
-      <% is_bio = params[:bio] == "true" %>
-      <%= link_to "Bio", products_path(product: params[:product], bio: !is_bio, query: params[:query], address: params[:address], transportation: params[:transportation]), class: "bio-color nav-link #{"active" if is_bio}" %>
-    </li>
-  </ul>
-</div>
-
-  <div class="">
-    <div class="d-flex ml-5">
-      <div class="products-list-wrapper">
-
-
-        <div class="d-flex justify-content-around m-4">
-          <div class="row opacity-color">
-          <% @products.each do |product| %>
-            <div class="col-md-4 mb-4">
-              <%= render "card_product", product: product %>
-            </div>
+        <div class= "overtitle">ADRESSE DE DEPART</div>
+        <div>
+          <%= form_tag products_path, method: :get do %>
+            <%= text_field_tag :address,
+              params[:address],
+              class: "form-control-index search-form-control form-group mb-2",
+              id: "address_input",
+              placeholder: params[:address]
+            %>
+            <button name="button" type="submit" class="btn pencil">
+              <i class="fas fa-pencil-alt"></i>
+            </button>
           <% end %>
-​
-          </div>
         </div>
-
-
-
-        </div>
-      </div>
-      <div class="card courses-2 products-cart-wrapper">
-          <div class="text-center p-3" id="border-bottom">
-            Mes courses
-          </div>
-          <div id="cartlist">
-            <%= render 'cartlist' %>
-          </div>
       </div>
     </div>
   </div>
-</div>
+
+  <div class="ml-5 mt-3 ">
+    <div class="form-inline mt-3">
+      <%= form_tag products_path, method: :get do %>
+        <%= text_field_tag :query,
+          params[:query],
+          class: "form-control search-form-controlv2 form-group",
+          placeholder: "ingrédient"
+        %>
+        <button name="button" type="submit" class="btn btn-search">
+              <i class="fas fa-search"></i>
+            </button>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="ml-5 mt-5 mb-3 d-flex products-list-wrapper">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <% filters = params.permit(:product, :bio, :query, :address, :transportation) %>
+        <% is_products_all = !params[:product].present? || params[:product] == "all" %>
+        <%= link_to "Tout", products_path( filters.merge({product: "all"}) ), class: "nav-link #{"active" if is_products_all}" %>
+      </li>
+      <li class="nav-item">
+        <% is_products_boucherie = params[:product] == "boucherie" %>
+        <%= link_to "Boucherie", products_path( filters.merge({product: "boucherie"}) ), class: "nav-link #{"active" if is_products_boucherie}" %>
+      </li>
+      <li class="nav-item">
+        <% is_products_maraicher = params[:product] == "maraîcher" %>
+        <%= link_to "Maraîcher", products_path( filters.merge({product: "maraîcher"}) ), class: "nav-link #{"active" if is_products_maraicher}" %>
+      </li>
+      <li class="nav-item">
+        <% is_products_vin = params[:product] == "vins et spiritueux" %>
+        <%= link_to "Vins et spiritueux", products_path( filters.merge({product: "vins et spiritueux"}) ), class: "nav-link #{"active" if is_products_vin}" %>
+      </li>
+      <li class="nav-item">
+        <% is_products_epicerie = params[:product] == "epicerie fine" %>
+        <%= link_to "Epicerie fine", products_path( filters.merge({product: "epicerie fine"}) ), class: "nav-link #{"active" if is_products_epicerie}" %>
+      </li>
+      <li class="nav-item">
+        <% is_products_boulangerie = params[:product] == "boulangerie" %>
+        <%= link_to "Boulangerie", products_path( filters.merge({product: "boulangerie"}) ), class: "nav-link #{"active" if is_products_boulangerie}" %>
+      </li>
+      <li class="nav-item">
+        <% is_products_poissonnerie = params[:product] == "poissonnerie" %>
+        <%= link_to "Poissonnerie", products_path( filters.merge({product: "poissonnerie"}) ), class: "nav-link #{"active" if is_products_poissonnerie}" %>
+      </li>
+      <li class="nav-item">
+        <% is_products_cremerie = params[:product] == "crémerie" %>
+        <%= link_to "Crémerie", products_path( filters.merge({product: "crémerie",}) ), class: "nav-link #{"active" if is_products_cremerie}" %>
+      </li>
+      <li class="nav-item">
+        <% is_products_crepier = params[:product] == "produits régionaux" %>
+        <%= link_to "Produits régionaux", products_path( filters.merge({product: "produits régionaux"}) ), class: "nav-link #{"active" if is_products_crepier}" %>
+      </li>
+      <li class="nav-item">
+        <% is_bio = params[:bio] == "true" %>
+        <%= link_to "Bio", products_path(product: params[:product], bio: !is_bio, query: params[:query], address: params[:address], transportation: params[:transportation]), class: "bio-color nav-link #{"active" if is_bio}" %>
+      </li>
+    </ul>
+  </div>
+
+    <div class="">
+      <div class="d-flex">
+        <div class="products-list-wrapper">
+
+
+          <div class="d-flex justify-content-around m-4">
+            <div class="row opacity-color">
+            <% @products.each do |product| %>
+              <div class="col-xl-4 col-lg-3 col-md-2 col-sm-1 mb-4">
+                <%= render "card_product", product: product %>
+              </div>
+            <% end %>
+  ​
+            </div>
+          </div>
+
+
+
+          </div>
+        </div>
+        <div class="card courses-2 products-cart-wrapper">
+            <div class="text-center p-3" id="border-bottom">
+              Mes courses
+            </div>
+            <div id="cartlist">
+              <%= render 'cartlist' %>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 </div>
 
 

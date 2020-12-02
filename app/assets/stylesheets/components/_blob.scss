@@ -19,11 +19,11 @@
   animation: morph 5s ease-in-out infinite;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   transition: all 1s ease-in-out;
-  position: absolute;
   z-index: -999999;
 }
 
 .shape {
+  top: 500px;
   height: 400px;
   width: 400px;
   z-index: 1;
@@ -41,11 +41,13 @@
   width: 600px;
   right:0;
   margin-top: 300px;
+  position: absolute;
 }
 
 .shape-homepage-1 {
   height: 700px;
   width: 600px;
+  position: absolute;
   left: -180px;
   top: 960px;
 }
@@ -56,6 +58,7 @@
   left: 1180px;
   top: 570px;
   z-index: -999999;
+  position: absolute;
 }
 
 @keyframes morph {
