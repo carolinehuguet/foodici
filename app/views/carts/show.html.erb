@@ -2,7 +2,7 @@
 	<div id="back">
 		<%= link_to("< Voir la liste des produits", products_path, class: "back-text") %>
 	</div>
-	<h1 id="title">Panier</h1>
+	<h1 class="title-page">Panier</h1>
 	<%= render :partial => "shared/timelinebasket" %>
 	<div class="row main-content">
 		<% if @order_lines.count != 0 %>
