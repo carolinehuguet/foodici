@@ -1,38 +1,51 @@
-<main class="container col-8 content-home text-center">
+<main class="content-home text-center">
+  <div class="blob-container">
+    <div class="shape-homepage-1"></div>
+    <div class="shape-homepage-2"></div>
+  </div>
   <div class="container welcome-block my-5">
     <h1>Bienvenue cher locavore !</h1>
     <p class="text-large">Retrouvez les <strong>commerçants près de chez vous</strong> et passez une <strong>commande unique</strong> en quelques clics.</p>
   </div>
 
-  <div data-controller="map">
-    <%= form_tag products_path, method: :get do %>
-      <div class="container form-wrapper my-5">
-        <%# Section ADDRESS %>
-        <h3>Quel sera votre point de départ ?</h3>
-        <%= text_field_tag :address,
-          params[:address],
-          class: "form-control search-form-control form-group col-6 mt-4",
-          id: "address_input",
-          placeholder: "22 rue des Ursulines, 22100 Dinan",
-          data: { target: "map.address" }
-        %>
+  <div class="">
+    <div data-controller="map">
+      <%= form_tag products_path, method: :get do %>
+        <div class="container search-form-wrapper-hp">
+          <%# Section ADDRESS %>
+          <div class="address-section-hp">
+            <h3>Quel sera votre point de départ ?</h3>
+            <%= text_field_tag :address,
+              params[:address],
+              class: "form-control search-form-control form-group col-6",
+              id: "address_input",
+              placeholder: "22 rue des Ursulines, 22100 Dinan",
+              data: { target: "map.address" }
+            %>
+          </div>
 
-        <%# Section TRANSPORTATION %>
-        <h3 class="mt-5">Vous vous déplacez...</h3>
-        <div class="d-flex justify-content-center my-4">
-          <%= render 'transportation' %>
+          <%# Section TRANSPORTATION %>
+          <div class="transportation-section-hp">
+            <h3>Vous vous déplacez...</h3>
+            <div class="d-flex justify-content-center my-4">
+              <%= render 'transportation' %>
+            </div>
+          </div>
         </div>
-      </div>
-  </div>
-  <div class="container form-wrapper my-5 text-center" id="map-section">
-    <h3>Les commerçants à proximité</h3>
-    <div id="map"
-      style="width: 100%; height: 500px;"
-      data-markers="<%= @markers.to_json %>"
-      data-starting-marker="<%= @starting_marker.to_json %>"
-      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
     </div>
-    <%= submit_tag 'Voir les produits', class: "main-btn" %>
+  </div>
+
+  <div class="form-wrapper" id="map-section">
+    <div class="container text-center">
+      <h3 class="title-map-hp">Les commerçants à proximité</h3>
+      <div id="map"
+        style="width: 100%; height: 500px;"
+        data-markers="<%= @markers.to_json %>"
+        data-starting-marker="<%= @starting_marker.to_json %>"
+        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+      </div>
+      <%= submit_tag 'Voir les produits', class: "main-btn mt-5" %>
+    </div>
   </div>
 
   <% end %>

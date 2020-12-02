@@ -1,5 +1,6 @@
 // Specific CSS for your home-page
 @import "components/search_form";
+@import "components/map";
 
 .content-home {
   margin-top: 150px;
@@ -24,11 +25,29 @@
 
 // CONTAINER FORMULAIRE
 
+.search-form-wrapper-hp {
+  margin: 110px auto;
+}
+
 .form-wrapper {
   background-color: white;
   padding: 50px;
-  border-radius: 5px;
   box-shadow: 0px 15px 10px 5px rgba(80, 80, 80, 0.05);
+  margin: 50px 0px;
+
+  .title-map-hp {
+    margin-bottom: 50px!important;
+  }
+}
+
+.address-section-hp, .transportation-section-hp {
+  h3 {
+    margin-bottom: 50px!important;
+  }
+}
+
+.transportation-section-hp {
+  margin-top : 80px;
 }
 
 // CHECKBOX - Vous vous déplacez...

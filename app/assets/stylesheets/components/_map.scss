@@ -1,21 +1,19 @@
-// MAP -------------------------------------------------------------------------
-// #map {
-//   // margin: 50px 0px;
-// }
 
 // INFO WINDOWS ----------------------------------------------------------------
 .mapboxgl-popup {
-  max-width: 200px;
+  min-width: 250px!important;
+  margin-top: 21px!important;
 }
 
 .mapboxgl-popup-content {
   text-align: left;
-  padding: 20px;
+  padding: 30px;
 }
 
 .mapboxgl-popup-content h3 {
   font-size: 23px!important;
   font-weight: 700!important;
+  margin-bottom: 0px!important;
 }
 
 .mapboxgl-popup-content p {
