@@ -8,13 +8,13 @@
     <br>
   </div>
   <div class="itinerary d-flex justify-content-center mt-2">
-    <div>
+<!--     <div>
       <%= link_to 'Voir ma commande', order_path, class: "main-btn" %>
-    </div>
+    </div> -->
     <div class="text-center">
 <!--       <p>Voir mon itinéraire</p> -->
       <% this_order = Order.find(params[:id]) %>
-      <%= link_to 'Voir mon itinéraire', @order.itinerary(this_order), class: "main-btn", target: :_blank %>
+      <%= link_to 'Voir ma commande', @order.itinerary(this_order), class: "main-btn", target: :_blank %>
     </div>
   </div>
   <div class="container-2 mt-5 mb-5">
