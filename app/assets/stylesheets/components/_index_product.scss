@@ -1,5 +1,7 @@
 .products-list-wrapper {
   flex: 0 0 64%;
+  margin-bottom: 0;
+  margin-left: 25px;
 }
 
 .products-cart-wrapper {
@@ -57,7 +59,7 @@
 .card-product-index {
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 12px rgba(0,0,0,0.06);
   border-radius: 20px;
 }
 
@@ -90,7 +92,7 @@
   background-color: white;
   border-radius: 20px;
   position: fixed;
-  top: 420px;
+  top: 390px;
   right:17vw;
   z-index: 999;
   border:none;
@@ -112,3 +114,10 @@
   color: $green-900 !important;
 }
 
+.card-height {
+  height: 300px;
+}
+
+.form-control-index {
+  background: transparent;
+}
