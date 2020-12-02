@@ -2,5 +2,5 @@
 meta_product_name: "Food'ici"
 meta_title: "Food'ici - Rejoignez Food'ici pour soutenir les magasins locaux!"
 meta_description: "Retrouvez les commerçants près de chez vous et passez une commande unique en quelques clics."
-meta_image: "cover.png" # should exist in `app/assets/images/`
+meta_image: "meta-foodici.jpg" # should exist in `app/assets/images/`
 twitter_account: "@product_twitter_account"   # required for Twitter Cards
