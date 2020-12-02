@@ -27,7 +27,7 @@
         </div>
         <h2><%= @product.name %></h2>
         <% if @product.description.present? %>
-          <p>@product.description</p>
+          <p><%= @product.description %></p>
         <% else %>
           <p>Un produit fait avec amour en France qui ravira les papilles des petits et grands.</p>
         <% end %>
