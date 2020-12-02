@@ -33,7 +33,7 @@
 
 // MARKERS ---------------------------------------------------------------------
 .starting-marker {
-  background-image: url('picto/starting-marker.svg');
+  background-image: asset-url('picto/starting-marker.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 50px;
@@ -42,7 +42,7 @@
 }
 
 .marker {
-  background-image: url('picto/marker.svg');
+  background-image: asset-url('picto/marker.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 40px;
