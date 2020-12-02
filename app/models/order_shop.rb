@@ -4,7 +4,7 @@ class OrderShop < ApplicationRecord
   has_many :order_lines
 
   validates :subtotal_price_cents, presence: true
-   # validates :status, inclusion: { in: ["accepted", "denied", "pending", "cancelled"] }
+  # validates :status, inclusion: { in: ["pending", "completed"] }
 
   monetize :subtotal_price_cents
 end
