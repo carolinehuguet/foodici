@@ -24,3 +24,9 @@
 @import "pages/checkout";
 @import "components/blob";
 @import "pages/orders_show";
+
+// EVITER LE SCROLL HORIZONTAL
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
