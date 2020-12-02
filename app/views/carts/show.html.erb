@@ -42,8 +42,7 @@
 				<div>
 					<% if total_price != 0 %>
 						<%= form_tag orders_path do %>
-          					<%= hidden_field_tag 'order_id', @order %>
-          						<%= submit_tag 'Payer', class: 'btn btn-primary main-btn btn-block btn-custom', :id => 'pay', data: { stripe: ENV['STRIPE_PUBLISHABLE_KEY'], session: @cart.checkout_session_id } %>
+              <button class="btn btn-primary main-btn btn-block btn-custom" id="pay" data-stripe="<%= ENV['STRIPE_PUBLISHABLE_KEY'] %>" data-session="<%= @cart.checkout_session_id %>">Payer</button>
 		        		<% end %>
 		        	<% else %>
 		        		<%= form_tag orders_path do %>

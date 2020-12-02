@@ -1,6 +1,6 @@
 class Order < ApplicationRecord
   belongs_to :user
-  has_many :order_shops
+  has_many :order_shops, dependent: :destroy
   has_many :order_lines, through: :order_shops
 
   # enlevé pour pouvoir créer un order sans strating_address
