@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   def index
     @products = Product.all
     @order_line = OrderLine.new
+    @cart = current_user.orders.find_by(status: "cart")
     @shops = Shop.all
     session[:original_fullpath] = request.original_fullpath
 
@@ -56,6 +57,7 @@ class ProductsController < ApplicationController
   def show
     @product = Product.find(params[:id])
     @order_line = OrderLine.new
+    @cart = current_user.orders.find_by(status: "cart")
     session[:original_fullpath] = request.original_fullpath
   end
 end

@@ -46,6 +46,12 @@
   align-items:center;
 }
 
+.compteur-show {
+  position:absolute;
+  bottom: 0 !important;
+  right: 70px !important;
+}
+
 .hidden {
     display:none !important;
 }
