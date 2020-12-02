@@ -10,8 +10,16 @@
 }
 
 .text-large {
-  font-size: 23px;
+  padding-top: 30px;
+  font-size: 17px!important;
   font-weight: 300;
+  line-height: 2.2;
+
+  strong {
+    //color: $green-accent;
+    font-size: 19px;
+    border-bottom: 3px solid $orange-accent;
+  }
 }
 
 // CONTAINER FORMULAIRE

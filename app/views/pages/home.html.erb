@@ -1,7 +1,7 @@
 <main class="container col-8 content-home text-center">
   <div class="container welcome-block my-5">
     <h1>Bienvenue cher locavore !</h1>
-    <p class="text-large">Retrouvez les commerçants de votre ville et passez commande en quelques clics.</p>
+    <p class="text-large">Retrouvez les <strong>commerçants près de chez vous</strong> et passez une <strong>commande unique</strong> en quelques clics.</p>
   </div>
 
   <div data-controller="map">
@@ -24,17 +24,16 @@
         </div>
       </div>
   </div>
-</main>
-
-<div class="container form-wrapper col-8 my-5 text-center" id="map-section">
-  <h3>Les commerçants à proximité</h3>
-  <div id="map"
-    style="width: 100%; height: 600px;"
-    data-markers="<%= @markers.to_json %>"
-    data-starting-marker="<%= @starting_marker.to_json %>"
-    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+  <div class="container form-wrapper my-5 text-center" id="map-section">
+    <h3>Les commerçants à proximité</h3>
+    <div id="map"
+      style="width: 100%; height: 500px;"
+      data-markers="<%= @markers.to_json %>"
+      data-starting-marker="<%= @starting_marker.to_json %>"
+      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
+    <%= submit_tag 'Voir les produits', class: "main-btn" %>
   </div>
-  <%= submit_tag 'Voir les produits', class: "main-btn" %>
-</div>
 
-   <% end %>
+  <% end %>
+</main>
