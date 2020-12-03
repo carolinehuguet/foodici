@@ -1,26 +1,45 @@
 <article class="card-product">
- 	<%= cl_image_tag order_line.product.photo.key, height: 200 %>
-	<div class="card-product-infos">
-		<div>
-			<p class="product-name"><%= order_line.product.name %></p>
-		<p><span><%= order_line.product.amount %> <%= order_line.product.unit %></span></p>
+  <div class= "img-product-card-cart">
+    <%= link_to order_line.product do %>
+​      <%= cl_image_tag order_line.product.photo.key, crop: :fill, class: "img-product-cart" %>
+    <% end %>
+  </div>
+
+	<div class="card-product-wrapper">
+
+		<div class="card-product-info-wrapper">
+			<h4 class="product-name"><%= order_line.product.name %></h4>
+		  <p>
+        <span><%= order_line.product.amount %><%= order_line.product.unit %></span>
+      </p>
 		</div>
-		<p class="add-or-remove"><%= link_to decrease_quantity_order_line_path(order_line), method: :patch do %>
-				<i class="fas fa-minus"></i>
-			<% end %>
-			<span class="quantity">
-			<%= order_line.quantity %></span>
-			<%= link_to(increase_quantity_order_line_path(order_line), method: :patch) do %>		<i class="fas fa-plus"></i>
-			<% end %>
-		</p>
-		<div class="price">
-			<p><strong><%= humanized_money(order_line.subtotal_price) %></strong><sup>€</sup></p>
-		<p><span><%= order_line.product.price %>€/<%= order_line.product.unit %></span></p>
-		</div>
-		<div>
-			<p>
-				<%= link_to(icon("far","far fa-trash-alt"), order_line_path(order_line), method: :delete, data: { confirm: "Are you sure?" }) %>
-			</p>
-		</div>
+
+    <div class="card-product-add-price-wrapper">
+      <div class="card-product-add-wrapper">
+        <p class="add-or-remove">
+          <%= link_to decrease_quantity_order_line_path(order_line), method: :patch do %>
+            <i class="fas fa-minus"></i>
+          <% end %>
+          <span class="quantity">
+            <%= order_line.quantity %>
+          </span>
+          <%= link_to(increase_quantity_order_line_path(order_line), method: :patch) do %>
+            <i class="fas fa-plus"></i>
+          <% end %>
+        </p>
+      </div>
+
+      <div class="price">
+        <p><strong><%= humanized_money(order_line.subtotal_price) %></strong><sup>€</sup></p>
+        <p><span><%= order_line.product.price %>€/<%= order_line.product.unit %></span></p>
+      </div>
+    </div>
 	</div>
+
+  <div class="delete-icon-cart">
+    <p>
+      <%= link_to(icon("far","far fa-trash-alt"), order_line_path(order_line), method: :delete, data: { confirm: "Are you sure?" }) %>
+    </p>
+  </div>
+
 </article>
