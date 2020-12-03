@@ -1,8 +1,10 @@
+
+// STYLE -----------------------------------------------------------------------
 .card-product {
   overflow: hidden;
-  height: 120px;
+  height: 140px;
   background: white;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
   display: flex;
   align-items: center;
   border-radius: 20px;
@@ -10,85 +12,120 @@
   transition: 1000ms;
 }
 
-.card-product img {
-  height: 100%;
-  width: 120px;
+.img-product-card-cart {
+  width: 200px;
+  height: 240px;
+  border: none;
+  background: url("https://res.cloudinary.com/dlu9wclb0/image/upload/v1606313176/card-texture_ehqi5a.png");
+  background-size: cover;
   object-fit: cover;
-  background-color: #EAE9E4;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.img-product-cart {
+  width: 100% !important;
+  object-fit: cover;
 }
 
 .product-name {
-  font-size: 21px !important;
-  margin: 0;
-  color: $green-900;
-}
-
-.card-product span {
   font-family: $body-font;
-  color: #AAADAB;
-  // font-size: 14px !important;
+  font-weight: 500!important;
+  font-size: 20px!important;
+  margin: 0;
 }
 
 .quantity {
-    font-size: 1.1em !important;
-    color: $green-900 !important;
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .card-product strong{
-  font-size: 1.4em !important;
-  color: #1B391F;
+  font-size: 18px !important;
+  color: $green-800!important;
 }
 
 .card-product sup{
-  color: #1B391F;
+  color: $green-800!important;
+  font-size: 14px !important;
 }
 
 .card-product i {
   font-size: 1.3em;
-  color: #AAADAB;
-  transition: 500ms;
+  color: $black-700;
+  transition: all 0.5s;
 }
 
 .card-product p {
-  font-size: 12px;
   line-height: 1.4;
-  opacity: .7;
   margin: 0;
 }
 
-.card-product .price{
+// PLACEMENT -------------------------------------------------------------------
+
+.card-product-wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 21px;
+}
+
+.card-product-add-price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 54%;
+}
+
+.price {
   text-align: right;
+  font-weight: 400!important;
+  font-size: 18px!important;
+  span {
+    font-weight: 300;
+    color: $green-accent!important;
+  }
+}
+
+.card-product-info-wrapper {
+  width: 200px;
+  p span {
+    font-weight: 300;
+    color: $green-accent!important;
+  }
+}
+
+.delete-icon-cart {
+  padding-right: 45px!important;
+  margin-left: 10px;
+  width: 21px;
+  opacity: 0.4!important;
 }
 
 .card-product .card-product-infos {
   padding: 16px 30px;
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%
 }
 
 .add-or-remove {
   font-size: 1.2em !important;
-  color: #1B391F;
-  background-color: #F9F7F3;
+  color: $green-800;
+  background-color: $black-500;
+  opacity: 0.8;
   padding: 6px 10px;
   border-radius: 20px;
 }
 
 .add-or-remove i {
-  font-size: 1em !important;
+  font-size: 14px!important;
+  opacity: 0.8;
   margin: 0 5px;
+  color: $black-700;
 }
 
-// .add-or-remove button {
-//   border: none;
-//   background-color: transparent;
-// }
+.add-or-remove button {
+  border: none;
+  background-color: transparent;
+}
 
 
 // ------- PSEUDO CLASSES ------
@@ -99,6 +136,6 @@
 }
 
 .card-product i:hover {
-  color: #2A5730;
+  color: $green-accent;
   transition: 500ms;
 }
