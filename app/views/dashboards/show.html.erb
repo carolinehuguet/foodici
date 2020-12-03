@@ -1,14 +1,17 @@
 <main class="container dashboard">
 
 	<header>
-		<h1 class="title-page">Ma commande</h1>
+		<h1 class="title-page">Commande en cours</h1>
 	</header>
 	<section>
 		<article class="row">
 			<!-- Map -->
-			<div class="col-12 col-lg-8">
-				<h3>Mon itinéraire</h3>
+			<div class="col-12 col-lg-8 mb-5">
+				<h3 class="mrg-bottom">Ma carte</h3>
 				<%= render :partial => "shared/dashboard/dashboardMap" %>
+        <div class="dashboard-btn">
+          <%= link_to 'Voir mon itinéraire', @cart.itinerary(@cart), class: "line-btn mrg-left", target: :_blank %>
+        </div>
 			</div>
 			<!-- Liste des commerçants -->
 			<div class="col-12 col-lg-4">

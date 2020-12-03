@@ -73,8 +73,8 @@
 }
 
 .total-order{
-	background-color: $green-800;
-	color: #fff;
+	background-color: $orange-600;
+	color: $green-900;
 	font-weight: bold;
 	padding: 25px;
 	border-radius: 10px;
@@ -93,5 +93,16 @@
 	transition: 500ms;
   	box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
+
+.dashboard-btn {
+  margin-top: 28px !important;
+  margin-left: 0 !important;
+  margin-bottom: 30px;
+}
+
+.mrg-left {
+    margin-left: 0;
+}
+
 
 // -----------
