@@ -28,21 +28,29 @@ class Order < ApplicationRecord
   end
 
   def itinerary(order)
-    origin = [48.112160, -1.677671]
-    travelmode =
+    origin = order.starting_address
     shops = []
 
     order.order_shops.each do |order_shop|
       shops << order_shop.shop
     end
 
-    sorted_shops = shops.sort_by{ |shop| shop.distance_from(origin) }
-
-    sorted_coordinates = sorted_shops.map! do |sorted_shop|
-      sorted_shop = "#{sorted_shop.latitude}, #{sorted_shop.longitude}"
+    if shops.length == 1
+      destination = "#{shops.first.latitude}, #{shops.first.longitude}"
+    elsif shops.length == 2
+      waypoints = "#{shops.first.latitude}, #{shops.first.longitude}"
+      destination = "#{shops.last.latitude}, #{shops.last.longitude}"
+    else
+      destination = "#{shops.last.latitude}, #{shops.last.longitude}"
+      first_waypoints = shops.pop
+      raw_waypoints = []
+      shops.each do |shop|
+        raw_waypoints << "#{shop.latitude}, #{shop.longitude}"
+      end
+      waypoints = raw_waypoints.join('|')
     end
 
-    url = "https://www.google.com/maps/dir/?api=1&waypoints=#{sorted_coordinates.join('|')}&dir_action=navigate"
+    url = "https://www.google.com/maps/dir/?api=1&origin=#{origin}&waypoints=#{waypoints}&destination=#{destination}&dir_action=navigate"
     return url
   end
 end
