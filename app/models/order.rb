@@ -17,7 +17,7 @@ class Order < ApplicationRecord
   def complete_order_shop
     if status == "pending"
       order_shops.each do |shop|
-        statuses = [ "completed", "pending" ] 
+        statuses = [ "completed", "pending" ]
         shop.update(status: satuses.sample)
       end
     end
@@ -42,7 +42,18 @@ class Order < ApplicationRecord
       sorted_shop = "#{sorted_shop.latitude}, #{sorted_shop.longitude}"
     end
 
-    url = "https://www.google.com/maps/dir/?api=1&waypoints=#{sorted_coordinates.join('|')}&dir_action=navigate"
+    waypointsarray = sorted_coordinates.pop
+
+    def waypoints
+      if waypointsarray.size > 1
+        return waypointsarray.join('|')
+      else
+        return waypointsarray
+      end
+    end
+    destination = sorted_coordinates.last
+
+    url = "https://www.google.com/maps/dir/?api=1&waypoints=#{waypoints}&destination=#{destination}&dir_action=navigate"
     return url
   end
 end
