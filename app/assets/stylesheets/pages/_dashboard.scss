@@ -5,36 +5,74 @@
 	padding: 0;
 }
 
+.check-line{
+	margin-bottom: 5px !important;
+}
+
 .check{
 	background-color: $green-700;
-	height:15px;
-	width: 5px;
+	padding: 5px;
+	font-weight: 500;
+	font-size: 0.6em;
+	color: #fff;
+	border-radius: 5px;
 }
 
 .dashboard .shop{
 	margin: 12px 0;
 	background-color: #fff;
 	border-radius: 10px;
-	padding: 10px;
+	padding: 15px;
 	box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-.dashboard .name-shop{
+.name-shop{
 	font-weight: 700;
-	color: $green-700;
+	color: $green-900;
+	margin-bottom: 0px !important;
 }
 
 .dashboard .address-shop{
-	color: $green-accent;
-	font-size: 0.9em;
+	color: $orange-700;
+	font-size: 0.8em !important;
+	font-weight: 500;
+	margin-bottom: 5px;
 }
 
 .dashboard .product-shop{
-	font-size: 0.8em;
-	color: $black-700;
-	margin-left: 10px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 0.5px solid $black-500;
 }
 
+.dashboard .product-shop p{
+	color: $black-600 !important;
+	font-size: 0.8em !important;
+	font-weight: 400;
+	margin: 0 10px;
+}
+
+.total-shop{
+	display: flex;
+	justify-content: space-between;
+	p{
+		font-size: 0.9em !important;
+		margin-bottom: 0px;
+		margin-top: 10px;
+		font-weight: 600 !important;
+	}
+}
+
+.total-order{
+	background-color: $green-800;
+	color: #fff;
+	font-weight: bold;
+	padding: 25px;
+	border-radius: 10px;
+	strong{
+		font-size: 1.2em;
+	}
+}
 
 // ---- PSEUDO CLASS -----
 .dashboard .shop:hover {
