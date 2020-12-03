@@ -11,7 +11,7 @@
           <% order_shop.order_lines.each do |order_line| %>
             <ul>
               <li class="line-cart">
-                <div class="line-cart-name"><%= order_line.product.name %></div><div class="line-cart-name"><%= order_line.subtotal_price %> €</div></li>
+                <div class="line-cart-name"><%= order_line.quantity %> x <%= order_line.product.name %></div><div class="line-cart-name"><%= order_line.subtotal_price %> €</div></li>
                 <% this_order_price += order_line.subtotal_price %>
             </ul>
           <% end %>
