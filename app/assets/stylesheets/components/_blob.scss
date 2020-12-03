@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-.shape, .shape-2, .shape-homepage-1, .shape-homepage-2 {
+.shape, .shape-2, .shape-homepage-1, .shape-homepage-2, .shape-payment {
   background: var(--primary) 100%;
   -webkit-animation: morph 5s ease-in-out infinite;
   animation: morph 5s ease-in-out infinite;
@@ -57,6 +57,15 @@
   width: 600px;
   left: 1180px;
   top: 570px;
+  z-index: -999999;
+  position: absolute;
+}
+
+.shape-payment {
+  height: 600px;
+  width: 600px;
+  left: 1180px;
+  top: -2000px;
   z-index: -999999;
   position: absolute;
 }
