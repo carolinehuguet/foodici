@@ -110,9 +110,14 @@
   }
 }
 
-.bio-color.active {
+.bio-color {
   background-color:$green-600 !important;
   color: $green-900 !important;
+}
+
+.bio-color.active {
+  background-color:$orange-700 !important;
+  color: white !important;
 }
 
 .card-height {
@@ -125,4 +130,14 @@
 
 .align-index {
   margin-left: 20vh !important;
+}
+
+.separation-line {
+ border-width:1px;
+ transform: scaleX(0.5);
+ opacity: 0.5;
+ border-style:solid;
+ border-color:#AAADAB;
+ margin-right: 20px;
+ margin-left: 15px;
 }

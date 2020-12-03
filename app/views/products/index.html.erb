@@ -14,7 +14,6 @@
       </div>
       <div>
         <div class= "overtitle">ADRESSE DE DEPART</div>
-        <div>
           <%= form_tag products_path, method: :get do %>
             <%= text_field_tag :address,
               params[:address],
@@ -23,10 +22,9 @@
               placeholder: params[:address]
             %>
             <button name="button" type="submit" class="btn pencil">
-              <i class="fas fa-pencil-alt"></i>
+              <%= image_tag("picto/edit-2.svg") %>
             </button>
           <% end %>
-        </div>
       </div>
     </div>
   </div>
@@ -40,7 +38,7 @@
           placeholder: "ingrédient"
         %>
         <button name="button" type="submit" class="btn btn-search">
-              <i class="fas fa-search"></i>
+              <%= image_tag("picto/search-index.svg") %>
             </button>
       <% end %>
     </div>
@@ -85,6 +83,8 @@
         <% is_products_crepier = params[:product] == "produits régionaux" %>
         <%= link_to "Produits régionaux", products_path( filters.merge({product: "produits régionaux"}) ), class: "nav-link #{"active" if is_products_crepier}" %>
       </li>
+
+      <div class="separation-line"></div>
       <li class="nav-item">
         <% is_bio = params[:bio] == "true" %>
         <%= link_to "Bio", products_path(product: params[:product], bio: !is_bio, query: params[:query], address: params[:address], transportation: params[:transportation]), class: "bio-color nav-link #{"active" if is_bio}" %>
