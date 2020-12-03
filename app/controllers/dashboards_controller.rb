@@ -4,13 +4,20 @@ class DashboardsController < ApplicationController
 		@cart = @user.orders.find_by(status: "cart")
 		@this_order_price = 0
 
-		# map
-		@shops = Shop.geocoded
-		@markers = @shops.geocoded.map do |shop|
+
+    @shops = []
+    @cart_shops = @cart.order_shops.each do |order_shop|
+      @shops << order_shop.shop
+    end
+
+    # map
+		@markers = @shops.map do |shop|
 			{
 				lat: shop.latitude,
-				lng: shop.longitude
+        lng: shop.longitude,
+        image_url: helpers.asset_url('picto/marker.svg'),
+        infoWindow: render_to_string(partial: "shared/dashboard/dashboard_info_window", locals: { shop: shop })
 			}
-		end
-	end
+    end
+  end
 end
