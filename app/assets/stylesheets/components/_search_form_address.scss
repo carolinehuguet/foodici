@@ -1,9 +1,13 @@
 .pencil {
   position: absolute;
-  left: 302px;
+  left: 294px;
   top: 25px;
   color: $black-600;
   background-color: $orange-500;
+}
+
+.max-width-form {
+  max-width: 500px !important;
 }
 
 .btn-search {
