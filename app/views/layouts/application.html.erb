@@ -53,7 +53,7 @@
     <style></style>
   </head>
 
-  <body>
+  <body <%= "data-turbolinks=false" if controller.controller_name == 'carts' %> >
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
 

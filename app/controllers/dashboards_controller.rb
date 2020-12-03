@@ -1,24 +1,21 @@
 class DashboardsController < ApplicationController
 	def show
 		@user = current_user
-		@cart = @user.orders.find_by(status: "cart")
+
+    status = Rails.env.development? ? "cart" : "pending"
+		@cart = @user.orders.find_by(status: status)
 		@this_order_price = 0
 
-
-    @shops = []
-    @cart_shops = @cart.order_shops.each do |order_shop|
-      @shops << order_shop.shop
-    end
+    @order_shops = @cart.order_shops
 
     # map
-		@markers = @shops.map do |shop|
+		@markers = @order_shops.map do |order_shop|
 			{
-				lat: shop.latitude,
-        lng: shop.longitude,
-        image_url: helpers.asset_url('picto/marker.svg'),
-        infoWindow: render_to_string(partial: "shared/dashboard/dashboard_info_window", locals: { shop: shop })
-			}
-    # @cart = current_user.orders.find(params[:id])
+        lat: order_shop.shop.latitude,
+        lng: order_shop.shop.longitude,
+        image_url: helpers.asset_url( order_shop.status == "completed" ? 'picto/marker-approved.svg' : 'picto/marker-pending.svg'),
+        infoWindow: render_to_string(partial: "shared/dashboard/dashboard_info_window", locals: { shop: order_shop.shop })
+      }
     end
   end
 end

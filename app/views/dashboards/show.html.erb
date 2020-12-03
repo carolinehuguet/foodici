@@ -21,8 +21,12 @@
 					<% @cart.order_shops.each do |order_shop| %>
 						<li class="shop"><span class="name-shop">
 							<header>
-								<p class="check-line"><span class="check"><i class="fas fa-check-circle"></i> c'est tout bon</span></p>
-								<h6 class="name-shop"><%= order_shop.shop.name %></h6>
+								<% if order_shop.status == "completed" %>
+								<p class="check-line"><span class="check"><i class="fas fa-check-circle"></i> c'est tout bon ! </span></p>
+								<% elsif order_shop.status == "pending" %>
+								<p class="check-line"><span class="check-pending"><i class="fas fa-clock"></i> en cours... </span></p>
+								<% end %>
+								<h6 class="name-shop"><i class="fas fa-store"></i> <%= order_shop.shop.name %></h6>
 								<p class="address-shop"><i class="fas fa-map-marker-alt"></i> <%= order_shop.shop.address %></p>
 								<span > </span>
 							</header>
@@ -40,7 +44,6 @@
 							</ul>
 							<footer class="total-shop">
 								<p>Total chez ce commerçant : </p>
-
 								<p><%= @subTotal %> €</p>
 								<% @total << @subTotal %>
 							</footer>
@@ -50,9 +53,8 @@
 				<p class="total-order">
 					Total de votre commande : <strong><%= @total.sum %> €</strong>
 				</p>
+        <%= link_to "Navig", @cart.itinerary(@cart) %>
 			</div>
 		</article>
 	</section>
 </main>
-
-

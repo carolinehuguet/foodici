@@ -1,17 +1,5 @@
 // Specific CSS for your cart
 
-// h1{
-// 	margin: 60px auto;
-// 	font-family: $headers-font;
-// 	text-align: center;
-// }
-
-// h3 {
-//   font-family: $headers-font;
-//   font-weight: bold;
-//   margin-top: 50px;
-//   margin-bottom: 15px;
-// }
 .title-page {
     text-align: center;
     margin: 60px 0 50px 0;
@@ -40,13 +28,11 @@
 	color: $green-700 !important;
 }
 
-// ------------------
-
 // ----------- ASIDE CART PAGE --------------
 .recap {
 	background-color: #fff;
 	border-radius: 20px;
-	padding: 30px 30px 0 30px;
+	padding: 40px;
 	box-shadow: 0 0 5px rgba(0,0,0,0.1);
 	height: 100%;
 	margin-top: 39px;
@@ -63,7 +49,8 @@
 
 .address-and-date {
 	font-size: 1.2em !important;
-	margin-bottom: 15px;
+  margin-bottom: 23px;
+  padding-top: 3px;
 	font-family: $headers-font;
 }
 
@@ -71,45 +58,45 @@
 	display: flex;
 	width: 100%;
 	flex-direction: column;
-	margin-bottom: 20px;
 }
 
 #total{
 	display: flex;
-	justify-content: space-between;
-	margin-bottom: 30px;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 13px;
 }
 
 #total p{
-	display: flex;
+  color: $green-800!important;
 	margin: 0;
-	text-align: right;
-	font-size: 1.2em !important;
+  font-size: 19px!important;
+  strong {
+    font-size: 22px!important;
+  }
 }
 
-.number-article{
-	color: $black-600;
-	font-weight: 200 !important;
+#total .number-article{
+  font-size: 16px!important;
+	// font-weight: 200 !important;
 }
 
 .taxes{
-	font-family: $body-font;
 	text-align: right;
-	font-weight: lighter !important;
+	font-weight: 300!important;
 	color: $black-600;
-	margin-top: 20px;
-    margin-bottom: 0px;
+	margin-top: 40px;
+  margin-bottom: 0px;
 }
 
 .btn-custom{
-	margin: 0 !important;
-	font-weight: 500 !important;
-	text-transform: uppercase;
+  width: 100%;
+  margin: auto;
 }
 
-.btn-custom:disabled{
-	background-color: $black-600 !important;
-}
+// .btn-custom:disabled{
+// 	background-color: $black-600 !important;
+// }
 
 // -------------------
 

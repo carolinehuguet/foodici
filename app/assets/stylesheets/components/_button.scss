@@ -15,8 +15,12 @@
 a.main-btn {
   text-decoration: none;
 }
-input.main-btn {
-  border: none;
+input.main-btn, button.main-btn {
+  border: none!important;
+}
+
+.main-btn:focus {
+  outline: none!important;
 }
 
 .main-btn:hover {

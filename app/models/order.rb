@@ -2,6 +2,7 @@ class Order < ApplicationRecord
   belongs_to :user
   has_many :order_shops, dependent: :destroy
   has_many :order_lines, through: :order_shops
+  has_many :shops, through: :order_shops
 
   # enlevé pour pouvoir créer un order sans strating_address
   # validates :starting_address, presence: true
@@ -10,6 +11,17 @@ class Order < ApplicationRecord
 
   monetize :total_price_cents
   monetize :amount_cents
+
+  before_save :complete_order_shop
+
+  def complete_order_shop
+    if status == "pending"
+      order_shops.each do |shop|
+        statuses = [ "completed", "pending" ]
+        shop.update(status: satuses.sample)
+      end
+    end
+  end
 
   def cart?
     return status == "cart"
@@ -30,7 +42,18 @@ class Order < ApplicationRecord
       sorted_shop = "#{sorted_shop.latitude}, #{sorted_shop.longitude}"
     end
 
-    url = "https://www.google.com/maps/dir/?api=1&waypoints=#{sorted_coordinates.join('|')}&dir_action=navigate"
+    waypointsarray = sorted_coordinates.pop
+
+    def waypoints
+      if waypointsarray.size > 1
+        return waypointsarray.join('|')
+      else
+        return waypointsarray
+      end
+    end
+    destination = sorted_coordinates.last
+
+    url = "https://www.google.com/maps/dir/?api=1&waypoints=#{waypoints}&destination=#{destination}&dir_action=navigate"
     return url
   end
 end
