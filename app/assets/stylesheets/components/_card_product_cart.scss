@@ -24,8 +24,14 @@
   justify-content:center;
 }
 
+.img-product-card-cart a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .img-product-cart {
-  width: 100% !important;
+  width: 80% !important;
   object-fit: cover;
 }
 
@@ -62,6 +68,10 @@
 }
 
 // PLACEMENT -------------------------------------------------------------------
+
+aside.recap {
+  margin-top: 60px;
+}
 
 .card-product-wrapper {
   display: flex;
