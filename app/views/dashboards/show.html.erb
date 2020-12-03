@@ -48,8 +48,9 @@
 					<% end %>
 				</ul>
 				<p class="total-order">
-					Total de votre commande : <strong><%= @total.sum %> €</strong> 
+					Total de votre commande : <strong><%= @total.sum %> €</strong>
 				</p>
+        <%= link_to "Navig", @cart.itinerary(@cart) %>
 			</div>
 		</article>
 	</section>
