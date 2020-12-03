@@ -4,34 +4,49 @@
 		<h1 class="title-page">Ma commande</h1>
 	</header>
 	<section>
-		
-		
 		<article class="row">
+			<!-- Map -->
 			<div class="col-12 col-lg-8">
 				<h3>Mon itinéraire</h3>
-				<p>Map</p>
+				<%= render :partial => "shared/dashboard/dashboardMap" %>
 			</div>
+			<!-- Liste des commerçants -->
 			<div class="col-12 col-lg-4">
 				<h3>Liste des commerçants</h3>
 				<ul>
+					<% @total = [] %>
 					<% @cart.order_shops.each do |order_shop| %>
 						<li class="shop"><span class="name-shop">
 							<header>
-								<span class="check"> <%= order_shop.status %> </span></br> 
-								<%= order_shop.shop.name %></span><br>
-								<span class="address-shop"><%= order_shop.shop.address %>
+								<p class="check-line"><span class="check"><i class="fas fa-check-circle"></i> c'est tout bon</span></p>
+								<h6 class="name-shop"><%= order_shop.shop.name %></h6>
+								<p class="address-shop"><i class="fas fa-map-marker-alt"></i> <%= order_shop.shop.address %></p>
+								<span > </span>
 							</header>
-</span>							<ul>
+							<ul>
+								<% @subTotal = 0 %>
 								<% order_shop.order_lines.each do |order_line| %>
 									<% if order_line.subtotal_price != 0 %>
-										<li class="product-shop"><%= order_line.product.name %> <%= order_line.subtotal_price %> €</li>
+										<li class="product-shop">
+											<p><%= order_line.product.name %> (<%= order_line.quantity %>) </p>
+											<p><strong><%= order_line.subtotal_price %> €</strong></p>
+										</li>
 									<% end %>
+									<% @subTotal += order_line.subtotal_price %>
 								<% end %>
 							</ul>
+							<footer class="total-shop">
+								<p>Total chez ce commerçant : </p>
+
+								<p><%= @subTotal %> €</p>
+								<% @total << @subTotal %>
+							</footer>
 						</li>
 					<% end %>
 				</ul>
-				<p>Total :  <%= @cart.total_price %> €</p>
+				<p class="total-order">
+					Total de votre commande : <strong><%= @total.sum %> €</strong> 
+				</p>
 			</div>
 		</article>
 	</section>
