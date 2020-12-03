@@ -42,18 +42,7 @@ class Order < ApplicationRecord
       sorted_shop = "#{sorted_shop.latitude}, #{sorted_shop.longitude}"
     end
 
-    waypointsarray = sorted_coordinates.pop
-
-    def waypoints
-      if waypointsarray.size > 1
-        return waypointsarray.join('|')
-      else
-        return waypointsarray
-      end
-    end
-    destination = sorted_coordinates.last
-
-    url = "https://www.google.com/maps/dir/?api=1&waypoints=#{waypoints}&destination=#{destination}&dir_action=navigate"
+    url = "https://www.google.com/maps/dir/?api=1&waypoints=#{sorted_coordinates.join('|')}&dir_action=navigate"
     return url
   end
 end
