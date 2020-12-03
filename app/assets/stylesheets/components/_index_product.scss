@@ -59,7 +59,7 @@
 .card-product-index {
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 0 12px rgba(0,0,0,0.06);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.04);
   border-radius: 20px;
   min-width: 200px;
 }
@@ -140,4 +140,8 @@
  border-color:#AAADAB;
  margin-right: 20px;
  margin-left: 15px;
+}
+
+.line-height {
+  line-height: 1.5;
 }
