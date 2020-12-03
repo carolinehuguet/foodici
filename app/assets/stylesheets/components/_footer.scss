@@ -45,3 +45,13 @@
   background-color: #fff;
   width:100vw !important;
 }
+
+.custom-foodici-footer a{
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.custom-foodici-footer a:hover{
+  color: $green-700 !important;
+  transition: 0.5s;
+}
