@@ -9,8 +9,8 @@
 		<div class="col-12 col-lg-8">
 		    <% total_price = 0 %>
 			<% @order_lines.each do |category,order_lines| %>
-				<section>
-					<h3><%= category %></h3>
+				<section class="mt-3">
+					<h3 class="my-3"><%= category %></h3>
 					<% order_lines.each do |order_line| %>
           				<% total_price += order_line.subtotal_price %>
 						<%= render partial: "shared/card_product_cart", locals: { order_line: order_line } %>
