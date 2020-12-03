@@ -18,7 +18,7 @@ class OrdersController < ApplicationController
         quantity: 1,
         name: "Food'ici"
       }],
-      success_url: order_url(order),
+      success_url: "https://www.food-ici.fr#{order_path(order)}",
       cancel_url: order_url(order)
     )
 
