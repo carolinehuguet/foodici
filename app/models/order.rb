@@ -2,6 +2,7 @@ class Order < ApplicationRecord
   belongs_to :user
   has_many :order_shops, dependent: :destroy
   has_many :order_lines, through: :order_shops
+  has_many :shops, through: :order_shops
 
   # enlevé pour pouvoir créer un order sans strating_address
   # validates :starting_address, presence: true
@@ -10,6 +11,17 @@ class Order < ApplicationRecord
 
   monetize :total_price_cents
   monetize :amount_cents
+
+  before_save :complete_order_shop
+
+  def complete_order_shop
+    if status == "pending"
+      order_shops.each do |shop|
+        statuses = [ "completed", "pending" ] 
+        shop.update(status: satuses.sample)
+      end
+    end
+  end
 
   def cart?
     return status == "cart"

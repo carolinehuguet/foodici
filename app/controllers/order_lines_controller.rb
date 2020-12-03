@@ -14,10 +14,11 @@ class OrderLinesController < ApplicationController
       order_shop: @order_shop,
       product: @product
     )
+    @order_line.order_shop.update(status: "pending")
     @order_line.quantity = order_line_params[:quantity]
     @order_line.subtotal_price = @product.price * @order_line.quantity
 
-    if @order_line.save!
+    if @order_line.save
 
       respond_to do |format|
         format.html { redirect_to session[:original_fullpath] }
@@ -55,6 +56,7 @@ class OrderLinesController < ApplicationController
     @order_line = OrderLine.find(params[:id])
     if @order_line.quantity > 0
       @order_line.quantity -= 1
+      @order_line.order_shop.update(status: "pending")
     end
     @order_line.save
     redirect_to cart_path
@@ -63,6 +65,7 @@ class OrderLinesController < ApplicationController
   def increase_quantity
     @order_line = OrderLine.find(params[:id])
     @order_line.quantity += 1
+    @order_line.order_shop.update(status: "pending")
     @order_line.save
     redirect_to cart_path
   end
