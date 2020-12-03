@@ -30,3 +30,8 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+::selection{
+  background-color: $green-700;
+  color: #fff;
+}
