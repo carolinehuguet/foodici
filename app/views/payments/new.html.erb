@@ -17,7 +17,7 @@
                   <% order_shop.order_lines.each do |order_line| %>
                     <ul>
                       <li class="line-cart">
-                        <div class="line-cart-name"><%= order_line.product.name %> (<%= order_line.quantity*order_line.product.amount %><%= order_line.product.unit %>)</div><div class="line-cart-name"><%= humanized_money_with_symbol order_line.subtotal_price %></div></li>
+                        <div class="line-cart-name"><%= order_line.product.name %> (<%= order_line.quantity*order_line.product.amount %><%= order_line.product.unit %>)</div><div class="line-cart-name"><%= order_line.subtotal_price %>€</div></li>
                         <% this_order_price += order_line.subtotal_price %>
                     </ul>
                   <% end %>
@@ -28,8 +28,8 @@
           <br>
             <div id="border-top">
               <div class="cart-total m-4">
-                <h5>TOTAL:</h5>
-                <h5> <%= this_order_price %>€</h5>
+                <p>TOTAL:</p>
+                <p> <%= this_order_price %>€</p>
               </div>
             </div>
         <% end %>
