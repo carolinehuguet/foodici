@@ -72,7 +72,7 @@ export default class extends Controller {
         map.setCenter([startingMarker.lng, startingMarker.lat]);
       }
     // Scroller redirect_to root_path(anchor: "map-section")
-    document.getElementById("map-section").scrollIntoView();
+    document.getElementById("map-section").scrollIntoView({behavior: "smooth", block: "center"});
     });
   }
 }
