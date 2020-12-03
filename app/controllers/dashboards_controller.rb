@@ -1,14 +1,11 @@
 class DashboardsController < ApplicationController
 	def show
 		@user = current_user
-		@cart = @user.orders.find_by(status: "cart")
+        status = Rails.env.development? ? "cart" : "pending"
+		@cart = @user.orders.find_by(status: status)
 		@this_order_price = 0
 
-
-    @shops = []
-    @cart_shops = @cart.order_shops.each do |order_shop|
-      @shops << order_shop.shop
-    end
+        @shops = @cart.shops
 
     # map
 		@markers = @shops.map do |shop|

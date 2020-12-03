@@ -64,6 +64,7 @@
     <script src="https://js.stripe.com/v3/"></script>
     <script>
       const paymentButton = document.getElementById('pay');
+      if (paymentButton){
       paymentButton.addEventListener('click', (event) => {
         event.preventDefault();
         const stripe = Stripe('<%= ENV['STRIPE_PUBLISHABLE_KEY'] %>');
@@ -71,6 +72,7 @@
           sessionId: '<%= @cart.checkout_session_id %>'
         });
       });
+  }
     </script>
 	</div>
 </main>
