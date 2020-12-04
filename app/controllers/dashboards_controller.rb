@@ -2,7 +2,7 @@ class DashboardsController < ApplicationController
 	def show
 		@user = current_user
 
-    @cart = @user.orders.find_by(status: "pending")
+    @cart = @user.orders.where(status: "pending").last
     @cart = @users.orders.create_or_find_by(status: "cart") if !@cart.present?
 		@this_order_price = 0
 
