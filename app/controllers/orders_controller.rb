@@ -18,12 +18,19 @@ class OrdersController < ApplicationController
         quantity: 1,
         name: "Food'ici"
       }],
-      success_url: "https://www.food-ici.fr#{order_path(order)}",
+      success_url: "https://www.food-ici.fr#{confirm_order_path(order)}",
       cancel_url: order_url(order)
     )
 
     order.update(checkout_session_id: session.id)
     redirect_to new_order_payment_path(order)
+  end
+
+  def confirm
+    order = Order.find(params[:id])
+    order.status = "pending"
+    order.save
+    redirect_to order_path(order)
   end
 
   def show
