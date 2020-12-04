@@ -2,8 +2,8 @@ class DashboardsController < ApplicationController
 	def show
 		@user = current_user
 
-    status = Rails.env.development? ? "cart" : "pending"
-		@cart = @user.orders.find_by(status: status)
+    @cart = @user.orders.find_by(status: "pending")
+    @cart = @users.orders.create_or_find_by(status: "cart") if !@cart.present?
 		@this_order_price = 0
 
     @order_shops = @cart.order_shops

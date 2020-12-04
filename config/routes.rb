@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   resources :orders, only: [:edit, :update, :show] do
     member do
       get :itinerary
+      get :confirm
     end
   end
 

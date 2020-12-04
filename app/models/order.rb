@@ -18,7 +18,7 @@ class Order < ApplicationRecord
     if status == "pending"
       order_shops.each do |shop|
         statuses = [ "completed", "pending" ]
-        shop.update(status: satuses.sample)
+        shop.update(status: statuses.sample)
       end
     end
   end
